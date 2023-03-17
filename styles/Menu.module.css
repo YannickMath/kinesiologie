@@ -1,0 +1,21 @@
+.link {
+    opacity: 1;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    color: #6c9470;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }

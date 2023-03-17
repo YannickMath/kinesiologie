@@ -10,9 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "hero-pattern": "url('/FOND D'ECRAN POUR SITE INTERNET.jpeg')",
-      },
+      // backgroundImage: {
+      //   "hero-pattern": "url('/backgroundimage.jpg)",
+      // },
     },
   },
   plugins: [],
