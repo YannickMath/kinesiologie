@@ -1,7 +1,9 @@
-// import "@/styles/Home.module.css"
-import styles from "../styles/Menu.module.css"
 import Link from "next/link";
 import Head from "next/head";
+import 'tailwindcss/tailwind.css'
+import styles from "../styles/Menu.module.css";
+
+
 
 export default function Menu() {
   const links = {
