@@ -40,13 +40,13 @@ export default function Kinesiologie() {
     };
 
     return (
-      <div className="h-screen  font-raleway italic overflow-hidden  "
-      // style={{
-      //   backgroundImage: "url(/fondkinesio.jpg)",
-      //   backgroundSize: "cover",
-      //   backgroundPosition: "center",
-      //   backgroundRepeat: "no-repeat",
-      // }}
+      <div className="h-screen text-white font-raleway italic overflow-hidden  "
+      style={{
+        backgroundImage: "url(/fondkinesio.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
       >
         <div className="h-full flex flex-col justify-center ml-10 mr-10">
           <Slider {...settings}>
@@ -71,10 +71,10 @@ export default function Kinesiologie() {
                   />
                 </p>
                 <div className="flex justify-around">
-                  <p className="text-center text-green-400 font-tangerine text-4xl">
+                  <p className="text-center text-white font-tangerine text-5xl">
                     {items.item8}
                   </p>
-                  <p className="text-center  text-green-400 font-tangerine text-4xl">
+                  <p className="text-center  text-white font-tangerine text-5xl">
                     {items.item9}
                   </p>
                 </div>
@@ -87,7 +87,7 @@ export default function Kinesiologie() {
   };
 
   return (
-    <div className="h-screen  overflow-hidden">
+    <div className="h-screen overflow-hidden">
       <Menu />
       <div>
         <Carousel items={wikipedia} />

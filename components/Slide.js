@@ -21,7 +21,7 @@ return (
 {Object.values(wikipedia).map((item, i) => (
 <div key={i}>
 <div className="flex justify-center">
-<Link href="{wikipedia.item${i}}" className="w-2 h-2 m-5 rounded bg-gray-700"></Link>
+<Link href="{wikipedia.item${i}}" className="w-5 h-5 m-5 rounded bg-white"></Link>
 {/* <Link href="/" className="w-2 h-2 m-5 rounded bg-gray-700"></Link>
 <Link href="/" className="w-2 h-2 m-5 rounded bg-gray-700"></Link> */}
 </div>

@@ -5,6 +5,8 @@
     animation-name: fadeInDown;
     animation-duration: 1s;
     cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .link:hover {

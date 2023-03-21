@@ -6,7 +6,7 @@ export default function Acceuil() {
     item1: `"Libérez-vous des blocages conscients ou inconscients grâce à la mémoire du corps"`,
     item2: `"Reprenez votre pouvoir personnel et accéder à votre grandeur et à votre plein potentiel"`,
     item3: `"Je vous accompagne dans le processus de libération de tensions intérieures pour aller vers un mieux-être physique, mental, émotionnel et énergétique et retrouver ainsi votre vitalité, votre équilibre, et mobiliser vos propres ressources pour continuer sur le chemin de la vie, paisiblement, en étant libre de vos choix."`,
-    item4: "Murielle",
+    item4: "Muriel",
   };
   return (
     <div className="h-screen font-tangerine text-5xl  overflow-hidden">
@@ -25,7 +25,7 @@ export default function Acceuil() {
           <li className={styles.phrase}>{welcome.item2}</li>
           <li className={styles.phrase}>{welcome.item3}</li>
           <li className={styles.phrase}>
-            <span className={styles.signature}>Murielle</span>
+            <span className={styles.signature}>Muriel</span>
           </li>
         </ul>
       </div>

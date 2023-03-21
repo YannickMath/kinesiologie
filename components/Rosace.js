@@ -7,11 +7,10 @@ export default function Rosace() {
     `Difficulté d'apprenttissage leture, ecriture`,
     "Découragement, burn out",
     "Insomnies",
-    "Mauxx du corps",
-    "Angoisses, peurs",
+    "Mauxx du corps, douleurs chroniques",
+    "Angoisses, peurs, stress profond",
     "Chocs affectifs, solitude",
-    "Douleurs chroniques",
-    "Stress profond",
+    
   ];
   const title = "Pourquoi se tourner vers la kinésiologie";
   return (
