@@ -544,6 +544,11 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-image@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/react-image/-/react-image-4.1.0.tgz#92f2d4a809a178b3bf69acd7bad7da7aa5e7364c"
+  integrity sha512-qwPNlelQe9Zy14K2pGWSwoL+vHsAwmJKS6gkotekDgRpcnRuzXNap00GfibD3eEPYu3WCPlyIUUNzcyHOrLHjw==
+
 react-slick@^0.29.0:
   version "0.29.0"
   resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.29.0.tgz#0bed5ea42bf75a23d40c0259b828ed27627b51bb"
@@ -676,6 +681,36 @@ tslib@^2.4.0:
   version "2.5.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz"
   integrity sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==
+
+typeface-amatic-sc@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-amatic-sc/-/typeface-amatic-sc-1.1.13.tgz#fb8e20799acad91759b3bc835fbe51677d90efc8"
+  integrity sha512-1tw9k+YRfAFvhbYyO9haJpI/T15/OyXClLtiIMoCMM1jWeJjDUEY7oPrcGVdRsvUZ9LhUNGEEqH7nb4icJl7fg==
+
+typeface-amita@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-amita/-/typeface-amita-1.1.13.tgz#b43c2fe48b2919bea96f6b100de07e75f749e685"
+  integrity sha512-2VsWitvGaZIdGKxZt7S00ONc6LJqeKz2N61QbKAJksZVsyyg1hGPln5ZZIvplNanfdJ4B3EYmI67BFR1OuSU4g==
+
+typeface-kalam@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-kalam/-/typeface-kalam-1.1.13.tgz#2a250a91b7d3e6ccc866bf6b195a5eafdee16436"
+  integrity sha512-oRjaWkHQDVegWxU28/BusuaSYN7BgWRfYxkrPiOiYNZArqVMKBaBXkzvvcD3AGI7clS5scwicC9WrRNV5w/EOQ==
+
+typeface-pinyon-script@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-pinyon-script/-/typeface-pinyon-script-1.1.13.tgz#2e9d5c9f4a61da732119b00a9759b5850dfb7670"
+  integrity sha512-iv+u4m7zJX6Ezyh+gpQJf3ZooN9VTNo77uXSe+Hb2/feeijIFMH6HAB7dNr/GNfF/8DloMBtC89Co5JPDGS5Vw==
+
+typeface-raleway@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-raleway/-/typeface-raleway-1.1.13.tgz#5dd44c7029c69991f3e8a66f4434ba62bcf0886a"
+  integrity sha512-iouV4D1dv4Ylm++j2PmPW7HKJH7zTKu5xXsta1hqQ2oG8+9fSpocuF40xCSTckaa1DLYbk1TUiU14wr2nCUBqg==
+
+typeface-satisfy@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-satisfy/-/typeface-satisfy-1.1.13.tgz#35369566c336b113559a112288aef8c4e2e7117e"
+  integrity sha512-7E4QCYWGxAwC6XCfKcxWpJi2t7GMflxYcJz5xYJB3O9jhDiSQTH+TMsqp2zz6KGzAxM2qJdZtTmECO+6ck+9Gg==
 
 update-browserslist-db@^1.0.10:
   version "1.0.10"

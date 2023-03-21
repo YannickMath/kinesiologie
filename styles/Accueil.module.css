@@ -1,49 +1,89 @@
 @keyframes display-phrases {
-    0% {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    25% {
-      opacity: 1;
-      transform: translateX(-75%);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(-50%);
-    }
-    75% {
-      opacity: 1;
-      transform: translateX(-50%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(-50%);
-    }
-  }
-  
-  .phrase {
+  0% {
     opacity: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    text-align: center;
+    /* transform: translateX(-100%); */
   }
-  
-  .phrase:nth-child(1) {
-    top: 40%;
-    animation: display-phrases 10s linear forwards 1s ;
+  25% {
+    opacity: 1;
+    /* transform: translateX(-75%); */
   }
-  
-  .phrase:nth-child(2) {
-    top: 50%;
-    animation: display-phrases 10s linear forwards 5s;
+  50% {
+    opacity: 1;
+    /* transform: translateX(-50%); */
   }
-  
-  .phrase:nth-child(3) {
-    top: 60%;
-    animation: display-phrases 10s linear forwards 10s;
-    animation-fill-mode: forwards;
+  75% {
+    opacity: 1;
+    /* transform: translateX(-50%); */
   }
-  
-  
+  100% {
+    opacity: 1;
+    /* transform: translateX(-50%); */
+  }
+}
+
+.phrase {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.phrase:nth-child(1) {
+  top: 40%;
+  animation: display-phrases 8s linear forwards;
+}
+
+.phrase:nth-child(2) {
+  top: 50%;
+  animation: display-phrases 8s linear forwards 4s;
+}
+
+.phrase:nth-child(3) {
+  top: 60%;
+  animation: display-phrases 8s linear forwards 8s;
+  animation-fill-mode: forwards;
+}
+.phrase:nth-child(4) {
+  top: 80%;
+  animation: display-phrases 8s linear forwards 6s;
+  animation-fill-mode: forwards;
+}
+
+.signature {
+  opacity: 0;
+  display: inline-block;
+  position: relative;
+  animation: write-signature 5s forwards;
+  animation-delay: 10s;
+  /* color: rgb(55, 150, 55); */
+  /* color: gray; */
+  color: #ffffff;
+  margin-top: 5%;
+  margin-left: 70%;
+}
+
+@keyframes write-signature {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scaleX(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1);
+  }
+}

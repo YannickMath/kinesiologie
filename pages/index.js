@@ -1,5 +1,7 @@
 
-import Accueil from "../components/Accueil"
+import Accueil from "../components/Acceuil"
+
+
 
 export default function Home() {
   return (

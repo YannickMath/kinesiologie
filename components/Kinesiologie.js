@@ -8,9 +8,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 export default function Kinesiologie() {
+  const imageTestMusculaire = "/testmusc.png";
   const wikipedia = {
     item1:
-      "La kinésiologie est une approche holistique qui vise à rétablir l'équilibre du corps dans toutes ses composantes : structurelles, psycho, émotionnelles, biochimiques et énergétiques.",
+      "La kinésiologie est une approche holistique qui vise à rétablir l'équilibre du corps dans toutes ses composantes : structurelles, psycho, émotionnelles, biochimiques et énergétiques. La spécificité de la kinésiologie c'est l'utilisation du test musculaire qui permet d'interroger le corps, notre inconscient et de faire remonter à la soncience les déséquilibres énéergétiques et les stress émotionnels qui empêchent l'individu d'utiliser toutes ses potentialiités.",
     item2:
       "La spécificité de la kinésiologie c'est l'utilisation du test musculaire qui permet d'interroger le corps, notre inconscient et de faire remonter à la soncience les déséquilibres énéergétiques et les stress émotionnels qui empêchent l'individu d'utiliser toutes ses potentialiités.",
     item3:
@@ -20,42 +21,77 @@ export default function Kinesiologie() {
     item5:
       "Faire appel à la kinésiologie c’est utiliser l’intelligence du corps pour remettre l’énergie en mouvement, faire le tri dans le flot émotionnel pour enfin se sentir léger, apaisé.",
     item6: "Le test musculaire",
-    item7: "'Ce qui ne s'exprime pas s'imprime'",
-    item8: "'Le corps est le reflet de notre inconscient'",
+    item7: imageTestMusculaire,
+    item8: `"Ce qui ne s'exprime pas s'imprime"`,
+    item9: `"Le corps est le reflet de notre inconscient"`,
   };
 
-  const imageTestMusculaire = "/testmusc.png";
+  const Carousel = ({ items }) => {
+    const [activeSlide, setActiveSlide] = useState(0);
 
-  const [modal, setModal] = useState(false);
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    const settings = {
+      dots: true, 
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      afterChange: (index) => setActiveSlide(index),
+    };
+
+    return (
+      <div className="h-screen  font-raleway italic overflow-hidden  "
+      // style={{
+      //   backgroundImage: "url(/fondkinesio.jpg)",
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      //   backgroundRepeat: "no-repeat",
+      // }}
+      >
+        <div className="h-full flex flex-col justify-center ml-10 mr-10">
+          <Slider {...settings}>
+            <div className={activeSlide === 0 ? "" : "hidden"}>
+              <div className="h-full flex flex-col justify-center space-y-10 py-10 mt-10">
+                <p style={{ marginLeft: "30%" }}>{items.item1}</p>
+                <p>{items.item2}</p>
+                <p>{items.item3}</p>
+                <p>{items.item4}</p>
+                <p>{items.item5}</p>
+              </div>
+            </div>
+            <div className={activeSlide === 1 ? "" : "hidden"}>
+              <div className="h-full flex flex-col justify-center space-y-12 py-10 mt-10">
+                <p className="text-center">{items.item6}</p>
+                <p>
+                  <img
+                    className="mx-auto opacity-70"
+                    src={items.item7}
+                    alt="Test musculaire"
+                    style={{ borderRadius: "50% / 50%" }}
+                  />
+                </p>
+                <div className="flex justify-around">
+                  <p className="text-center text-green-400 font-tangerine text-4xl">
+                    {items.item8}
+                  </p>
+                  <p className="text-center  text-green-400 font-tangerine text-4xl">
+                    {items.item9}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Slider>
+        </div>
+      </div>
+    );
   };
 
   return (
-    <div className="h-screen">
+    <div className="h-screen  overflow-hidden">
       <Menu />
-      <div className="flex justify-center items-center">
-        {Object.values(wikipedia).map((item, i) => (
-          <a
-            key={i}
-            href={`#${Object.keys(wikipedia)[i]}`}
-            // className="w-2 h-2 m-5 rounded bg-gray-700"
-          ></a>
-        ))}
+      <div>
+        <Carousel items={wikipedia} />
       </div>
-      <Slider {...settings}>
-        {Object.values(wikipedia).map((item, i) => (
-          <div key={i}>
-            <p className={styles.phrase} id={Object.keys(wikipedia)[i]}>
-              {item}
-            </p>
-          </div>
-        ))}
-      </Slider>
     </div>
   );
 }

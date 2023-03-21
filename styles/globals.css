@@ -2,3 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Tangerine&display=swap");
+
+.font-tangerine {
+  font-family: "Tangerine", cursive;
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+.font-amatic {
+  font-family: "Amatic SC", cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+  .font-amita {
+    font-family: 'Amita', cursive;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+.font-satisfy {
+    font-family: "Satisfy", cursive;
+
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+    .font-kalam {
+        font-family: 'Kalam', cursive;
+    
+    }  */
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    .font-raleway {
+        font-family: 'Raleway', sans-serif;
+    
+    } 
