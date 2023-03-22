@@ -33,7 +33,7 @@
 
 .phrase:nth-child(1) {
   top: 40%;
-  animation: display-phrases 8s linear forwards;
+  animation: display-phrases 8s linear forwards 1s;
 }
 
 .phrase:nth-child(2) {

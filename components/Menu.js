@@ -37,20 +37,17 @@ export default function Menu() {
         <Link href="/Pourquoi" className={styles.link}>
           {links.id3}
         </Link>
-        <Link href="/Seance" className={styles.link}>
+        <Link href="/Reflexologie" className={styles.link}>
           {links.id4}
         </Link>
-        <Link href="/Kinesiologie" className={styles.link}>
+        <Link href="/NettoyageEnergetique" className={styles.link}>
           {links.id5}
         </Link>
-        <Link href="/Kinesiologie" className={styles.link}>
+        <Link href="/aProposDeMoi" className={styles.link}>
           {links.id6}
         </Link>
-        <Link href="/Kinesiologie" className={styles.link}>
+        <Link href="/contactsEtTarifs" className={styles.link}>
           {links.id7}
-        </Link>
-        <Link href="/Kinesiologie" className={styles.link}>
-          {links.id8}
         </Link>
       </div>
     </>

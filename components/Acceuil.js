@@ -1,5 +1,6 @@
 import Menu from "./Menu";
 import styles from "../styles/Accueil.module.css";
+import Image from "next/image";
 
 export default function Acceuil() {
   const welcome = {
@@ -8,18 +9,20 @@ export default function Acceuil() {
     item3: `"Je vous accompagne dans le processus de libération de tensions intérieures pour aller vers un mieux-être physique, mental, émotionnel et énergétique et retrouver ainsi votre vitalité, votre équilibre, et mobiliser vos propres ressources pour continuer sur le chemin de la vie, paisiblement, en étant libre de vos choix."`,
     item4: "Muriel",
   };
+
   return (
     <div className="h-screen font-tangerine text-5xl  overflow-hidden">
       <Menu className="fixed top-0 left-0 right-0 z-10" />
-      <div
-        className="h-full "
-        style={{
-          backgroundImage: "url(/fond.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      <div className="h-full relative">
+        <div className="opacity-80">
+          <Image
+            src="/fond.jpg"
+            alt="Image de fond"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
+        </div>
         <ul>
           <li className={styles.phrase}>{welcome.item1}</li>
           <li className={styles.phrase}>{welcome.item2}</li>

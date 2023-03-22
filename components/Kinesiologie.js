@@ -1,11 +1,10 @@
 import Menu from "./Menu";
-import styles from "../styles/Kinesiologie.module.css";
 import React from "react";
 import { useState } from "react";
-import Slide from "./Slide";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Image from "next/image";
 
 export default function Kinesiologie() {
   const imageTestMusculaire = "/testmusc.png";
@@ -30,7 +29,17 @@ export default function Kinesiologie() {
     const [activeSlide, setActiveSlide] = useState(0);
 
     const settings = {
-      dots: true, 
+      dots: true,
+      // dotsClass: 'custom-dots',
+      customPaging: (i) => (
+        <div
+          className="text-bold text-black"
+          style={{color: activeSlide === i ? 'white' : 'black', fontSize: activeSlide === i ? '25px' : '18px', textDecoration: activeSlide === i ? 'underline' : 'none'}}
+        >
+          {i+1}
+        </div>
+      ),
+      
       arrows: false,
       infinite: true,
       speed: 500,
@@ -38,16 +47,10 @@ export default function Kinesiologie() {
       slidesToScroll: 1,
       afterChange: (index) => setActiveSlide(index),
     };
+    
 
     return (
-      <div className="h-screen text-white font-raleway italic overflow-hidden  "
-      style={{
-        backgroundImage: "url(/fondkinesio.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-      >
+      <div className="h-screen text-gray-700 font-raleway italic overflow-hidden  ">
         <div className="h-full flex flex-col justify-center ml-10 mr-10">
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
@@ -61,10 +64,10 @@ export default function Kinesiologie() {
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
               <div className="h-full flex flex-col justify-center space-y-12 py-10 mt-10">
-                <p className="text-center">{items.item6}</p>
+                <p className="text-center text-xl">{items.item6}</p>
                 <p>
                   <img
-                    className="mx-auto opacity-70"
+                    className="mx-auto opacity-60"
                     src={items.item7}
                     alt="Test musculaire"
                     style={{ borderRadius: "50% / 50%" }}
@@ -74,7 +77,7 @@ export default function Kinesiologie() {
                   <p className="text-center text-white font-tangerine text-5xl">
                     {items.item8}
                   </p>
-                  <p className="text-center  text-white font-tangerine text-5xl">
+                  <p className="text-center text-white font-tangerine text-5xl">
                     {items.item9}
                   </p>
                 </div>
@@ -89,9 +92,16 @@ export default function Kinesiologie() {
   return (
     <div className="h-screen overflow-hidden">
       <Menu />
-      <div>
-        <Carousel items={wikipedia} />
+      <div className="opacity-40">
+        <Image
+          src="/fondkinesio.jpg"
+          alt="Image de fond"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
       </div>
+      <Carousel items={wikipedia} />
     </div>
   );
 }
