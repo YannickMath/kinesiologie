@@ -3,6 +3,7 @@ import styles from "../styles/Accueil.module.css";
 import Image from "next/image";
 
 export default function Acceuil() {
+
   const welcome = {
     item1: `"Libérez-vous des blocages conscients ou inconscients grâce à la mémoire du corps"`,
     item2: `"Reprenez votre pouvoir personnel et accéder à votre grandeur et à votre plein potentiel"`,
@@ -11,27 +12,30 @@ export default function Acceuil() {
   };
 
   return (
-    <div className="h-screen font-tangerine text-5xl  overflow-hidden">
+    <div className="h-screen font-tangerine text-5xl relative overflow-hidden flex flex-col">
       <Menu className="fixed top-0 left-0 right-0 z-10" />
-      <div className="h-full relative">
-        <div className="opacity-80">
-          <Image
-            src="/fond.jpg"
-            alt="Image de fond"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-          />
-        </div>
-        <ul>
-          <li className={styles.phrase}>{welcome.item1}</li>
-          <li className={styles.phrase}>{welcome.item2}</li>
-          <li className={styles.phrase}>{welcome.item3}</li>
-          <li className={styles.phrase}>
-            <span className={styles.signature}>Muriel</span>
-          </li>
-        </ul>
+      <div className="opacity-80">
+        <Image
+          src="/fond.jpg"
+          alt="Image de fond"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+      </div>
+      <div className=" h-full">
+        <p className={styles.phrase}>{welcome.item1}</p>
+        <p className={styles.phrase}>{welcome.item2}</p>
+        <p className={styles.phrase}>{welcome.item3}</p>
+        <p className={styles.phrase}>
+          <span className={styles.signature}>Muriel</span>
+        </p>
       </div>
     </div>
   );
+  
+
+  
+  
+
 }

@@ -8,16 +8,13 @@ export default function Pourquoi() {
       <Menu />
       <div className="h-screen  font-raleway italic overflow-hidden ">
         <div className="opacity-70">
-
-        <Image
-          src="/fondpourquoi.jpg"
-          alt="Image de fond"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-     
-
-        />
+          <Image
+            src="/fondpourquoi.jpg"
+            alt="Image de fond"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
         </div>
         <Rosace />
       </div>

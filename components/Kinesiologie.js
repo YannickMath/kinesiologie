@@ -50,20 +50,20 @@ export default function Kinesiologie() {
     
 
     return (
-      <div className="h-screen text-gray-700 font-raleway italic overflow-hidden  ">
-        <div className="h-full flex flex-col justify-center ml-10 mr-10">
+      <div className="h-screen text-gray-700 font-raleway italic overflow-hidden relative ">
+        <div className=" flex flex-col justify-center md:ml-10 ml-2 md:mr-10 mr-2">
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className="h-full flex flex-col justify-center space-y-10 py-10 mt-10">
-                <p style={{ marginLeft: "30%" }}>{items.item1}</p>
-                <p>{items.item2}</p>
+              <div className="text-sm md:text-base  flex flex-col justify-center space-y-4 md:space-y-10 py-10 mt-40">
+              <p className="md:ml-80" >{items.item1}</p>
+                <p >{items.item2}</p>
                 <p>{items.item3}</p>
                 <p>{items.item4}</p>
                 <p>{items.item5}</p>
               </div>
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
-              <div className="h-full flex flex-col justify-center space-y-12 py-10 mt-10">
+              <div className="h-full flex flex-col justify-center space-y-12 py-10 mt-48">
                 <p className="text-center text-xl">{items.item6}</p>
                 <p>
                   <img
@@ -74,10 +74,10 @@ export default function Kinesiologie() {
                   />
                 </p>
                 <div className="flex justify-around">
-                  <p className="text-center text-white font-tangerine text-5xl">
+                  <p className="text-center text-white font-tangerine text-4xl md:text-5xl">
                     {items.item8}
                   </p>
-                  <p className="text-center text-white font-tangerine text-5xl">
+                  <p className="text-center text-white font-tangerine text-4xl md:text-5xl">
                     {items.item9}
                   </p>
                 </div>
@@ -88,7 +88,6 @@ export default function Kinesiologie() {
       </div>
     );
   };
-
   return (
     <div className="h-screen overflow-hidden">
       <Menu />
@@ -101,7 +100,10 @@ export default function Kinesiologie() {
           quality={100}
         />
       </div>
-      <Carousel items={wikipedia} />
+      <div>
+        <Carousel items={wikipedia} />
+      </div>
     </div>
   );
+  
 }
