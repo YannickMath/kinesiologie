@@ -51,10 +51,10 @@ export default function Kinesiologie() {
 
     return (
       <div className="h-screen text-gray-700 font-raleway italic overflow-hidden relative ">
-        <div className=" flex flex-col justify-center md:ml-10 ml-2 md:mr-10 mr-2">
+        <div className=" flex flex-col justify-center mt-3 md:mt-0 md:ml-10 ml-2 md:mr-10 mr-2">
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className="text-sm md:text-base  flex flex-col justify-center space-y-4 md:space-y-10 py-10 mt-40">
+              <div className="text-sm md:text-base  flex flex-col justify-center space-y-3 md:space-y-10 py-10 mt-40">
               <p className="md:ml-80" >{items.item1}</p>
                 <p >{items.item2}</p>
                 <p>{items.item3}</p>
