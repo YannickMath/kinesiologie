@@ -16,16 +16,16 @@ export default function NettoyageEnergetique() {
       <div className="h-16 md:h-screen">
         {/* <Menu /> */}
       </div>
-      <div className=" h-1/3 md:h-full md:w-1/2  relative opacity-70">
+      <div className="opacity-40">
         <Image
           src="/fondnettoyage.jpg"
           alt="Image de fond"
           layout="fill"
-          quality={50}
-          className="bg-contain md:bg-cover mt-24 md:mt-0"
+          objectFit="cover"
+          quality={100}
         />
       </div>
-      <div className="flex bg-gray-100 flex-col text-gray-600 italic justify-center h-2/3 md:w-1/2 mt-5 md:mt-10 md:h-full font-raleway space-y-4 md:space-y-8 text-sm md:text-base ">
+      <div className="flex bg-gray-100 flex-col text-gray-800 italic justify-center h-2/3  mt-5 md:mt-0 md:h-full font-raleway space-y-4 md:space-y-8 text-sm md:text-base ">
         <p className="mr-2 ml-2 text-center md:mr-10 md:ml-10 md:text-justify">{nettoyage.item1}</p>
         <p className="mr-2 ml-2 text-center md:mr-10 md:ml-10 md:text-justify">{nettoyage.item2}</p>
         <p className="mr-2 ml-2 text-center md:mr-10 md:ml-10 md:text-justify">{nettoyage.item3}</p>

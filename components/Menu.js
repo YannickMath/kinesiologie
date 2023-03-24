@@ -26,9 +26,12 @@ export default function Menu() {
   };
 
   const handleSelectPage = (id) => {
-    localStorage.setItem("nomPage", links[id]);
+    const newPageName = links[id];
+    localStorage.setItem("nomPage", newPageName);
+    setNomPage(newPageName);
     toggleMenu();
   };
+  
 
   useEffect(() => {
     const savedNomPage = localStorage.getItem("nomPage");
