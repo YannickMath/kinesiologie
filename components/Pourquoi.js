@@ -5,8 +5,8 @@ import Rosace from "./Rosace";
 export default function Pourquoi() {
   return (
     <div>
-      <Menu />
-      <div className="h-screen  font-raleway italic overflow-hidden ">
+      {/* <Menu /> */}
+      <div className="h-screen  font-raleway italic overflow-hidden z-auto">
         <div className="opacity-70">
           <Image
             src="/fondpourquoi.jpg"

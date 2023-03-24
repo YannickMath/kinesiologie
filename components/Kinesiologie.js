@@ -106,7 +106,7 @@ export default function Kinesiologie() {
   };
   return (
     <div className="h-screen overflow-hidden">
-      <Menu />
+      {/* <Menu /> */}
       <div className="opacity-40">
         <Image
           src="/fondkinesio.jpg"

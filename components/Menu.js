@@ -1,8 +1,9 @@
-import Link from "next/link";
 import Head from "next/head";
 import "tailwindcss/tailwind.css";
 import styles from "../styles/Menu.module.css";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Menu() {
   const links = {
@@ -18,34 +19,29 @@ export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [nomPage, setNomPage] = useState("");
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-console.log("NOMPAGE", nomPage)
+  console.log("NOMPAGE", nomPage);
 
-const toggleMenu = () => {
-  setMenuOpen(!menuOpen);
-};
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-const handleSelectPage = (id) => {
-  localStorage.setItem("nomPage", links[id]);
-  toggleMenu();
-};
+  const handleSelectPage = (id) => {
+    localStorage.setItem("nomPage", links[id]);
+    toggleMenu();
+  };
 
-useEffect(() => {
-  //on stocke dans le localStorage la valeur de nomPage
-  const savedNomPage = localStorage.getItem("nomPage");
-  if (savedNomPage) {
-    setNomPage(savedNomPage);
-  }
+  useEffect(() => {
+    const savedNomPage = localStorage.getItem("nomPage");
+    if (savedNomPage) {
+      setNomPage(savedNomPage);
+    }
 
-  // Vérifie si l'écran est petit
-  const mediaQuery = window.matchMedia("(max-width: 768px)");
-  if (mediaQuery.matches) {
-    setIsSmallScreen(true);
-  }
-}, []);
-
-
-
-
+    // Vérifie si l'écran est petit
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    if (mediaQuery.matches) {
+      setIsSmallScreen(true);
+    }
+  }, []);
 
   return (
     <>
@@ -55,94 +51,69 @@ useEffect(() => {
         <title>Muriel MATHIEU Kinésiologie</title>
         <link rel="icon" href="./logo.png" type="image/x-icon" />
       </Head>
-      <style jsx>{`
-      .menu-transition {
-        transition: all 0.5s ease-out;
-      }
-    `}</style>
-    <div className="bg-green-50 md:pt-24 text-gray-500 flex justify-around items-center font-semibold font-tangerine fixed top-0 w-full z-50">
-      <img
-        className={`rounded-md md:rounded-[50px] w-40 h-40 md:w-64 md:h-64 md:my-0 my-auto ${menuOpen ? 'absolute top-0 left-0 ml-3 z-10' : ''}`}
-        src="logo.png"
-        alt="logo"
-      />
-
-      {isSmallScreen && (
-        <div className={`text-center font-medium mr-4 ${menuOpen ? 'w-full' : ''}`}>
-          <p className={`text-gray-400 text-4xl mb-4 mt-14 flex ml-5 ${menuOpen ? 'w-2/5' : ''}`}>Menu</p>
-          <p className={`text-gray-400 text-2xl text-bold flex ml-5 ${menuOpen ? 'w-2/5' : ''}`}>{nomPage}</p>
-        </div>
-      )}
-
-      <button
-        className="text-3xl md:hidden focus:outline-none"
-        onClick={toggleMenu}
-      >
-        &#9776;
-      </button>
-
+      <div className="bg-green-50 md:h-1/6 text-gray-500 flex justify-around md:justify-around items-center font-semibold font-tangerine fixed top-0 w-full z-50 ">
       <div
-        className={`flex flex-col md:flex-row mr-2 ml-16 overflow-hidden ${menuOpen ? 'block menu-transition' : 'hidden menu-transition'} md:block ${menuOpen ? 'w-3/5' : ''}`}
-      >
+  className={`relative md:fixed md:top-0 md:left-0 md:ml-5 ${
+    menuOpen ? "hidden md:block" : ""
+  }`}
+>
+<img
+    className="md:rounded-xl w-40 h-40 md:w-64 md:h-56"
+    src="logo.png"
+    alt="logo"
+    style={{ marginTop: isSmallScreen ? 0 : "-35px" }} // Ajoutez cette ligne
+  />
+        </div>
+
+        {isSmallScreen && (
+          <div className="text-center font-medium ">
+            <p className="text-gray-400 text-4xl mb-3">{nomPage}</p>
+          </div>
+        )}
+
+        <button
+          className="text-3xl md:hidden focus:outline-none"
+          onClick={toggleMenu}
+        >
+          &#9776;
+        </button>
+        <div
+          className={`${
+            isSmallScreen ? (menuOpen ? "block" : "hidden") : "flex"
+          }  md:flex-row md:justify-around md:w-auto md:ml-64 `}
+        >
           <Link href="/Acceuil">
-            <p
-              className={styles.link}
-              onClick={() => handleSelectPage("id1")}
-            >
+            <p className={styles.link} onClick={() => handleSelectPage("id1")}>
               {links.id1}
             </p>
           </Link>
-          <Link
-            href="/Kinesiologie">
-            <p
-              className={styles.link}
-              onClick={() => handleSelectPage("id2")}
-            >
+          <Link href="/Kinesiologie">
+            <p className={styles.link} onClick={() => handleSelectPage("id2")}>
               {links.id2}
             </p>
           </Link>
-          <Link
-            href="/Pourquoi">
-            <p
-              className={styles.link}
-              onClick={() => handleSelectPage("id3")}
-            >
+          <Link href="/Pourquoi">
+            <p className={styles.link} onClick={() => handleSelectPage("id3")}>
               {links.id3}
             </p>
           </Link>
-          <Link
-            href="/Reflexologie">
-            <p
-              className={styles.link}
-              onClick={() => handleSelectPage("id4")}
-            >
+          <Link href="/Reflexologie">
+            <p className={styles.link} onClick={() => handleSelectPage("id4")}>
               {links.id4}
             </p>
           </Link>
-          <Link
-            href="/NettoyageEnergetique">
-            <p
-              className={styles.link}
-              onClick={() => handleSelectPage("id5")}
-            >
+          <Link href="/NettoyageEnergetique">
+            <p className={styles.link} onClick={() => handleSelectPage("id5")}>
               {links.id5}
             </p>
           </Link>
-          <Link
-            href="/AproposDeMoi">
-            <p
-              className={styles.link}
-              onClick={() => handleSelectPage("id6")}
-            >
+          <Link href="/AproposDeMoi">
+            <p className={styles.link} onClick={() => handleSelectPage("id6")}>
               {links.id6}
             </p>
           </Link>
-          <Link
-            href="/ContactsEtTarifs">
-            <p
-              className={styles.link}
-              onClick={() => handleSelectPage("id7")}
-            >
+          <Link href="/ContactsEtTarifs">
+            <p className={styles.link} onClick={() => handleSelectPage("id7")}>
               {links.id7}
             </p>
           </Link>

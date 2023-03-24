@@ -5,7 +5,7 @@ export default function AproposDeMoi() {
 
     return (
         <div>
-            <Menu/>
+            {/* <Menu/> */}
         </div>
     )
 }

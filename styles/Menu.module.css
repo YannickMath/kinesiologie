@@ -1,37 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Tangerine&display=swap");
 
 
-
 .link {
   opacity: 1;
   animation-name: fadeInDown;
   animation-duration: 1s;
   cursor: pointer;
-  display: inline-block;
+  margin-right: 35px;
+  font-size: 1.8rem;
 }
 
 .link:hover {
   color: #6c9470;
 }
 
-@media (max-width: 768px) {
-  .link {
-    display: block;
-    margin: 10px 0;
-    font-size: 1.5rem;
-  }
 
-}
-
-@media (min-width: 769px) {
-  .link {
-    margin-right: 35px;
-    font-size: 1.8rem;
-  }
- 
-  
-}
-
+/* KEYFRAME */
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -42,3 +26,17 @@
     transform: translateY(0%);
   }
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .link {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+
+}
+
+
+
+

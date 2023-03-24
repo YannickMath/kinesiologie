@@ -6,7 +6,7 @@ export default function ContactsEtTarifs() {
 
     return (
         <div>
-            <Menu/>
+            {/* <Menu/> */}
         </div>
     )
 }

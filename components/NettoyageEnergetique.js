@@ -14,7 +14,7 @@ export default function NettoyageEnergetique() {
   return (
     <div className="h-screen overflow-hidden md:flex">
       <div className="h-16 md:h-screen">
-        <Menu />
+        {/* <Menu /> */}
       </div>
       <div className=" h-1/3 md:h-full md:w-1/2  relative opacity-70">
         <Image

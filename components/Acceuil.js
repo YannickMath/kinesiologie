@@ -12,8 +12,8 @@ export default function Acceuil() {
   };
 
   return (
-    <div className="h-screen font-tangerine text-5xl md:text-3xl relative overflow-hidden flex flex-col">
-      <Menu />
+    <div className="h-screen font-tangerine text-5xl md:text-3xl relative overflow-hidden flex flex-col ">
+      {/* <Menu /> */}
       <div className="opacity-80">
         <Image
           src="/fond.jpg"
