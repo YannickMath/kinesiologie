@@ -5,11 +5,6 @@ import styles from "../styles/Menu.module.css";
 import { useState, useEffect } from "react";
 
 export default function Menu() {
-
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const [nomPage, setNomPage] = useState("")
-
   const links = {
     id1: "Acceuil",
     id2: "Kinésiologie",
@@ -20,28 +15,38 @@ export default function Menu() {
     id7: "Contact et tarifs",
   };
 
-  
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [nomPage, setNomPage] = useState("");
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+console.log("NOMPAGE", nomPage)
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+const toggleMenu = () => {
+  setMenuOpen(!menuOpen);
+};
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
-    setIsSmallScreen(mediaQuery.matches);
+const handleSelectPage = (id) => {
+  localStorage.setItem("nomPage", links[id]);
+  toggleMenu();
+};
 
-    const handleMediaQueryChange = (e) => setIsSmallScreen(e.matches);
-    mediaQuery.addListener(handleMediaQueryChange);
+useEffect(() => {
+  //on stocke dans le localStorage la valeur de nomPage
+  const savedNomPage = localStorage.getItem("nomPage");
+  if (savedNomPage) {
+    setNomPage(savedNomPage);
+  }
 
-    return () => mediaQuery.removeListener(handleMediaQueryChange);
-  }, []);
+  // Vérifie si l'écran est petit
+  const mediaQuery = window.matchMedia("(max-width: 768px)");
+  if (mediaQuery.matches) {
+    setIsSmallScreen(true);
+  }
+}, []);
 
-  const handleSelectPage = (id) => {
-    if (isSmallScreen) {
-      setNomPage(links[id]);
-    }
-  };
-  
+
+
+
+
   return (
     <>
       <Head>
@@ -50,86 +55,99 @@ export default function Menu() {
         <title>Muriel MATHIEU Kinésiologie</title>
         <link rel="icon" href="./logo.png" type="image/x-icon" />
       </Head>
-      <div className="bg-green-50 md:h-1/6 text-gray-500 flex justify-around md:justify-around items-center text-3xl font-semibold font-tangerine fixed top-0 w-full z-50 ">
-        <div className="relative ">
-          <img
-            className="rounded-md w-40 h-40 md:w-80 md:h-80"
-            src="logo.png"
-            alt="logo"
-            style={{ objectFit: "cover" }}
-          />
+      <style jsx>{`
+      .menu-transition {
+        transition: all 0.5s ease-out;
+      }
+    `}</style>
+    <div className="bg-green-50 md:pt-24 text-gray-500 flex justify-around items-center font-semibold font-tangerine fixed top-0 w-full z-50">
+      <img
+        className={`rounded-md md:rounded-[50px] w-40 h-40 md:w-64 md:h-64 md:my-0 my-auto ${menuOpen ? 'absolute top-0 left-0 ml-3 z-10' : ''}`}
+        src="logo.png"
+        alt="logo"
+      />
+
+      {isSmallScreen && (
+        <div className={`text-center font-medium mr-4 ${menuOpen ? 'w-full' : ''}`}>
+          <p className={`text-gray-400 text-4xl mb-4 mt-14 flex ml-5 ${menuOpen ? 'w-2/5' : ''}`}>Menu</p>
+          <p className={`text-gray-400 text-2xl text-bold flex ml-5 ${menuOpen ? 'w-2/5' : ''}`}>{nomPage}</p>
         </div>
-  
-        {isSmallScreen && (
-          <div className="text-center font-medium text-xxl ">
-            <p className="mt-10">Menu</p>
-            <p className="text-gray-400 mt-5">{nomPage}</p>
-          </div>
-        )}
-  
-        <button
-          className="text-3xl md:hidden focus:outline-none"
-          onClick={toggleMenu}
-        >
-          &#9776;
-        </button>
-        <div
-          className={`flex flex-col md:flex-row ${
-            menuOpen ? "block" : "hidden"
-          } md:block`}
-        >
-          <Link
-            href="/Acceuil"
-            className={styles.link}
-            onClick={() => handleSelectPage("id1")}
-          >
-            {links.id1}
+      )}
+
+      <button
+        className="text-3xl md:hidden focus:outline-none"
+        onClick={toggleMenu}
+      >
+        &#9776;
+      </button>
+
+      <div
+        className={`flex flex-col md:flex-row mr-2 ml-16 overflow-hidden ${menuOpen ? 'block menu-transition' : 'hidden menu-transition'} md:block ${menuOpen ? 'w-3/5' : ''}`}
+      >
+          <Link href="/Acceuil">
+            <p
+              className={styles.link}
+              onClick={() => handleSelectPage("id1")}
+            >
+              {links.id1}
+            </p>
           </Link>
           <Link
-            href="/Kinesiologie"
-            className={styles.link}
-            onClick={() => handleSelectPage("id2")}
-          >
-            {links.id2}
+            href="/Kinesiologie">
+            <p
+              className={styles.link}
+              onClick={() => handleSelectPage("id2")}
+            >
+              {links.id2}
+            </p>
           </Link>
           <Link
-            href="/Pourquoi"
-            className={styles.link}
-            onClick={() => handleSelectPage("id3")}
-          >
-            {links.id3}
+            href="/Pourquoi">
+            <p
+              className={styles.link}
+              onClick={() => handleSelectPage("id3")}
+            >
+              {links.id3}
+            </p>
           </Link>
           <Link
-            href="/Reflexologie"
-            className={styles.link}
-            onClick={() => handleSelectPage("id4")}
-          >
-            {links.id4}
+            href="/Reflexologie">
+            <p
+              className={styles.link}
+              onClick={() => handleSelectPage("id4")}
+            >
+              {links.id4}
+            </p>
           </Link>
           <Link
-            href="/NettoyageEnergetique"
-            className={styles.link}
-            onClick={() => handleSelectPage("id5")}
-          >
-            {links.id5}
+            href="/NettoyageEnergetique">
+            <p
+              className={styles.link}
+              onClick={() => handleSelectPage("id5")}
+            >
+              {links.id5}
+            </p>
           </Link>
           <Link
-            href="/AproposDeMoi"
-            className={styles.link}
-            onClick={() => handleSelectPage("id6")}
-          >
-            {links.id6}
+            href="/AproposDeMoi">
+            <p
+              className={styles.link}
+              onClick={() => handleSelectPage("id6")}
+            >
+              {links.id6}
+            </p>
           </Link>
           <Link
-            href="/ContactsEtTarifs"
-            className={styles.link}
-            onClick={() => handleSelectPage("id7")}
-          >
-            {links.id7}
+            href="/ContactsEtTarifs">
+            <p
+              className={styles.link}
+              onClick={() => handleSelectPage("id7")}
+            >
+              {links.id7}
+            </p>
           </Link>
         </div>
       </div>
     </>
   );
-  
 }

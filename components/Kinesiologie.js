@@ -23,6 +23,9 @@ export default function Kinesiologie() {
     item7: imageTestMusculaire,
     item8: `"Ce qui ne s'exprime pas s'imprime"`,
     item9: `"Le corps est le reflet de notre inconscient"`,
+    item10: "Une séance débute par un temps d’échange afin de clarifier la raison de votre venue et d’identifier votre objectif de séance. Puis allongé sur une table de massage, le test musculaire permet « d’interroger » votre corps.",
+    item11: "Qu’est-ce que le test musculaire ? Il s’agit d’une pression douce et non contraignante qui se pratique le plus souvent sur le muscle du bras. Il nous mène aux causes et aux antidotes du mal être. Il nous permet d’accéder à la mémoire du corps, d’identifier les facteurs contribuant aux blocages et nous amène aux équilibrations afin de retirer la charge émotionnelle négative associée pour rétablir votre mieux être.",
+    item12: "Un kinésiologue n’établit ni diagnostic, ni prescription et ne vous demandera jamais d’arrêter un traitement.",
   };
 
   const Carousel = ({ items }) => {
@@ -34,12 +37,16 @@ export default function Kinesiologie() {
       customPaging: (i) => (
         <div
           className="text-bold text-black"
-          style={{color: activeSlide === i ? 'white' : 'black', fontSize: activeSlide === i ? '25px' : '18px', textDecoration: activeSlide === i ? 'underline' : 'none'}}
+          style={{
+            color: activeSlide === i ? "white" : "black",
+            fontSize: activeSlide === i ? "25px" : "18px",
+            textDecoration: activeSlide === i ? "underline" : "none",
+          }}
         >
-          {i+1}
+          {i + 1}
         </div>
       ),
-      
+
       arrows: false,
       infinite: true,
       speed: 500,
@@ -47,24 +54,25 @@ export default function Kinesiologie() {
       slidesToScroll: 1,
       afterChange: (index) => setActiveSlide(index),
     };
-    
 
     return (
       <div className="h-screen text-gray-700 font-raleway italic overflow-hidden relative ">
-        <div className=" flex flex-col justify-center mt-3 md:mt-0 md:ml-10 ml-2 md:mr-10 mr-2">
+        <div className="flex flex-col justify-center mt-5 md:mt-0 md:ml-10 ml-2 md:mr-10 mr-2">
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className="text-sm md:text-base  flex flex-col justify-center space-y-3 md:space-y-10 py-10 mt-40">
-              <p className="md:ml-80" >{items.item1}</p>
-                <p >{items.item2}</p>
+              <div className="text-sm md:text-base  flex flex-col justify-center space-y-2 md:space-y-10 py-10 mt-32 md:mt-24">
+              <h3 className="text-center bold text-xl "> C'est quoi la kinésiologie</h3>
+
+                <p>{items.item1}</p>
+                <p>{items.item2}</p>
                 <p>{items.item3}</p>
                 <p>{items.item4}</p>
                 <p>{items.item5}</p>
               </div>
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
-              <div className="h-full flex flex-col justify-center space-y-12 py-10 mt-48">
-                <p className="text-center text-xl">{items.item6}</p>
+              <div className="h-full flex flex-col justify-center space-y-12 py-10 mt-32">
+                <p className="text-center text-bold text-xl ">{items.item6}</p>
                 <p>
                   <img
                     className="mx-auto opacity-60"
@@ -73,7 +81,7 @@ export default function Kinesiologie() {
                     style={{ borderRadius: "50% / 50%" }}
                   />
                 </p>
-                <div className="flex justify-around">
+                <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 justify-around">
                   <p className="text-center text-white font-tangerine text-4xl md:text-5xl">
                     {items.item8}
                   </p>
@@ -83,6 +91,14 @@ export default function Kinesiologie() {
                 </div>
               </div>
             </div>
+              <div className={activeSlide === 2 ? "" : "hidden"}>
+                <div className="text-sm md:text-base  flex flex-col justify-center space-y-8 md:space-y-10 py-10 mt-32 md:mt-30">
+                  <h3 className="text-center bold text-xl "> Déroulée d'une séance</h3>
+                  <p>{items.item10}</p>
+                  <p>{items.item11}</p>
+                  <p>{items.item12}</p>
+                </div>
+              </div>
           </Slider>
         </div>
       </div>
@@ -105,5 +121,4 @@ export default function Kinesiologie() {
       </div>
     </div>
   );
-  
 }
