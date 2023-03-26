@@ -1,10 +1,10 @@
-import React from "react";
 import Menu from "./Menu";
 
-export default function Layout({ children }) {
+export default function Layout({ children, isSmallScreen }) {
   return (
     <div>
-      <Menu />
+      <Menu currentPage="AproposDeMoi" isSmallScreen={isSmallScreen} />
+
       <main>{children}</main>
     </div>
   );

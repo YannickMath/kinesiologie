@@ -1,62 +1,27 @@
-import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import React from 'react';
+import { HiUserCircle, HiLocationMarker} from"react-icons/hi";
+import { BiHealth } from"react-icons/bi";
+import { AiFillMail } from"react-icons/ai";
+import { BsFillTelephoneFill } from"react-icons/bs";
 
+export default function ContactInfo() {
+  const infoPersonnel = {
+    nom: "Muriel MATHIEU",
+    adresse: "45 Boulevard Général de Gaulle, Oullins 69600",
+    activité: "Kinésiologie, Réflexologie cranio-sacrée, Nettoyage energétique",
+    email: "contact@murielmathieu.fr",
+    téléphone: "06 59 98 32 08 ",
+  }
 
-
-const ContactInfo = ({ name, email, location }) => {
-  const [ref, inView] = useInView({
-    threshold: 0,
-    triggerOnce: true,
-  });
   return (
-    <motion.div
-      className="contactInfo"
-      ref={ref}
-      initial={{ x: "10vw", opacity: 0 }}
-      animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
-    >
-      <h4 className="contentTitle">Contact Information</h4>
-      <p className="infoDescription">Open for opportunities. Let's connect and build something together! </p>
-      <ul className="listInfo">
-        <li>
-          <div className="personalContactInfo">
-            <span className="infoIcon">
-              <i className="icon fa-solid fa-user"></i>{" "}
-            </span>
-            <div className="mediaWrap">
-              <h6 className="infoType">Name</h6>
-              <span className="infoValue">{name}</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="personalContactInfo">
-            <span className="infoIcon">
-              <i className="icon fa-solid fa-location-pin "></i>{" "}
-            </span>
-            <div className="mediaWrap">
-              <h6 className="infoType">Location</h6>
-              <span className="infoValue">{location}</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="personalContactInfo">
-            <span className="infoIcon">
-              <i className="icon fa-solid fa-envelope "></i>{" "}
-            </span>
-            <div className="mediaWrap">
-              <h6 className="infoType">Email</h6>
-              <span className="infoValue">
-                <a href={`mailto:${email}`}>{email}</a>
-              </span>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </motion.div>
+    <div>
+      <p>N'hésitez pas à me contacter pour de plus informations, je serais ravi de vous renseigner.</p>
+      <p className='flex items-center'><HiUserCircle/>{infoPersonnel.nom}</p>
+      <p className='flex items-center'><BiHealth/>{infoPersonnel.activité}</p>
+      <p className='flex items-center'><HiLocationMarker/>{infoPersonnel.adresse}</p>
+      <p className='flex items-center'><AiFillMail/>{infoPersonnel.email}</p>
+      <p className='flex items-center'><BsFillTelephoneFill/>{infoPersonnel.téléphone}</p>
+    </div>
   );
 };
 
-export default ContactInfo;

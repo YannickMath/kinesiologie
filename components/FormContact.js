@@ -1,13 +1,6 @@
-import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
 import { useState } from "react";
 
-const Form = () => {
-  const [ref, inView] = useInView({
-    threshold: 0,
-    triggerOnce: true,
-  });
-
+export default function Form() {
   const [success, setSuccess] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -15,7 +8,7 @@ const Form = () => {
     email: "",
     objet: "",
     message: "",
-    access_key: "e675494a-4e16-484a-bc83-8f015fd33505",
+    access_key: "e5ce6e8e-4711-4e88-b42e-e693d5cb2041",
   });
 
   const handleChange = (e) => {
@@ -24,10 +17,10 @@ const Form = () => {
       [e.target.name]: e.target.value,
     });
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const data = JSON.stringify(formData);
 
     fetch("https://api.web3forms.com/submit", {
@@ -43,9 +36,9 @@ const Form = () => {
         setSuccess(true);
         setFormData({
           ...formData,
-          name: "",
+          nom: "",
           email: "",
-          subject: "",
+          objet: "",
           message: "",
         });
         setTimeout(() => {
@@ -56,20 +49,11 @@ const Form = () => {
   };
 
   return (
-    <motion.form
-      action=""
-      ref={ref}
-      className="contactForm"
-      initial={{ x: "-10vw", opacity: 0 }}
-      animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
-      onSubmit={handleSubmit}
-    >
-      <h4 className="contentTitle">Message Me</h4>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+    <div onSubmit={handleSubmit}>
+      <h4 className="contentTitle">Envoyez moi un mail directement</h4>
+      <div>
         <input
           type="text"
-          className="formControl"
           onChange={handleChange}
           value={formData.name}
           id="contactName"
@@ -78,10 +62,9 @@ const Form = () => {
           required
         />
       </div>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <div>
         <input
           type="email"
-          className="formControl"
           onChange={handleChange}
           value={formData.email}
           id="contactEmail"
@@ -90,10 +73,9 @@ const Form = () => {
           required
         />
       </div>
-      <div className="col-12 formGroup">
+      <div>
         <input
           type="text"
-          className="formControl"
           onChange={handleChange}
           value={formData.subject}
           id="contactSubject"
@@ -102,9 +84,8 @@ const Form = () => {
           required
         />
       </div>
-      <div className="col-12 formGroup">
+      <div>
         <textarea
-          className="formControl"
           onChange={handleChange}
           value={formData.message}
           name="message"
@@ -115,10 +96,12 @@ const Form = () => {
         ></textarea>
       </div>
       <div className="col-12 formGroup formSubmit">
-        <button className="btn">{success ? "Message Sent" : "Send Message"}</button>
+        <button className="btn">
+          {success ? "Message Sent" : "Send Message"}
+        </button>
       </div>
-    </motion.form>
+    </div>
   );
 };
 
-export default Form;
+

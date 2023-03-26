@@ -1,28 +1,34 @@
-import '@/styles/globals.css'
-import 'tailwindcss/tailwind.css'
+import "@/styles/globals.css";
+import "tailwindcss/tailwind.css";
 import React from "react";
-import { useRouter } from "next/router";
+import { useRouter} from "next/router";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
-import "../styles/Contact.css";
+import { useState, useEffect } from "react";
 
-
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
-  const infoPersonnel = {
-    nom: "Muriel MATHIEU",
-    adresse: "45 Boulevard Général de Gaulle, Oullins 69600",
-    activité: "Kinésiologie, Réflexologie cranio-sacrée, Nettoyage energétique",
-    email: "contact@murielmathieu.fr",
-    disponibilité: "Du lundi au vendredi",
-     };
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  const updateScreenSize = () => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsSmallScreen(mediaQuery.matches);
+  };
+
+  useEffect(() => {
+    updateScreenSize(); // Call the function once to set the initial value
+    window.addEventListener("resize", updateScreenSize); // Listen for window resize events
+
+    // Cleanup the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("resize", updateScreenSize);
+    };
+  }, []);
 
   return (
-    <Layout>
-      <Component {...pageProps} key={router.route} />
+    <Layout isSmallScreen={isSmallScreen}>
+      <Component {...pageProps} key={router.route} isSmallScreen={isSmallScreen} />
     </Layout>
   );
 }
-
-export default MyApp;

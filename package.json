@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.13",
     "framer-motion": "^10.8.5",
     "install": "^0.13.0",
@@ -16,6 +19,7 @@
     "react": "18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
     "react-image": "^4.1.0",
     "react-intersection-observer": "^9.4.3",
     "react-slick": "^0.29.0",

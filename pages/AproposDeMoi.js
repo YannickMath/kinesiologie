@@ -1,8 +1,8 @@
 import AproposDeMoi from "../components/AproposDeMoi";
 
-export default function AproposDeMoiPage() {
+export default function AproposDeMoiPage(props) {
 
-return <AproposDeMoi/>;
+return <AproposDeMoi {...props}/>;
 
 }
 
