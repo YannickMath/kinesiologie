@@ -4,11 +4,12 @@ import styles from "../styles/Menu.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
+
 export default function Menu({ isSmallScreen }) {
   const links = {
     id1: "Acceuil",
     id2: "Kinésiologie",
-    id3: "Pourquoi ?",
+    id3: "Pourquoi?",
     id4: "Reflexologie cranio-sacrée",
     id5: "Nettoyage energétique",
     id6: "A propos de moi",
