@@ -14,20 +14,20 @@ export default function Reflexologie() {
   };
 
   return (
-    <div className="h-screen overflow-hidden md:flex">
-      <div className="h-16 md:h-screen">
+    <div className="h-screen overflow-hidden lg:flex">
+      <div className="h-16 lg:h-screen">
         {/* <Menu /> */}
       </div>
-      <div className=" h-1/3 md:h-full md:w-1/2  relative opacity-70">
+      <div className=" h-1/3 lg:h-full lg:w-1/2  relative opacity-70">
         <Image
           src="/fondreflexo.jpg"
           alt="Image de fond"
           layout="fill"
           quality={50}
-          className="bg-contain md:bg-cover mt-24 md:mt-0"
+          className="bg-contain lg:bg-cover mt-24 lg:mt-0"
         />
       </div>
-      <div className="flex bg-gray-100 flex-col text-gray-600 italic justify-center h-2/3 md:w-1/2 md:mt-10 md:h-full font-raleway space-y-2 md:space-y-8 text-sm md:text-base ">
+      <div className="flex bg-gray-100 flex-col text-gray-600 italic justify-center h-2/3 lg:w-1/2 lg:mt-10 lg:h-full font-raleway space-y-2 lg:space-y-8 text-sm lg:text-base ">
         <p className="mr-10 ml-10">{reflexo.item1}</p>
         <p className="mr-10 ml-10">{reflexo.item2}</p>
         <p className="mr-10 ml-10">{reflexo.item3}</p>

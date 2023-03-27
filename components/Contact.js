@@ -4,18 +4,18 @@ import ContactInfo from "./ContactInfo";
 
 export default function Contact() {
   return (
-    <div className="flex md:flex-col justify-center items-center flex-col h-screen bg-gray-50 ml-2 md:ml-0  ">
-      <div className="mt-32">
-        <div className="md:flex">
+    <div className=" bg-gray-50 ml-2 lg:ml-0  ">
+      <div className="mt-44">
+        <div className="lg:flex ">
 
-        <div className="md:w-1/2 items-center md:mt-10">
+        <div className="lg:mt-8 lg:w-1/2  ">
           <FormContact />
         </div>
-        <div className="md:w-1/2 mt-7 items-center">
+        <div className="lg:w-1/2  ">
           <ContactInfo />
         </div>
         </div>
-        <div className="mt-10 md:mt-8 w-1/4 items-center">
+        <div className="mt-10 lg:mt-4 w-1/4 ">
           <SocialIcons />
         </div>
       </div>

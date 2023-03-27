@@ -36,7 +36,7 @@ export default function Kinesiologie() {
       // dotsClass: 'custom-dots',
       customPaging: (i) => (
         <div
-          className="text-bold text-black"
+          className=" text-bold text-black"
           style={{
             color: activeSlide === i ? "white" : "black",
             fontSize: activeSlide === i ? "25px" : "18px",
@@ -56,13 +56,13 @@ export default function Kinesiologie() {
     };
 
     return (
-      <div className="h-screen text-gray-700 font-raleway italic overflow-hidden relative ">
-        <div className="flex flex-col justify-center mt-5 md:mt-0 md:ml-10 ml-2 md:mr-10 mr-2">
+      <div className=" text-gray-700 font-raleway italic relative ">
+        <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
+        {/* <div className="slider-container"> */}
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className="text-sm md:text-base  flex flex-col justify-center space-y-2 md:space-y-10 py-10 mt-32 md:mt-24">
+              <div className="text-sm lg:text-base flex flex-col space-y-2 lg:space-y-8 py-10 mt-32 lg:mt-24">
               <h3 className="text-center bold text-xl "> C'est quoi la kinésiologie</h3>
-
                 <p>{items.item1}</p>
                 <p>{items.item2}</p>
                 <p>{items.item3}</p>
@@ -81,18 +81,18 @@ export default function Kinesiologie() {
                     style={{ borderRadius: "50% / 50%" }}
                   />
                 </p>
-                <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 justify-around">
-                  <p className="text-center text-white font-tangerine text-4xl md:text-5xl">
+                <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-around">
+                  <p className="text-center text-white font-tangerine text-4xl lg:text-5xl">
                     {items.item8}
                   </p>
-                  <p className="text-center text-white font-tangerine text-4xl md:text-5xl">
+                  <p className="text-center text-white font-tangerine text-4xl lg:text-5xl">
                     {items.item9}
                   </p>
                 </div>
               </div>
             </div>
               <div className={activeSlide === 2 ? "" : "hidden"}>
-                <div className="text-sm md:text-base  flex flex-col justify-center space-y-8 md:space-y-10 py-10 mt-32 md:mt-30">
+                <div className="text-sm lg:text-base  flex flex-col justify-center space-y-8 lg:space-y-10 py-10 mt-32 lg:mt-30">
                   <h3 className="text-center bold text-xl "> Déroulée d'une séance</h3>
                   <p>{items.item10}</p>
                   <p>{items.item11}</p>
@@ -100,23 +100,27 @@ export default function Kinesiologie() {
                 </div>
               </div>
           </Slider>
+          {/* <div className="slider-number">{activeSlide + 1} / {settings.slidesToShow}</div> */}
+
+        {/* </div> */}
         </div>
       </div>
     );
   };
   return (
-    <div className="h-screen overflow-hidden">
+    <div className="min-h-screen lg:overflow-hidden">
       {/* <Menu /> */}
-      <div className="opacity-40">
-        <Image
-          src="/fondkinesio.jpg"
-          alt="Image de fond"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        />
-      </div>
-      <div>
+      <div className="opacity-40" style={{ minHeight: "calc(100% - 100px)" }}>
+  <Image
+    src="/fondkinesio.jpg"
+    alt="Image de fond"
+    layout="fill"
+    objectFit="cover"
+    quality={100}
+  />
+</div>
+
+      <div style={{height:"100%"}}>
         <Carousel items={wikipedia} />
       </div>
     </div>

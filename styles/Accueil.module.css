@@ -16,6 +16,7 @@
   }
 }
 
+
 .phrase {
   opacity: 0;
   position: absolute;
@@ -88,7 +89,7 @@
 
 @media screen and (max-width: 768px) {
   .phrase {
-    font-size: 34px;
+    font-size: 30px;
   }
 
   .signature {

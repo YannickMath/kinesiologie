@@ -12,9 +12,9 @@ export default function Acceuil() {
   };
 
   return (
-    <div className="h-screen font-tangerine text-5xl md:text-3xl relative overflow-hidden flex flex-col ">
+    <div className="h-screen font-tangerine text-5xl lg:text-3xl relative overflow-hidden flex flex-col ">
       {/* <Menu /> */}
-      <div className="opacity-80">
+      <div className={styles.imgAcceuil}>
         <Image
           src="/fond.jpg"
           alt="Image de fond"

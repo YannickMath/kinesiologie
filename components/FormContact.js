@@ -7,11 +7,12 @@ export default function Form() {
   const [formData, setFormData] = useState({
     nom: "",
     soin: "",
+    téléphone: "",
     email: "",
     objet: "",
     message: "",
-    // access_key: "e5ce6e8e-4711-4e88-b42e-e693d5cb2041",
-    access_key: "2ed19dd2-3e07-41da-aac0-4762468c6554",
+    access_key: "e5ce6e8e-4711-4e88-b42e-e693d5cb2041",
+    // access_key: "2ed19dd2-3e07-41da-aac0-4762468c6554",
 
 
   });
@@ -66,7 +67,7 @@ export default function Form() {
   };
 
   return (
-    <div className="md:ml-4 flex-col space-y-4">
+    <div className="lg:ml-4 flex-col space-y-4">
       <h4>Envoyez moi un mail directement</h4>
       <div className=" rounded-xl relative">
         <input
@@ -123,6 +124,18 @@ export default function Form() {
         />
       </div>
       <div>
+        <input
+          type="text"
+          onChange={handleChange}
+          value={formData.téléphone}
+          id="contactTéléphone"
+          name="téléphone"
+          placeholder="Téléphone"
+          required
+          className="outline-none border-b-2"
+        />
+      </div>
+      <div>
         <textarea
           onChange={handleChange}
           value={formData.message}
@@ -136,8 +149,8 @@ export default function Form() {
         ></textarea>
       </div>
       <div className="flex items-center">
-        <button className="border-2 w-2/3 bg-green-50 rounded-full" onClick={handleSubmit}>
-          {success ? "Message Sent" : "Send Message"}
+        <button className="border-2 w-2/3 lg:w-1/5 border-yellow-500 bg-green-200 rounded-full" onClick={handleSubmit}>
+          {success ? "Message envoyé" : "Envoyer message"}
         </button>
         {success && (
           <div >
