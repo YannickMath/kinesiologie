@@ -7,15 +7,14 @@ export default function Contact() {
     <div className=" bg-gray-50 ml-2 lg:ml-0  ">
       <div className="mt-44">
         <div className="lg:flex ">
-
-        <div className="lg:mt-8 lg:w-1/2  ">
-          <FormContact />
+          <div className="lg:mt-8 lg:w-1/2  ">
+            <FormContact />
+          </div>
+          <div className="lg:w-1/2  ">
+            <ContactInfo />
+          </div>
         </div>
-        <div className="lg:w-1/2  ">
-          <ContactInfo />
-        </div>
-        </div>
-        <div className="mt-10 lg:mt-4 w-1/4 ">
+        <div className="mt-5 lg:mt-4 w-1/4 ">
           <SocialIcons />
         </div>
       </div>
