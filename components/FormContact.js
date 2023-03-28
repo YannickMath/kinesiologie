@@ -11,10 +11,8 @@ export default function Form() {
     email: "",
     objet: "",
     message: "",
-    access_key: "e5ce6e8e-4711-4e88-b42e-e693d5cb2041",
-    // access_key: "2ed19dd2-3e07-41da-aac0-4762468c6554",
-
-
+    access_key: process.env.NEXT_PUBLIC_API_KEY,
+    
   });
 
   const [selectedOption, setSelectedOption] = useState("Choisir un soin");
@@ -26,7 +24,7 @@ export default function Form() {
       soin: event.target.value,
     });
   };
-  console.log("FORMDATA.SOIN",formData.soin)
+  
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -36,30 +34,31 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-      // Vérifie que tous les champs sont remplis
-  if (
-    !formData.nom ||
-    !formData.soin ||
-    !formData.téléphone ||
-    !formData.email ||
-    !formData.objet ||
-    !formData.message
-  ) {
-    alert("Veuillez remplir tous les champs.");
-    return;
-  }
-
-
-    
-    const data = JSON.stringify(formData);
-
-    fetch("/.netlify/functions/sendMail", {
+  
+    // Vérifie que tous les champs sont remplis
+    if (
+      !formData.nom ||
+      !formData.soin ||
+      !formData.téléphone ||
+      !formData.email ||
+      !formData.objet ||
+      !formData.message
+    ) {
+      alert("Veuillez remplir tous les champs.");
+      return;
+    }
+  
+    const data = new FormData();
+    data.append("nom", formData.nom);
+    data.append("soin", formData.soin);
+    data.append("téléphone", formData.téléphone);
+    data.append("email", formData.email);
+    data.append("objet", formData.objet);
+    data.append("message", formData.message);
+    data.append("access_key", process.env.NEXT_PUBLIC_API_KEY);
+  
+    fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
       body: data,
     })
       .then((res) => res.json())
@@ -80,6 +79,7 @@ export default function Form() {
       })
       .catch((err) => console.log(err));
   };
+  
 
   return (
     <div className="lg:ml-4 flex-col space-y-4">
