@@ -64,7 +64,7 @@ export default function Kinesiologie() {
 
     return (
       <div
-        className=" font-raleway font-semibold italic relative "
+        className=" min-h-screen font-raleway font-semibold italic relative "
         ref={parentRef}
       >
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
@@ -72,7 +72,7 @@ export default function Kinesiologie() {
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
               <div className=" text-sm lg:text-base flex flex-col space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-24">
-                <h3 className="text-center bold text-xl ">
+                <h3 className="text-center bold text-xl underline">
                   {" "}
                   C'est quoi la kinésiologie
                 </h3>
@@ -85,7 +85,7 @@ export default function Kinesiologie() {
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
               <div className="h-full flex flex-col justify-center space-y-12 py-10 mt-32">
-                <p className="text-center text-bold text-xl ">{items.item6}</p>
+                <p className="text-center text-bold text-xl underline">{items.item6}</p>
                 <p>
                   <img
                     className="mx-auto opacity-60"
@@ -106,8 +106,8 @@ export default function Kinesiologie() {
             </div>
             <div className={activeSlide === 2 ? "" : "hidden"}>
               <div className="text-sm lg:text-base  flex flex-col justify-center space-y-8 lg:space-y-10 py-10 mt-32 lg:mt-30">
-                <h3 className="text-center bold text-xl ">
-                  {" "}
+                <h3 className="text-center bold text-xl underline ">
+                  
                   Déroulé d'une séance
                 </h3>
                 <p>{items.item10}</p>

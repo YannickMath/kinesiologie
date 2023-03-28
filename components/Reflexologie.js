@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Reflexologie({isSmallScreen}) {
   const reflexo = {
     item1:
-      "C’est une technique douce issue de l’ostéopathie, simple et complète, totalement dédiée à l’écoute du corps.",
+      "La réflexologie cranio-sacrée est une technique douce issue de l’ostéopathie, simple et complète, totalement dédiée à l’écoute du corps.",
     item2:
       "Elle permet de réduire, voir de supprimer les douleurs ou les inconforts physiques en fluidifiant les blocages énergétiques dans le corps pour retrouver ou prolonger votre vitalité et votre bien être.",
     item3:
