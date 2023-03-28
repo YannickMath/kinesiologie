@@ -8,7 +8,7 @@ export default function Rosace() {
     `Difficulté d'apprenttissage`,
     "Découragement, burn out",
     "Insomnies",
-    "Mauxx du corps, douleurs chroniques",
+    "Maux du corps, douleurs chroniques",
     "Angoisses, peurs, stress profond",
     "Chocs affectifs, solitude",
   ];

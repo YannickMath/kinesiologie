@@ -43,8 +43,8 @@
 }
 @media (min-width: 850px) and (max-width: 1050px) {
   .link {
-    font-size: 22px;
-    width: 6vw;
+    font-size: 20px;
+    width: 7vw;
 
   }
 }
