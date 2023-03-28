@@ -10,19 +10,22 @@ export default function AproposDeMoi({isSmallScreen}) {
     item3:
       "J’ai toujours été intéressée par le développement personnel, l’énergétique car oui et cela a été prouvé scientifiquement que l’être humain est fait d’énergie, tout est fait d’énergie. J’ai essayé plein de médecine alternative pour prendre soin de moi, pour me comprendre, pour me sortir de fonctionnements inadaptés, lâcher l’ancien pour créer du nouveau.",
     item4:
-      "Je suis vraiment passionnée par la recherche du bien-être, de la spiritualité. J’ai fait une formation de magnétisme que je ressentais beaucoup dans mes mains puis j’ai fait une formation de kinésiologue et de réflexologue cranio sacrée à l’école EKTC pendant 1 an ½. Et maintenant je peux dire que « je kiffe ma life ». J’ai vraiment envie d’accompagner les personnes pour qu’elles retrouvent leur chemin de vie de manière paisible, prêtes à faire de nouveaux choix et poser de nouvelles actions pour aller vers la vie qui leur ressemble.",
+      "Je suis vraiment passionnée par la recherche du bien-être, de la spiritualité. J’ai fait une formation de magnétisme que je ressentais beaucoup dans mes mains puis j’ai fait une formation de kinésiologue et de réflexologue cranio sacrée à l’école EKTC pendant 1 an et demi.",
+    item5:
+      "Mon objectif est d'accompagner les personnes pour qu’elles retrouvent leur chemin de vie de manière paisible, prêtes à faire de nouveaux choix et poser de nouvelles actions pour aller vers la vie qui leur ressemble.",
   };
   return (
-    <div className="relative flex flex-col md:flex-row h-screen font-raleway">
-      <div className="bg-gray-100 font-bold justify-center mt-40 md:mt-0 space-y-2 md:space-y-8 text-sm md:text-base p-4 w-full md:w-4/5 h-full md:h-screen">
-        <p className="font-bold md:ml-80 md:mt-32 underline">{apropos.item}</p>
-        <p className="md:pt-5 ">{apropos.item1}</p>
-        <p >{apropos.item2}</p>
-        <p >{apropos.item3}</p>
-        <p >{apropos.item4}</p>
+    <div className=" relative flex flex-col md:flex-row h-screen font-raleway">
+      <div className="bg-gray-100 font-bold justify-center mt-40 md:mt-0  space-y-2 md:space-y-4 lg:space-y-5  p-4 w-full md:w-4/5 h-full md:h-auto">
+        <p className="font-bold md:ml-80 sm:ml-0 md:mt-32 underline">{apropos.item}</p>
+        <p className="md:pt-5">{apropos.item1}</p>
+        <p>{apropos.item2}</p>
+        <p>{apropos.item3}</p>
+        <p>{apropos.item4}</p>
+        <p>{apropos.item5}</p>
       </div>
       {!isSmallScreen && (
-        <div className="h-full w-full md:w-1/5 relative">
+        <div className="flex-shrink-0 h-full w-full md:w-1/5 relative">
           <div className="opacity-70 h-full">
             <Image
               src="/moi.jpg"
@@ -37,6 +40,7 @@ export default function AproposDeMoi({isSmallScreen}) {
       )}
     </div>
   );
+  
   
 
 }

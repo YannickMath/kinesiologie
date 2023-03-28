@@ -71,7 +71,7 @@ export default function Kinesiologie() {
           {/* <div className="slider-container"> */}
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className=" text-sm lg:text-base flex flex-col space-y-2 lg:space-y-8 py-10 mt-32 lg:mt-24">
+              <div className=" text-sm lg:text-base flex flex-col space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-24">
                 <h3 className="text-center bold text-xl ">
                   {" "}
                   C'est quoi la kinésiologie
@@ -95,10 +95,10 @@ export default function Kinesiologie() {
                   />
                 </p>
                 <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-around">
-                  <p className="text-center text-white font-raleway font-light md:text-2xl  ">
+                  <p className="text-center  font-raleway  md:text-xl  ">
                     {items.item8}
                   </p>
-                  <p className="text-center text-white font-tangerine font-raleway font-light md:text-2xl ">
+                  <p className="text-center font-raleway  md:text-xl ">
                     {items.item9}
                   </p>
                 </div>
@@ -108,7 +108,7 @@ export default function Kinesiologie() {
               <div className="text-sm lg:text-base  flex flex-col justify-center space-y-8 lg:space-y-10 py-10 mt-32 lg:mt-30">
                 <h3 className="text-center bold text-xl ">
                   {" "}
-                  Déroulée d'une séance
+                  Déroulé d'une séance
                 </h3>
                 <p>{items.item10}</p>
                 <p>{items.item11}</p>
