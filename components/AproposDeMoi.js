@@ -14,12 +14,12 @@ export default function AproposDeMoi({isSmallScreen}) {
   };
   return (
 <div className="flex flex-col md:flex-row h-screen md:justify-between font-raleway overflow-hidden">
-  <div className="bg-gray-100 h-screen font-semibold justify-center md:w-2/3 mt-40 md:mt-24 space-y-2 md:space-y-8 text-sm md:text-base p-4">
-    <p className="font-bold md:ml-80 md:mt-16">{apropos.item}</p>
-    <p className="md:pt-5 font-light">{apropos.item1}</p>
-    <p className="font-light">{apropos.item2}</p>
-    <p className="font-light">{apropos.item3}</p>
-    <p className="font-light">{apropos.item4}</p>
+  <div className="bg-gray-100 h-screen font-bold justify-center md:w-2/3 mt-40 md:mt-24 space-y-2 md:space-y-8 text-sm md:text-base p-4">
+    <p className="font-bold md:ml-80 md:mt-16  underline">{apropos.item}</p>
+    <p className="md:pt-5 ">{apropos.item1}</p>
+    <p >{apropos.item2}</p>
+    <p >{apropos.item3}</p>
+    <p >{apropos.item4}</p>
   </div>
   {!isSmallScreen && (
     <div className="w-1/3 h-full relative">

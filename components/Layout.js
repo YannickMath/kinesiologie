@@ -2,7 +2,7 @@ import Menu from "./Menu";
 
 export default function Layout({ children, isSmallScreen }) {
   return (
-    <div>
+    <div >
       <Menu currentPage="AproposDeMoi" isSmallScreen={isSmallScreen} />
 
       <main>{children}</main>

@@ -27,7 +27,7 @@ export default function Reflexologie() {
           className="bg-contain lg:bg-cover mt-24 lg:mt-0"
         />
       </div>
-      <div className="flex bg-gray-100 flex-col text-gray-600 italic justify-center h-2/3 lg:w-1/2 lg:mt-10 lg:h-full font-raleway space-y-2 lg:space-y-8 text-sm lg:text-base ">
+      <div className="flex bg-gray-100 flex-col  font-semibold justify-center h-2/3 lg:w-1/2 lg:mt-10 lg:h-full font-raleway space-y-2 lg:space-y-8 text-sm lg:text-base ">
         <p className="mr-10 ml-10">{reflexo.item1}</p>
         <p className="mr-10 ml-10">{reflexo.item2}</p>
         <p className="mr-10 ml-10">{reflexo.item3}</p>

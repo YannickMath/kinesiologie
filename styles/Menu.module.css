@@ -5,8 +5,9 @@
   animation-name: fadeInDown;
   animation-duration: 1s;
   cursor: pointer;
-  margin-right: 35px;
-  font-size: 1.8rem;
+  margin-right: 42px;
+  font-size: 1.9rem;
+  text-align: center;
 }
 
 .link:hover {

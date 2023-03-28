@@ -37,10 +37,24 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+      // Vérifie que tous les champs sont remplis
+  if (
+    !formData.nom ||
+    !formData.soin ||
+    !formData.téléphone ||
+    !formData.email ||
+    !formData.objet ||
+    !formData.message
+  ) {
+    alert("Veuillez remplir tous les champs.");
+    return;
+  }
+
+
     
     const data = JSON.stringify(formData);
 
-    fetch("https://api.web3forms.com/submit", {
+    fetch("/.netlify/functions/sendMail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -92,6 +106,7 @@ export default function Form() {
           type="text"
           id="slectSoin"
           name="soin"
+          required
           // className="outline-none border-2 "
         >
           <option value="Aucune sélectoin de soin">Choisir le type de soin</option>
@@ -146,7 +161,6 @@ export default function Form() {
           placeholder="Message"
           required
           className="w-4/5 border-2 outline-none"
-
         ></textarea>
       </div>
       <div className="flex items-center">
