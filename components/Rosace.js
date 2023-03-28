@@ -13,22 +13,22 @@ export default function Rosace() {
     "Chocs affectifs, solitude",
   ];
 
-  const title = "Pourquoi se tourner vers la kinésiologie";
+  // const title = "Pourquoi se tourner vers la kinésiologie";
   
   return (
     <div className={styles.container}>
-      <div className={styles.title}>
+      {/* <div className={styles.title} >
         {title.split(" ").map((word, index, array) => (
           <>
             {word}
             {index === 0 && <><br /></>}
             {index < array.length - 1 && ' '}
           </>
-        ))}
-      </div>
+        ))} */}
+      {/* </div> */}
       <div className={styles.circleContainer}>
         {words.map((word, index) => (
-          <div key={index} className={styles.circle}>
+          <div key={index} className={styles.circle} >
             {word}
           </div>
         ))}

@@ -13,7 +13,6 @@ export default function Acceuil() {
 
   return (
     <div className="h-screen font-tangerine text-5xl lg:text-3xl relative  flex flex-col ">
-      {/* <Menu /> */}
       <div className="h-full">
         {/* Image pour les smartphones */}
       <Image

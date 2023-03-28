@@ -63,18 +63,18 @@ export default function Menu({ isSmallScreen }) {
             className="md:rounded-xl w-40 h-40 md:w-56 md:h-56 logo "
             src={getImageSrc()}
             alt="logo"
-            style={{ marginTop: isSmallScreen ? 0 : "-35px"}}
+            style={{ marginTop: isSmallScreen ? 0 : "-35px", padding:"6px", borderRadius:"30px"}}
             
           />
         </div>
 
         {isSmallScreen && (
           <div className="text-center font-medium ">
-            <p className="text-gray-900 text-4xl mb-3">{nomPage}</p>
+            <p className="text-gray-900 text-3xl mb-3 ">{nomPage}</p>
           </div>
         )}
         <button
-          className="text-3xl md:hidden focus:outline-none mr-5"
+          className="text-3xl md:hidden focus:outline-none mr-2 ml-2"
           onClick={toggleMenu}
         >
           &#9776;
@@ -83,7 +83,7 @@ export default function Menu({ isSmallScreen }) {
         <div
           className={`${
             isSmallScreen ? (menuOpen ? "block" : "hidden") : "flex"
-          }  md:flex-row md:justify-around md:w-auto md:ml-64 `}
+          }  md:flex-row md:justify-around md:w-auto md:ml-64 mr-2 `}
         >
           <Link href="/Acceuil">
             <p className={styles.link} onClick={() => handleSelectPage("id1")}>

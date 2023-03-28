@@ -1,6 +1,6 @@
 import Menu from "./Menu";
 import React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -28,11 +28,12 @@ export default function Kinesiologie() {
     item11:
       "Qu’est-ce que le test musculaire ? Il s’agit d’une pression douce et non contraignante qui se pratique le plus souvent sur le muscle du bras. Il nous mène aux causes et aux antidotes du mal être. Il nous permet d’accéder à la mémoire du corps, d’identifier les facteurs contribuant aux blocages et nous amène aux équilibrations afin de retirer la charge émotionnelle négative associée pour rétablir votre mieux être.",
     item12:
-      "Un kinésiologue n’établit ni diagnostic, ni prescription et ne vous demandera jamais d’arrêter un traitement.",
+      "Le kinésiologue n'est pas un médecin, il n'établit ni diagnostic, ni prescription et ne vous demandera jamais d'arrêter un traitement.",
   };
 
   const Carousel = ({ items }) => {
     const [activeSlide, setActiveSlide] = useState(0);
+    const parentRef = useRef(null);
 
     const settings = {
       dots: true,
@@ -55,11 +56,17 @@ export default function Kinesiologie() {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      afterChange: (index) => setActiveSlide(index),
+      afterChange: (index) => {
+        setActiveSlide(index);
+        parentRef.current.scrollIntoView({ behavior: "smooth" });
+      },
     };
 
     return (
-      <div className=" font-raleway font-semibold italic relative ">
+      <div
+        className=" font-raleway font-semibold italic relative "
+        ref={parentRef}
+      >
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
           {/* <div className="slider-container"> */}
           <Slider {...settings}>
@@ -88,10 +95,10 @@ export default function Kinesiologie() {
                   />
                 </p>
                 <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-around">
-                  <p className="text-center text-white font-tangerine font-light text-4xl lg:text-5xl">
+                  <p className="text-center text-white font-raleway font-light md:text-2xl  ">
                     {items.item8}
                   </p>
-                  <p className="text-center text-white font-tangerine  font-light text-4xl lg:text-5xl">
+                  <p className="text-center text-white font-tangerine font-raleway font-light md:text-2xl ">
                     {items.item9}
                   </p>
                 </div>
@@ -128,8 +135,7 @@ export default function Kinesiologie() {
           layout="fill"
           objectFit="cover"
           quality={100}
-        className="lg:hidden mt-10 md:mt-0" // Cache l'image sur les écrans larges
-
+          className="lg:hidden mt-10 md:mt-0" // Cache l'image sur les écrans larges
         />
         {/* Image pour les ordinateurs */}
 
@@ -139,9 +145,7 @@ export default function Kinesiologie() {
           layout="fill"
           objectFit="cover"
           quality={100}
-        className="hidden lg:block mt-10 md:mt-0" // Affiche l'image uniquement sur les écrans larges
-          
-
+          className="hidden lg:block mt-10 md:mt-0" // Affiche l'image uniquement sur les écrans larges
         />
       </div>
 

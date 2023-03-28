@@ -14,17 +14,27 @@
     
     } 
 
-    @media screen and (min-width: 769px) and (max-width: 850px) {
+    @media screen and (min-width: 769px) and (max-width: 1150px) {
+      .logo {
+        width: 180px !important;
+        height: 180px !important;
+      }
+    }
+    /* @media screen and (min-width: 941px) and (max-width: 1150px) {
       .logo {
         width: 200px !important;
         height: 225px !important;
       }
-    }
-    @media screen and (min-width: 851px) and (max-width: 1150px) {
-      .logo {
-        width: 200px !important;
-        height: 225px !important;
-      }
-    }
+    } */
 
-    /* lfdqfdsq */
+    .md:flex-row {
+      justify-content: center; /* centre horizontalement sur tailles écran plus larges */
+    }
+    
+    /* Optionnel : ajouter une marge pour espacer les liens */
+    .md:flex-row > * + * {
+      margin-left: 1rem;
+    }
+    
+
+    

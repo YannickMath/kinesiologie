@@ -25,6 +25,7 @@
   width: 90%;
   text-align: center;
   color: #ffffff;
+  font-weight: 500;
 }
 
 .phrase:nth-child(1) {
@@ -113,7 +114,16 @@
     top: 80%;
     animation: display-phrases 8s linear forwards 1s;
   }
-  
+  .signature {
+    opacity: 0;
+    display: inline-block;
+    position: relative;
+    animation: write-signature 3s forwards;
+    animation-delay: 2s;
+    color: #ffffff;
+    margin-top: 5%;
+    margin-left: 70%;
+  }
 
 }
 

@@ -1,7 +1,7 @@
 import Menu from "./Menu";
 import Image from "next/image";
 
-export default function Reflexologie() {
+export default function Reflexologie({isSmallScreen}) {
   const reflexo = {
     item1:
       "C’est une technique douce issue de l’ostéopathie, simple et complète, totalement dédiée à l’écoute du corps.",
@@ -14,20 +14,18 @@ export default function Reflexologie() {
   };
 
   return (
-    <div className="h-screen  lg:flex overflow-hidden">
-      <div className="h-16 lg:h-screen">
-        {/* <Menu /> */}
-      </div>
-      <div className=" h-1/3 lg:h-full lg:w-1/2  relative opacity-70">
+    <div className="h-screen flex flex-col md:flex-row">
+      <div className="w-full md:w-1/3 h-full relative opacity-70" style={{marginTop: isSmallScreen ? "100px" : 0}}>
         <Image
           src="/fondreflexo.jpg"
           alt="Image de fond"
-          layout="fill"
+          layout={isSmallScreen ? "fit" : "fill"}
+          objectFit={isSmallScreen ? "contain" : "cover"}
           quality={50}
-          className="bg-contain lg:bg-cover mt-24 lg:mt-0"
+          className="opacity-70 mt-32 md:mt-0"
         />
       </div>
-      <div className="flex bg-gray-100 flex-col  font-semibold justify-center h-2/3 lg:w-1/2 lg:mt-10 lg:h-full font-raleway space-y-2 lg:space-y-8 text-sm lg:text-base ">
+      <div className="flex bg-gray-100 mt-32 md:mt-0 flex-col font-semibold justify-center w-full md:w-2/3 h-full font-raleway space-y-2 md:space-y-8 text-sm md:text-base">
         <p className="mr-10 ml-10">{reflexo.item1}</p>
         <p className="mr-10 ml-10">{reflexo.item2}</p>
         <p className="mr-10 ml-10">{reflexo.item3}</p>
@@ -35,5 +33,8 @@ export default function Reflexologie() {
       </div>
     </div>
   );
+  
+  
+  
 
 }

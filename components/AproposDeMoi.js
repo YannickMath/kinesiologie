@@ -13,30 +13,30 @@ export default function AproposDeMoi({isSmallScreen}) {
       "Je suis vraiment passionnée par la recherche du bien-être, de la spiritualité. J’ai fait une formation de magnétisme que je ressentais beaucoup dans mes mains puis j’ai fait une formation de kinésiologue et de réflexologue cranio sacrée à l’école EKTC pendant 1 an ½. Et maintenant je peux dire que « je kiffe ma life ». J’ai vraiment envie d’accompagner les personnes pour qu’elles retrouvent leur chemin de vie de manière paisible, prêtes à faire de nouveaux choix et poser de nouvelles actions pour aller vers la vie qui leur ressemble.",
   };
   return (
-<div className="flex flex-col md:flex-row h-screen md:justify-between font-raleway overflow-hidden">
-  <div className="bg-gray-100 h-screen font-bold justify-center md:w-2/3 mt-40 md:mt-24 space-y-2 md:space-y-8 text-sm md:text-base p-4">
-    <p className="font-bold md:ml-80 md:mt-16  underline">{apropos.item}</p>
-    <p className="md:pt-5 ">{apropos.item1}</p>
-    <p >{apropos.item2}</p>
-    <p >{apropos.item3}</p>
-    <p >{apropos.item4}</p>
-  </div>
-  {!isSmallScreen && (
-    <div className="w-1/3 h-full relative">
-      <div className="opacity-70 h-full ">
-        <Image
-          src="/moi.jpg"
-          alt="Image de fond"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          className="md:mt-28"
-        />
+    <div className="relative flex flex-col md:flex-row h-screen font-raleway">
+      <div className="bg-gray-100 font-bold justify-center mt-40 md:mt-0 space-y-2 md:space-y-8 text-sm md:text-base p-4 w-full md:w-4/5 h-full md:h-screen">
+        <p className="font-bold md:ml-80 md:mt-32 underline">{apropos.item}</p>
+        <p className="md:pt-5 ">{apropos.item1}</p>
+        <p >{apropos.item2}</p>
+        <p >{apropos.item3}</p>
+        <p >{apropos.item4}</p>
       </div>
+      {!isSmallScreen && (
+        <div className="h-full w-full md:w-1/5 relative">
+          <div className="opacity-70 h-full">
+            <Image
+              src="/moi.jpg"
+              alt="Image de fond"
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+              // className="md:mt-24"
+            />
+          </div>
+        </div>
+      )}
     </div>
-  )}
- 
-</div>
-
   );
+  
+
 }
