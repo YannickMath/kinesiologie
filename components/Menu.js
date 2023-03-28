@@ -70,11 +70,11 @@ export default function Menu({ isSmallScreen }) {
 
         {isSmallScreen && (
           <div className="text-center font-medium ">
-            <p className="text-gray-400 text-4xl mb-3">{nomPage}</p>
+            <p className="text-gray-900 text-4xl mb-3">{nomPage}</p>
           </div>
         )}
         <button
-          className="text-3xl md:hidden focus:outline-none"
+          className="text-3xl md:hidden focus:outline-none mr-5"
           onClick={toggleMenu}
         >
           &#9776;

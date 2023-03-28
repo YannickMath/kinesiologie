@@ -12,16 +12,28 @@ export default function Acceuil() {
   };
 
   return (
-    <div className="h-screen font-tangerine text-5xl lg:text-3xl relative overflow-hidden flex flex-col ">
+    <div className="h-screen font-tangerine text-5xl lg:text-3xl relative  flex flex-col ">
       {/* <Menu /> */}
-      <div className={styles.imgAcceuil}>
-        <Image
-          src="/fond.jpg"
-          alt="Image de fond"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        />
+      <div className="h-full">
+        {/* Image pour les smartphones */}
+      <Image
+        src="/fond.jpg"
+        alt="Image de fond"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className="lg:hidden" // Cache l'image sur les écrans larges
+      />
+
+      {/* Image pour les ordinateurs */}
+      <Image
+        src="/fond-pc.jpg"
+        alt="Image de fond"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className="hidden lg:block" // Affiche l'image uniquement sur les écrans larges
+      />
       </div>
       <div className=" h-full">
         <p className={styles.phrase}>{welcome.item1}</p>

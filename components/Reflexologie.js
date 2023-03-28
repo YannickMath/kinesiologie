@@ -14,7 +14,7 @@ export default function Reflexologie() {
   };
 
   return (
-    <div className="h-screen overflow-hidden lg:flex">
+    <div className="h-screen  lg:flex">
       <div className="h-16 lg:h-screen">
         {/* <Menu /> */}
       </div>

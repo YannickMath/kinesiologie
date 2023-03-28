@@ -39,7 +39,7 @@ export default function Kinesiologie() {
       // dotsClass: 'custom-dots',
       customPaging: (i) => (
         <div
-          className="absolute md:bottom-0 text-bold text-black"
+          className="absolute md:bottom-0  bottom-6 text-bold text-black"
           style={{
             color: activeSlide === i ? "white" : "black",
             fontSize: activeSlide === i ? "25px" : "18px",
@@ -59,7 +59,7 @@ export default function Kinesiologie() {
     };
 
     return (
-      <div className=" text-gray-700 font-raleway italic relative ">
+      <div className=" font-raleway font-semibold italic relative ">
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
           {/* <div className="slider-container"> */}
           <Slider {...settings}>
@@ -88,10 +88,10 @@ export default function Kinesiologie() {
                   />
                 </p>
                 <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-around">
-                  <p className="text-center text-white font-tangerine text-4xl lg:text-5xl">
+                  <p className="text-center text-white font-tangerine font-light text-4xl lg:text-5xl">
                     {items.item8}
                   </p>
-                  <p className="text-center text-white font-tangerine text-4xl lg:text-5xl">
+                  <p className="text-center text-white font-tangerine  font-light text-4xl lg:text-5xl">
                     {items.item9}
                   </p>
                 </div>
@@ -117,15 +117,31 @@ export default function Kinesiologie() {
     );
   };
   return (
-    <div className="min-h-screen lg:overflow-hidden">
+    <div className="min-h-screen lg: font-raleway relative">
       {/* <Menu /> */}
       <div className="opacity-40" style={{ minHeight: "calc(100% - 100px)" }}>
+        {/* Image pour les smartphones */}
+
+        <Image
+          src="/fondkinesiosmart.jpg"
+          alt="Image de fond"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        className="lg:hidden mt-10 md:mt-0" // Cache l'image sur les écrans larges
+
+        />
+        {/* Image pour les ordinateurs */}
+
         <Image
           src="/fondkinesio.jpg"
           alt="Image de fond"
           layout="fill"
           objectFit="cover"
           quality={100}
+        className="hidden lg:block mt-10 md:mt-0" // Affiche l'image uniquement sur les écrans larges
+          
+
         />
       </div>
 

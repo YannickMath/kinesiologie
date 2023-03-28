@@ -17,7 +17,7 @@ export default function Form() {
 
   });
 
-  const [selectedOption, setSelectedOption] = useState("option0");
+  const [selectedOption, setSelectedOption] = useState("Choisir un soin");
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
@@ -57,6 +57,7 @@ export default function Form() {
           soin: selectedOption,
           email: "",
           objet: "",
+          téléphone: "",
           message: "",
         });
         setTimeout(() => {
