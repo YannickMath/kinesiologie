@@ -6,7 +6,7 @@ export default function Pourquoi() {
   return (
     <div>
       {/* <Menu /> */}
-      <div className="h-screen  font-raleway italic  z-auto">
+      <div className="h-screen  font-raleway italic  z-auto overflow-hidden">
         <div className="opacity-70">
           <Image
             src="/fondpourquoi.jpg"
@@ -14,7 +14,7 @@ export default function Pourquoi() {
             layout="fill"
             objectFit="cover"
             quality={100}
-            className="mt-16 md:mt-0"
+            className="mt-16 md:mt-0 h-screen"
           />
         </div>
         <Rosace />

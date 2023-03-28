@@ -15,7 +15,7 @@ export default function ContactInfo() {
 
   return (
     <div className="lg:space-y-4 space-y-1 ">
-      <p className="font-tangerine text-3xl mb-4 ">
+      <p className="font-tangerine text-3xl mb-4 md:mt-6 ">
         "N'hésitez pas à me contacter pour de plus informations, je serais ravi
         de vous renseigner".
       </p>
