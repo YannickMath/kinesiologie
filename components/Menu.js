@@ -70,11 +70,11 @@ export default function Menu({ isSmallScreen }) {
 
         {isSmallScreen && (
           <div className="text-center font-medium ">
-            <p className="text-gray-900 text-3xl mb-3 ">{nomPage}</p>
+            <p className="text-gray-600 text-3xl mb-3 ">{nomPage}</p>
           </div>
         )}
         <button
-          className="text-3xl md:hidden focus:outline-none mr-2 ml-2"
+          className="text-3xl md:hidden focus:outline-none mr-2 ml-2 relative"
           onClick={toggleMenu}
         >
           &#9776;
@@ -83,7 +83,7 @@ export default function Menu({ isSmallScreen }) {
         <div
   className={`${
     isSmallScreen ? (menuOpen ? "block" : "hidden") : "flex"
-  }  md:flex-row md:justify-around md:w-auto md:ml-64 mr-2 items-center`}
+  }  md:flex-row md:justify-around md:w-auto md:ml-64 mr-2 items-center text-gray-500`}
 >
           <Link href="/Acceuil">
             <p className={styles.link} onClick={() => handleSelectPage("id1")}>

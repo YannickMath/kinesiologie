@@ -82,7 +82,7 @@ export default function Form() {
   
 
   return (
-    <div className="font-roboto lg:ml-4 flex-col space-y-4">
+    <div className="font-roboto lg:ml-4 flex-col space-y-4 text-[#333333] p-5 lg:p-0">
       <h4>Envoyez moi un mail directement</h4>
       <div className=" rounded-xl relative">
         <input

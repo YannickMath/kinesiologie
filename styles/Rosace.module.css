@@ -29,13 +29,10 @@
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  font-size: 2.8rem;
-  /* font-weight: bold; */
-  /* color: rgb(66, 139, 131); */
+  font-size: 1.5rem;
   text-align: center;
   transition-duration: 1s;
-  font-family: tangerine;
-  /* font-family: roboto; */
+  font-family: roboto;
   z-index: 20;
   color: #333333;
 }
@@ -118,7 +115,9 @@
     height: 100vh;
     width: 100vw;
     margin-left: 5%;
+    margin-right: 5%;
     margin-top: -5%;
+    
   }
 
   .circleContainer {
@@ -128,12 +127,8 @@
     margin-top: 5;
   }
   .circle {
-    width: 100vw;
+    width: 102vw;
     height: 15%;
-    font-size: 1.2rem;
-    font-family: roboto;
-    font-weight: bold;
-    /* color: rgb(3, 58, 3); */
   }
 
   .item {

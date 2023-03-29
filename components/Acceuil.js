@@ -12,7 +12,7 @@ export default function Acceuil() {
   };
 
   return (
-    <div className="h-screen font-tangerine text-5xl lg:text-3xl relative  flex flex-col ">
+    <div className="h-screen font-tangerine text-5xl lg:text-3xl relative  flex flex-col  ">
       <div className="h-full">
         {/* Image pour les smartphones */}
       <Image
@@ -21,7 +21,7 @@ export default function Acceuil() {
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="lg:hidden" // Cache l'image sur les écrans larges
+        className="lg:hidden opacity-80" // Cache l'image sur les écrans larges
       />
 
       {/* Image pour les ordinateurs */}
@@ -31,15 +31,15 @@ export default function Acceuil() {
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="hidden lg:block" // Affiche l'image uniquement sur les écrans larges
+        className="hidden lg:block opacity-80" // Affiche l'image uniquement sur les écrans larges
       />
       </div>
-      <div className=" h-full ">
-        <p className={styles.phrase}>{welcome.item1}</p>
-        <p className={styles.phrase}>{welcome.item2}</p>
-        <p className={styles.phrase}>{welcome.item3}</p>
-        <p className={styles.phrase}>
-          <span className={styles.signature}>Muriel</span>
+      <div className=" h-full space-y-2 " >
+        <p className="phrase " >{welcome.item1}</p>
+        <p className="phrase " >{welcome.item2}</p>
+        <p className="phrase " >{welcome.item3}</p>
+        <p className="phrase " >
+          <span className="signature " >Muriel</span>
         </p>
       </div>
     </div>

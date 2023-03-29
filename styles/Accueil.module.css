@@ -1,4 +1,4 @@
-@keyframes display-phrases {
+/* @keyframes display-phrases {
   0% {
     opacity: 0;
   }
@@ -24,8 +24,9 @@
   transform: translateX(-50%);
   width: 90%;
   text-align: center;
-  color: #ffffff;
+  color: #f7eded;
   font-weight: 500;
+  
   
 }
 
@@ -89,9 +90,10 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .phrase {
     font-size: 32px;
+
   }
 
   .signature {
@@ -139,4 +141,4 @@
     margin-left: 50%;
   }
  
-}
+} */ 

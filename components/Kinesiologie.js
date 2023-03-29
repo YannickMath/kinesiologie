@@ -68,10 +68,9 @@ export default function Kinesiologie() {
         ref={parentRef}
       >
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
-          {/* <div className="slider-container"> */}
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className=" text-sm lg:text-base flex-col space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-24">
+              <div className=" text-sm lg:text-base flex-col space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-24 p-5 lg:p-0">
                 <h3 className="text-center bold text-xl underline text-[#333333]">
                   C'est quoi la kinésiologie
                 </h3>
@@ -83,7 +82,7 @@ export default function Kinesiologie() {
               </div>
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
-              <div className="h-full flex flex-col justify-center space-y-2  lg:space-y-6 py-10 mt-32 text-[#333333]">
+              <div className="h-full flex flex-col justify-center space-y-2  lg:space-y-6 py-10 mt-32 text-[#333333] p-5 lg:p-0">
                 <p className="text-center text-bold text-xl underline ">{items.item6}</p>
                 <p>
                   <img
@@ -104,7 +103,7 @@ export default function Kinesiologie() {
               </div>
             </div>
             <div className={activeSlide === 2 ? "" : "hidden"}>
-              <div className="text-sm lg:text-base  flex flex-col justify-center space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-30 text-[#333333]">
+              <div className="text-sm lg:text-base  flex flex-col justify-center space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-30 text-[#333333] p-5 lg:p-0">
                 <h3 className="text-center bold text-xl underline ">
                   
                   Déroulé d'une séance
