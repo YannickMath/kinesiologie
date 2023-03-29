@@ -10,7 +10,7 @@ export default function Kinesiologie() {
   const imageTestMusculaire = "/testmusc.png";
   const wikipedia = {
     item1:
-      "La kinésiologie est une approche holistique qui vise à rétablir l'équilibre du corps dans toutes ses composantes : structurelles, psycho, émotionnelles, biochimiques et énergétiques. La spécificité de la kinésiologie c'est l'utilisation du test musculaire qui permet d'interroger le corps, notre inconscient et de faire remonter à la soncience les déséquilibres énéergétiques et les stress émotionnels qui empêchent l'individu d'utiliser toutes ses potentialiités.",
+      "La kinésiologie est une approche holistique qui vise à rétablir l'équilibre du corps dans toutes ses composantes : structurelles, psycho, émotionnelles, biochimiques et énergétiques.",
     item2:
       "La spécificité de la kinésiologie c'est l'utilisation du test musculaire qui permet d'interroger le corps, notre inconscient et de faire remonter à la soncience les déséquilibres énéergétiques et les stress émotionnels qui empêchent l'individu d'utiliser toutes ses potentialiités.",
     item3:
@@ -40,7 +40,7 @@ export default function Kinesiologie() {
       // dotsClass: 'custom-dots',
       customPaging: (i) => (
         <div
-          className="absolute md:bottom-0  bottom-6 text-bold text-black"
+          className="absolute md:bottom-0  bottom-6 text-bold text-black font-roboto"
           style={{
             color: activeSlide === i ? "white" : "black",
             fontSize: activeSlide === i ? "25px" : "18px",
@@ -64,19 +64,18 @@ export default function Kinesiologie() {
 
     return (
       <div
-        className=" min-h-screen font-raleway font-semibold italic relative "
+        className=" min-h-screen font-roboto font-semibold italic relative "
         ref={parentRef}
       >
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
           {/* <div className="slider-container"> */}
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className=" text-sm lg:text-base flex flex-col space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-24">
-                <h3 className="text-center bold text-xl underline">
-                  {" "}
+              <div className=" text-sm lg:text-base flex-col space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-24">
+                <h3 className="text-center bold text-xl underline text-[#333333]">
                   C'est quoi la kinésiologie
                 </h3>
-                <p>{items.item1}</p>
+                <p >{items.item1}</p>
                 <p>{items.item2}</p>
                 <p>{items.item3}</p>
                 <p>{items.item4}</p>
@@ -84,8 +83,8 @@ export default function Kinesiologie() {
               </div>
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
-              <div className="h-full flex flex-col justify-center space-y-12 py-10 mt-32">
-                <p className="text-center text-bold text-xl underline">{items.item6}</p>
+              <div className="h-full flex flex-col justify-center space-y-2  lg:space-y-6 py-10 mt-32 text-[#333333]">
+                <p className="text-center text-bold text-xl underline ">{items.item6}</p>
                 <p>
                   <img
                     className="mx-auto opacity-60"
@@ -94,18 +93,18 @@ export default function Kinesiologie() {
                     style={{ borderRadius: "50% / 50%" }}
                   />
                 </p>
-                <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-around">
-                  <p className="text-center  font-raleway  md:text-xl  ">
+                <div className="flex flex-col lg:flex-row justify-around space-y-2  lg:space-y-6 ">
+                  <p className="text-center   md:text-xl  ">
                     {items.item8}
                   </p>
-                  <p className="text-center font-raleway  md:text-xl ">
+                  <p className="text-center   md:text-xl ">
                     {items.item9}
                   </p>
                 </div>
               </div>
             </div>
             <div className={activeSlide === 2 ? "" : "hidden"}>
-              <div className="text-sm lg:text-base  flex flex-col justify-center space-y-8 lg:space-y-10 py-10 mt-32 lg:mt-30">
+              <div className="text-sm lg:text-base  flex flex-col justify-center space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-30 text-[#333333]">
                 <h3 className="text-center bold text-xl underline ">
                   
                   Déroulé d'une séance

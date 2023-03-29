@@ -34,7 +34,7 @@ export default function Acceuil() {
         className="hidden lg:block" // Affiche l'image uniquement sur les écrans larges
       />
       </div>
-      <div className=" h-full">
+      <div className=" h-full ">
         <p className={styles.phrase}>{welcome.item1}</p>
         <p className={styles.phrase}>{welcome.item2}</p>
         <p className={styles.phrase}>{welcome.item3}</p>

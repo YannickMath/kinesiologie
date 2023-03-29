@@ -14,7 +14,7 @@ export default function Reflexologie({isSmallScreen}) {
   };
 
   return (
-    <div className="h-screen flex flex-col md:flex-row">
+    <div className="h-screen flex flex-col md:flex-row font-roboto">
       <div className="w-full md:w-1/3 h-full relative opacity-70" style={{marginTop: isSmallScreen ? "100px" : 0}}>
         <Image
           src="/fondreflexo.jpg"
@@ -25,7 +25,7 @@ export default function Reflexologie({isSmallScreen}) {
           className="opacity-70 mt-32 md:mt-0"
         />
       </div>
-      <div className="flex bg-gray-100 mt-32 md:mt-0 flex-col font-semibold justify-center w-full md:w-2/3 h-full font-raleway space-y-2 md:space-y-8 text-sm md:text-base">
+      <div className="flex bg-gray-100 mt-32 md:mt-0 flex-col font-semibold justify-center w-full md:w-2/3 h-full font-roboto space-y-2 md:space-y-8 text-sm md:text-base">
         <p className="mr-10 ml-10">{reflexo.item1}</p>
         <p className="mr-10 ml-10">{reflexo.item2}</p>
         <p className="mr-10 ml-10">{reflexo.item3}</p>

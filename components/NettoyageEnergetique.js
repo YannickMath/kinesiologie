@@ -23,7 +23,7 @@ export default function NettoyageEnergetique() {
           quality={100}
         />
       </div>
-      <div className="mt-32 flex bg-gray-100 flex-col font-semibold justify-center h-2/3  lg:mt-0 lg:h-full font-raleway space-y-4 lg:space-y-8 text-sm lg:text-base ">
+      <div className="mt-32 md:mt-0 flex bg-gray-100 flex-col font-semibold justify-center h-2/3  lg:mt-0 lg:h-full font-roboto space-y-2 lg:space-y-6 text-sm lg:text-base ">
         <p className="mr-2 ml-2 text-center lg:mr-10 lg:ml-10 lg:text-justify">{nettoyage.item1}</p>
         <p className="mr-2 ml-2 text-center lg:mr-10 lg:ml-10 lg:text-justify">{nettoyage.item2}</p>
         <p className="mr-2 ml-2 text-center lg:mr-10 lg:ml-10 lg:text-justify">{nettoyage.item3}</p>

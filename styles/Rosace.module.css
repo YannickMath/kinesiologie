@@ -35,8 +35,9 @@
   text-align: center;
   transition-duration: 1s;
   font-family: tangerine;
-  /* font-family: raleway; */
+  /* font-family: roboto; */
   z-index: 20;
+  color: #333333;
 }
 
 .circle:nth-child(1) {
@@ -102,7 +103,7 @@
   margin-top: 5%;
   margin-left: 8%;
   font-size: 1.5rem;
-  font-family: raleway;
+  font-family: roboto;
   
   
 }
@@ -130,7 +131,7 @@
     width: 100vw;
     height: 15%;
     font-size: 1.2rem;
-    font-family: raleway;
+    font-family: roboto;
     font-weight: bold;
     /* color: rgb(3, 58, 3); */
   }
