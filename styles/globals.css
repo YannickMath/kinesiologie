@@ -49,14 +49,18 @@
       transform: translateX(-50%);
       width: 90%;
       text-align: center;
-      color: #f7eded;
+      /* color: #f7eded; */
+      color: #ffffff;
       /* font-weight: 500; */
-      line-height: 1;
-    
+      margin-top: -50px; /* ajuster la valeur pour la position souhaitée */
       
       
     }
     
+    .item-to-move {
+      margin-top: -20px;
+    }
+
     .phrase:nth-child(1) {
       top: 40%;
       animation: display-phrases 8s linear forwards 1s;
@@ -88,6 +92,7 @@
       color: #ffffff;
       margin-top: 5%;
       margin-left: 70%;
+
     }
     
     
@@ -176,8 +181,22 @@
         width: 180px !important;
         height: 180px !important;
       }
+      .phrase{
+        font-size: 36px;
+      }
+      .signature{
+        font-size: 32px;
+      }
     }
    
+    
+    @media screen and (min-width: 1200px) {
+      .phrase {
+        font-size: 45px;
+    line-height: 0.95;
+       
+      }
+    }
 
     .md:flex-row {
       justify-content: center; /* centre horizontalement sur tailles écran plus larges */

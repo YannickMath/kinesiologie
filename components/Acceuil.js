@@ -1,6 +1,7 @@
 import Menu from "./Menu";
 import styles from "../styles/Accueil.module.css";
 import Image from "next/image";
+import { BiBrightness } from "react-icons/bi";
 
 export default function Acceuil() {
 
@@ -32,13 +33,14 @@ export default function Acceuil() {
         objectFit="cover"
         quality={100}
         className="hidden lg:block opacity-80" // Affiche l'image uniquement sur les écrans larges
+        style={{filter: 'brightness(70%)'}}
       />
       </div>
-      <div className=" h-full space-y-2 " >
-        <p className="phrase " >{welcome.item1}</p>
-        <p className="phrase " >{welcome.item2}</p>
-        <p className="phrase " >{welcome.item3}</p>
-        <p className="phrase " >
+      <div className=" h-full" >
+        <p className="phrase" >{welcome.item1}</p>
+        <p className="phrase" >{welcome.item2}</p>
+        <p className="phrase" >{welcome.item3}</p>
+        <p className="phrase" >
           <span className="signature " >Muriel</span>
         </p>
       </div>

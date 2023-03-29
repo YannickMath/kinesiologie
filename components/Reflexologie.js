@@ -25,8 +25,8 @@ export default function Reflexologie({isSmallScreen}) {
           className="opacity-70 mt-32 md:mt-0"
         />
       </div>
-      <div className="flex bg-gray-100 mt-32 md:mt-0 flex-col font-semibold justify-center w-full md:w-2/3 h-full font-roboto space-y-2 lg:space-y-6 text-sm md:text-base text-[#333333]  ">
-        <p className="mr-10 ml-10">{reflexo.item1}</p>
+      <div className="flex bg-gray-100 mt-32 md:mt-0 flex-col text-justify justify-center w-full md:w-2/3 h-full font-roboto space-y-4 lg:space-y-6 text-sm md:text-base text-[#333333]  ">
+        <p className="mr-10 ml-10 ">{reflexo.item1}</p>
         <p className="mr-10 ml-10">{reflexo.item2}</p>
         <p className="mr-10 ml-10">{reflexo.item3}</p>
         <p className="mr-10 ml-10">{reflexo.item4}</p>

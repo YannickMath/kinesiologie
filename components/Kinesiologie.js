@@ -40,7 +40,7 @@ export default function Kinesiologie() {
       // dotsClass: 'custom-dots',
       customPaging: (i) => (
         <div
-          className="absolute md:bottom-0  bottom-6 text-bold text-black font-roboto"
+          className="fixed  bottom-6 text-bold text-black font-roboto"
           style={{
             color: activeSlide === i ? "white" : "black",
             fontSize: activeSlide === i ? "25px" : "18px",
@@ -64,26 +64,26 @@ export default function Kinesiologie() {
 
     return (
       <div
-        className=" min-h-screen font-roboto font-semibold italic relative "
+        className=" min-h-screen font-roboto  italic relative "
         ref={parentRef}
       >
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className=" text-sm lg:text-base flex-col space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-24 p-5 lg:p-0">
-                <h3 className="text-center bold text-xl underline text-[#333333]">
+              <div className=" text-sm lg:text-base flex-col space-y-4 lg:space-y-6 py-10 mt-40 sm:mt-24 md:mt-36 p-5 lg:p-0">
+                <h3 className="text-center font-bold  text-xl underline text-[#333333]">
                   C'est quoi la kinésiologie
                 </h3>
-                <p >{items.item1}</p>
-                <p>{items.item2}</p>
-                <p>{items.item3}</p>
-                <p>{items.item4}</p>
-                <p>{items.item5}</p>
+                <p className="text-justify ">{items.item1}</p>
+                <p className="text-justify ">{items.item2}</p>
+                <p className="text-justify ">{items.item3}</p>
+                <p className="text-justify ">{items.item4}</p>
+                <p className="text-justify ">{items.item5}</p>
               </div>
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
-              <div className="h-full flex flex-col justify-center space-y-2  lg:space-y-6 py-10 mt-32 text-[#333333] p-5 lg:p-0">
-                <p className="text-center text-bold text-xl underline ">{items.item6}</p>
+              <div className="h-full flex flex-col justify-center space-y-4  lg:space-y-6 py-10 mt-40 text-[#333333] p-5 lg:p-0">
+                <p className="text-center font-bold  text-xl underline ">{items.item6}</p>
                 <p>
                   <img
                     className="mx-auto opacity-60"
@@ -92,7 +92,7 @@ export default function Kinesiologie() {
                     style={{ borderRadius: "50% / 50%" }}
                   />
                 </p>
-                <div className="flex flex-col lg:flex-row justify-around space-y-2  lg:space-y-6 ">
+                <div className="flex flex-col lg:flex-row justify-around space-y-4  lg:space-y-6 ">
                   <p className="text-center   md:text-xl  ">
                     {items.item8}
                   </p>
@@ -103,14 +103,14 @@ export default function Kinesiologie() {
               </div>
             </div>
             <div className={activeSlide === 2 ? "" : "hidden"}>
-              <div className="text-sm lg:text-base  flex flex-col justify-center space-y-2 lg:space-y-6 py-10 mt-32 lg:mt-30 text-[#333333] p-5 lg:p-0">
-                <h3 className="text-center bold text-xl underline ">
+              <div className="text-sm lg:text-base  flex flex-col justify-center space-y-4 lg:space-y-6 py-10 mt-40 lg:mt-30 text-[#333333] p-5 lg:p-0">
+                <h3 className="text-center font-bold text-xl underline ">
                   
                   Déroulé d'une séance
                 </h3>
-                <p>{items.item10}</p>
-                <p>{items.item11}</p>
-                <p>{items.item12}</p>
+                <p className="text-justify ">{items.item10}</p>
+                <p className="text-justify ">{items.item11}</p>
+                <p className="text-justify ">{items.item12}</p>
               </div>
             </div>
           </Slider>
@@ -122,7 +122,7 @@ export default function Kinesiologie() {
     );
   };
   return (
-    <div className="min-h-screen lg: font-raleway relative">
+    <div className="min-h-screen lg:  relative">
       {/* <Menu /> */}
       <div className="opacity-40" style={{ minHeight: "calc(100% - 100px)" }}>
         {/* Image pour les smartphones */}
@@ -133,7 +133,7 @@ export default function Kinesiologie() {
           layout="fill"
           objectFit="cover"
           quality={100}
-          className="lg:hidden mt-10 md:mt-0" // Cache l'image sur les écrans larges
+          className="lg:hidden mt-10 md:mt-0 opacity-80" // Cache l'image sur les écrans larges
         />
         {/* Image pour les ordinateurs */}
 
@@ -143,7 +143,7 @@ export default function Kinesiologie() {
           layout="fill"
           objectFit="cover"
           quality={100}
-          className="hidden lg:block mt-10 md:mt-0" // Affiche l'image uniquement sur les écrans larges
+          className="hidden lg:block mt-10 md:mt-0 opacity-80" // Affiche l'image uniquement sur les écrans larges
         />
       </div>
 

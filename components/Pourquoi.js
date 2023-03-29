@@ -13,7 +13,7 @@ export default function Pourquoi() {
           objectFit="cover"
           objectPosition="center"
           priority
-          className="opacity-70"
+          className="opacity-40"
         />
       </div>
       <div className="relative z-10 ">
