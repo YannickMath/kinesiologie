@@ -19,7 +19,7 @@ export default function Acceuil() {
           objectFit="cover"
           quality={100}
           className="lg:hidden opacity-80" // Cache l'image sur les écrans larges
-          // style={{ filter: "brightness(70%)" }}
+          style={{ filter: "brightness(70%)" }}
         />
 
         {/* Image pour les ordinateurs */}
@@ -30,7 +30,7 @@ export default function Acceuil() {
           objectFit="cover"
           quality={100}
           className="hidden lg:block opacity-80" // Affiche l'image uniquement sur les écrans larges
-          // style={{ filter: "brightness(70%)" }}
+          style={{ filter: "brightness(70%)" }}
           loading="lazy"
         />
       </div>
