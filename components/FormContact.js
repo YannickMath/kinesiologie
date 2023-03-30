@@ -49,6 +49,7 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
   
+    console.log("PROCESS.ENV.KEY",process.env.NEXT_PUBLIC_API_KEY)
     // Vérifie que tous les champs sont remplis
     if (
       !formData.nom ||
