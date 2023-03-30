@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 
-export default function Kinesiologie() {
+export default function Kinesiologie({isSmallScreen}) {
   const imageTestMusculaire = "/testmusc.png";
   const wikipedia = {
     item1:
@@ -40,13 +40,16 @@ export default function Kinesiologie() {
       // dotsClass: 'custom-dots',
       customPaging: (i) => (
         <div
-          className="fixed  bottom-6 text-bold text-black font-roboto"
-          style={{
-            color: activeSlide === i ? "white" : "black",
-            fontSize: activeSlide === i ? "25px" : "18px",
-            textDecoration: activeSlide === i ? "underline" : "none",
-          }}
-        >
+        className="md:top-10 bottom-2 font-bold text-black font-roboto"
+        style={{
+          color: activeSlide === i ? "white" : "black",
+          fontSize: activeSlide === i ? "25px" : "18px",
+          textDecoration: activeSlide === i ? "underline" : "none",
+          position: isSmallScreen && activeSlide === 1 ? "fixed" : "absolute"
+        }}
+      >
+      
+      
           {i + 1}
         </div>
       ),
@@ -70,15 +73,15 @@ export default function Kinesiologie() {
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className=" text-sm lg:text-base flex-col space-y-4 lg:space-y-6 py-10 mt-40 sm:mt-24 md:mt-36 p-5 lg:p-0">
+              <div className="  lg:text-base flex-col space-y-4 lg:space-y-6 py-10 mt-40 sm:mt-24 md:mt-36 p-5 lg:p-0">
                 <h3 className="text-center font-bold  text-xl underline text-[#333333]">
                   C'est quoi la kinésiologie
                 </h3>
-                <p className="text-justify ">{items.item1}</p>
-                <p className="text-justify ">{items.item2}</p>
-                <p className="text-justify ">{items.item3}</p>
-                <p className="text-justify ">{items.item4}</p>
-                <p className="text-justify ">{items.item5}</p>
+                <p >{items.item1}</p>
+                <p >{items.item2}</p>
+                <p >{items.item3}</p>
+                <p >{items.item4}</p>
+                <p >{items.item5}</p>
               </div>
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
@@ -92,31 +95,26 @@ export default function Kinesiologie() {
                     style={{ borderRadius: "50% / 50%" }}
                   />
                 </p>
-                <div className="flex flex-col lg:flex-row justify-around space-y-4  lg:space-y-6 ">
-                  <p className="text-center   md:text-xl  ">
-                    {items.item8}
-                  </p>
-                  <p className="text-center   md:text-xl ">
-                    {items.item9}
-                  </p>
-                </div>
+                <div className="md:flex-row justify-around space-y-4 lg:space-y-6">
+  <p className="text-center md:text-xl flex-grow">{items.item8}</p>
+  <p className="text-center md:text-xl flex-grow">{items.item9}</p>
+</div>
+
               </div>
             </div>
             <div className={activeSlide === 2 ? "" : "hidden"}>
-              <div className="text-sm lg:text-base  flex flex-col justify-center space-y-4 lg:space-y-6 py-10 mt-40 lg:mt-30 text-[#333333] p-5 lg:p-0">
+              <div className=" lg:text-base  flex flex-col justify-center space-y-4 lg:space-y-6 py-10 mt-40 lg:mt-30 text-[#333333] p-5 lg:p-0">
                 <h3 className="text-center font-bold text-xl underline ">
                   
                   Déroulé d'une séance
                 </h3>
-                <p className="text-justify ">{items.item10}</p>
-                <p className="text-justify ">{items.item11}</p>
-                <p className="text-justify ">{items.item12}</p>
+                <p >{items.item10}</p>
+                <p >{items.item11}</p>
+                <p >{items.item12}</p>
               </div>
             </div>
           </Slider>
-          {/* <div className="slider-number">{activeSlide + 1} / {settings.slidesToShow}</div> */}
-
-          {/* </div> */}
+        
         </div>
       </div>
     );

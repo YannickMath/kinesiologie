@@ -15,21 +15,22 @@ export default function Reflexologie({isSmallScreen}) {
 
   return (
     <div className="h-screen flex flex-col md:flex-row font-roboto">
-      <div className="w-full md:w-1/3 h-full relative opacity-70" style={{marginTop: isSmallScreen ? "100px" : 0}}>
+      <div className="w-full md:w-1/3 h-full relative opacity-70" >
         <Image
           src="/fondreflexo.jpg"
           alt="Image de fond"
           layout={isSmallScreen ? "fit" : "fill"}
           objectFit={isSmallScreen ? "contain" : "cover"}
           quality={50}
-          className="opacity-70 mt-32 md:mt-0"
+          className="opacity-70 mt-40 md:mt-0"
         />
+        
       </div>
-      <div className="flex bg-gray-100 mt-32 md:mt-0 flex-col text-justify justify-center w-full md:w-2/3 h-full font-roboto space-y-4 lg:space-y-6 text-sm md:text-base text-[#333333]  ">
-        <p className="mr-10 ml-10 ">{reflexo.item1}</p>
-        <p className="mr-10 ml-10">{reflexo.item2}</p>
-        <p className="mr-10 ml-10">{reflexo.item3}</p>
-        <p className="mr-10 ml-10">{reflexo.item4}</p>
+      <div className="flex bg-gray-100 mt-40 md:mt-0 flex-col p-5 md:p-0 justify-center w-full md:w-2/3  font-roboto space-y-4 lg:space-y-6  md:text-base text-[#333333]  ">
+        <p className="">{reflexo.item1}</p>
+        <p className="">{reflexo.item2}</p>
+        <p className="">{reflexo.item3}</p>
+        <p className="">{reflexo.item4}</p>
       </div>
     </div>
   );

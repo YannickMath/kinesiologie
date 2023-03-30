@@ -17,7 +17,7 @@ export default function Menu({ isSmallScreen }) {
   };
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const [nomPage, setNomPage] = useState("Menu");
+  const [nomPage, setNomPage] = useState("Acceuil");
 
 
   const toggleMenu = () => {

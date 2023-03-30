@@ -29,7 +29,7 @@
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-align: center;
   transition-duration: 1s;
   font-family: roboto;
@@ -39,6 +39,7 @@
 
 .circle:nth-child(1) {
   left: 35%;
+  top: 5%;
 }
 
 .circle:nth-child(2) {
@@ -57,7 +58,7 @@
 }
 
 .circle:nth-child(5) {
-  top: 79%;
+  top: 74%;
   left: 35%;
 }
 
@@ -77,7 +78,7 @@
 }
 
 .circle:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
   cursor: default;
   
 }

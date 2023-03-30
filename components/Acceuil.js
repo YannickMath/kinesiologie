@@ -23,6 +23,7 @@ export default function Acceuil() {
         objectFit="cover"
         quality={100}
         className="lg:hidden opacity-80" // Cache l'image sur les écrans larges
+        style={{filter: 'brightness(70%)'}}
       />
 
       {/* Image pour les ordinateurs */}
@@ -37,10 +38,10 @@ export default function Acceuil() {
       />
       </div>
       <div className=" h-full" >
-        <p className="phrase" >{welcome.item1}</p>
-        <p className="phrase" >{welcome.item2}</p>
-        <p className="phrase" >{welcome.item3}</p>
-        <p className="phrase" >
+        <p className="phrase espace" >{welcome.item1}</p>
+        <p className="phrase espace" >{welcome.item2}</p>
+        <p className="phrase espace" >{welcome.item3}</p>
+        <p className="phrase espace" >
           <span className="signature " >Muriel</span>
         </p>
       </div>

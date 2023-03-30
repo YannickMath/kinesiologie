@@ -16,7 +16,7 @@ export default function AproposDeMoi({isSmallScreen}) {
   };
   return (
     <div className=" min-h-screen relative flex flex-col md:flex-row font-roboto text-[#333333]">
-      <div className="bg-gray-100  justify-center mt-40 md:mt-0 text-justify space-y-2 md:space-y-4 lg:space-y-6  w-full md:w-4/5 h-full md:h-auto p-5 ">
+      <div className="bg-gray-100  justify-center mt-40 md:mt-0  space-y-2 md:space-y-4 lg:space-y-6  w-full md:w-4/5 h-full md:h-auto p-5 ">
         <p className="font-bold md:ml-80 sm:ml-0 md:mt-32 underline">{apropos.item}</p>
         <p className="md:pt-5">{apropos.item1}</p>
         <p>{apropos.item2}</p>

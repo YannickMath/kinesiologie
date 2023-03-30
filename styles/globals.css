@@ -13,198 +13,183 @@
     
     }  */
 
-
 .font-roboto {
-  font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 
+/*CSS ACCEUIL*/
 
+@keyframes display-phrases {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-    /*CSS ACCEUIL*/
+.phrase {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+  /* color: #f7eded; */
+  color: #ffffff;
+  /* font-weight: 500; */
+  margin-top: -50px; /* ajuster la valeur pour la position souhaitée */
+}
 
-    @keyframes display-phrases {
-      0% {
-        opacity: 0;
-      }
-      25% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 1;
-      }
-      75% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-    
-    
-    .phrase {
-      opacity: 0;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      text-align: center;
-      /* color: #f7eded; */
-      color: #ffffff;
-      /* font-weight: 500; */
-      margin-top: -50px; /* ajuster la valeur pour la position souhaitée */
-      
-      
-    }
-    
-    .item-to-move {
-      margin-top: -20px;
-    }
+.item-to-move {
+  margin-top: -20px;
+}
 
-    .phrase:nth-child(1) {
-      top: 40%;
-      animation: display-phrases 8s linear forwards 1s;
-    }
-    
-    .phrase:nth-child(2) {
-      top: 50%;
-      animation: display-phrases 8s linear forwards 4s;
-    }
-    
-    .phrase:nth-child(3) {
-      top: 60%;
-      animation: display-phrases 8s linear forwards 6s;
-      animation-fill-mode: forwards;
-    }
-    
-    .phrase:nth-child(4) {
-      top: 80%;
-      animation: display-phrases 5s linear forwards 4s;
-      animation-fill-mode: forwards;
-    }
-    
-    .signature {
-      opacity: 0;
-      display: inline-block;
-      position: relative;
-      animation: write-signature 3s forwards;
-      animation-delay: 10s;
-      color: #ffffff;
-      margin-top: 5%;
-      margin-left: 70%;
+.phrase:nth-child(1) {
+  top: 40%;
+  animation: display-phrases 8s linear forwards 1s;
+}
 
-    }
-    
-    
-    
-    @keyframes write-signature {
-      0% {
-        opacity: 0;
-        transform: translateX(-50%) scaleX(0);
-      }
-      25% {
-        opacity: 1;
-        transform: translateX(-50%) scaleX(0);
-      }
-      50% {
-        opacity: 1;
-        transform: translateX(-50%) scaleX(1);
-      }
-      75% {
-        opacity: 1;
-        transform: translateX(-50%) scaleX(1);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(-50%) scaleX(1);
-      }
-    }
-    
-    /* Media Queries */
-    
-    @media screen and (max-width: 768px) {
-      .phrase {
-        font-size: 32px;
-    
-      }
-    
-      .signature {
-        font-size: 34px;
-        margin-top: 10%;
-        margin-left: 60%;
-      }
-      .phrase:nth-child(1) {
-        top: 30%;
-        animation: display-phrases 8s linear forwards 1s;
-      }
-      .phrase:nth-child(2) {
-        top: 40%;
-        animation: display-phrases 8s linear forwards 1s;
-      }
-      .phrase:nth-child(3) {
-        top: 50%;
-        animation: display-phrases 8s linear forwards 1s;
-      }
-      .phrase:nth-child(4) {
-        top: 80%;
-        animation: display-phrases 8s linear forwards 1s;
-      }
-      .signature {
-        opacity: 0;
-        display: inline-block;
-        position: relative;
-        animation: write-signature 3s forwards;
-        animation-delay: 2s;
-        color: #ffffff;
-        margin-top: 14%;
-        margin-left: 70%;
-      }
-    
-    }
-    
-    @media screen and (min-width: 768px) {
-      .phrase {
-        font-size: 50px;
-       
-      }
-    
-      .signature {
-        font-size: 50px;
-        margin-left: 50%;
-      }
-     
-    }
+.phrase:nth-child(2) {
+  top: 50%;
+  animation: display-phrases 8s linear forwards 4s;
+}
 
-    /*CSS Menu et plus précisemmment du logo*/
-    @media screen and (min-width: 769px) and (max-width: 1150px) {
-      .logo {
-        width: 180px !important;
-        height: 180px !important;
-      }
-      .phrase{
-        font-size: 36px;
-      }
-      .signature{
-        font-size: 32px;
-      }
-    }
-   
-    
-    @media screen and (min-width: 1200px) {
-      .phrase {
-        font-size: 45px;
+.phrase:nth-child(3) {
+  top: 60%;
+  animation: display-phrases 8s linear forwards 6s;
+  animation-fill-mode: forwards;
+}
+
+.phrase:nth-child(4) {
+  top: 80%;
+  animation: display-phrases 5s linear forwards 4s;
+  animation-fill-mode: forwards;
+}
+
+.signature {
+  opacity: 0;
+  display: inline-block;
+  position: relative;
+  animation: write-signature 3s forwards;
+  animation-delay: 10s;
+  color: #ffffff;
+  margin-top: 5%;
+  margin-left: 70%;
+}
+
+@keyframes write-signature {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scaleX(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .phrase {
+    font-size: 34px;
+    line-height: 0.65;
+    margin-top: 5px;
+  }
+
+ 
+  .signature {
+    font-size: 36px;
+    /* margin-top: 10%; */
+    margin-left: 60%;
+  }
+  .phrase:nth-child(1) {
+    top: 30%;
+    animation: display-phrases 8s linear forwards 1s;
+  }
+  .phrase:nth-child(2) {
+    top: 40%;
+    animation: display-phrases 8s linear forwards 1s;
+  }
+  .phrase:nth-child(3) {
+    top: 50%;
+    animation: display-phrases 8s linear forwards 1s;
+  }
+  .phrase:nth-child(4) {
+    top: 80%;
+    animation: display-phrases 8s linear forwards 1s;
+  }
+  .signature {
+    opacity: 0;
+    display: inline-block;
+    position: relative;
+    animation: write-signature 3s forwards;
+    animation-delay: 2s;
+    color: #ffffff;
+    margin-top: 14%;
+    margin-left: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .phrase {
+    font-size: 50px;
+  }
+
+  .signature {
+    font-size: 50px;
+    margin-left: 50%;
+  }
+}
+
+/*CSS Menu et plus précisemmment du logo*/
+@media screen and (min-width: 769px) and (max-width: 1150px) {
+  .logo {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .phrase {
+    font-size: 36px;
+  }
+  .signature {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .phrase {
+    font-size: 45px;
     line-height: 0.95;
-       
-      }
-    }
+  }
+}
 
-    .md:flex-row {
-      justify-content: center; /* centre horizontalement sur tailles écran plus larges */
-    }
-    
-    /* Optionnel : ajouter une marge pour espacer les liens */
-    .md:flex-row > * + * {
-      margin-left: 1rem;
-    }
-    
-    
+.md:flex-row {
+  justify-content: center; /* centre horizontalement sur tailles écran plus larges */
+}
+
+/* Optionnel : ajouter une marge pour espacer les liens */
+.md:flex-row > * + * {
+  margin-left: 1rem;
+}
