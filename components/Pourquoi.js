@@ -1,4 +1,3 @@
-import Menu from "./Menu";
 import Image from "next/image";
 import Rosace from "./Rosace";
 

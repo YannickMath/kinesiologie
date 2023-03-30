@@ -9,7 +9,7 @@ export default function Tarifs() {
 
   return (
     <div className="space-y-2 md:mt-10 mt-8 font-roboto p-5 lg:p-0">
-        <h3 className="font-semibold underline">Tarifs</h3>
+      <h3 className="font-semibold underline">Tarifs</h3>
       <p>{details.item1}</p>
       <p>{details.item2}</p>
       <p>{details.item3}</p>

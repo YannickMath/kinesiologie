@@ -4,7 +4,6 @@ import styles from "../styles/Menu.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-
 export default function Menu({ isSmallScreen }) {
   const links = {
     id1: "Acceuil",
@@ -18,7 +17,6 @@ export default function Menu({ isSmallScreen }) {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [nomPage, setNomPage] = useState("Acceuil");
-
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -63,8 +61,11 @@ export default function Menu({ isSmallScreen }) {
             className="md:rounded-xl w-40 h-40 md:w-56 md:h-56 logo "
             src={getImageSrc()}
             alt="logo"
-            style={{ marginTop: isSmallScreen ? 0 : "-35px", padding:"6px", borderRadius:"30px"}}
-            
+            style={{
+              marginTop: isSmallScreen ? 0 : "-35px",
+              padding: "6px",
+              borderRadius: "30px",
+            }}
           />
         </div>
 
@@ -81,10 +82,10 @@ export default function Menu({ isSmallScreen }) {
         </button>
 
         <div
-  className={`${
-    isSmallScreen ? (menuOpen ? "block" : "hidden") : "flex"
-  }  md:flex-row md:justify-around md:w-auto md:ml-64 mr-2 items-center text-gray-500`}
->
+          className={`${
+            isSmallScreen ? (menuOpen ? "block" : "hidden") : "flex"
+          }  md:flex-row md:justify-around md:w-auto md:ml-64 mr-2 items-center text-gray-500`}
+        >
           <Link href="/Acceuil">
             <p className={styles.link} onClick={() => handleSelectPage("id1")}>
               {links.id1}

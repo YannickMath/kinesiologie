@@ -8,13 +8,20 @@
   font-family: "Tangerine", cursive;
 }
 
-/* .font-raleway {
+.font-raleway {
         font-family: 'Raleway', sans-serif;
     
-    }  */
+    } 
 
 .font-roboto {
   font-family: "Roboto", sans-serif;
+}
+
+.font-satisfy {
+  font-family: 'Satisfy', cursive;
+}
+.font-carattere {
+  font-family: 'Carattere', cursive;
 }
 
 /*CSS ACCEUIL*/

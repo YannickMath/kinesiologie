@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 
-export default function Kinesiologie({isSmallScreen}) {
+export default function Kinesiologie({ isSmallScreen }) {
   const imageTestMusculaire = "/testmusc.png";
   const wikipedia = {
     item1:
@@ -37,19 +37,16 @@ export default function Kinesiologie({isSmallScreen}) {
 
     const settings = {
       dots: true,
-      // dotsClass: 'custom-dots',
       customPaging: (i) => (
         <div
-        className="md:top-10 bottom-2 font-bold text-black font-roboto"
-        style={{
-          color: activeSlide === i ? "white" : "black",
-          fontSize: activeSlide === i ? "25px" : "18px",
-          textDecoration: activeSlide === i ? "underline" : "none",
-          position: isSmallScreen && activeSlide === 1 ? "fixed" : "absolute"
-        }}
-      >
-      
-      
+          className="md:top-10 bottom-2 font-bold text-black font-roboto"
+          style={{
+            color: activeSlide === i ? "white" : "black",
+            fontSize: activeSlide === i ? "25px" : "18px",
+            textDecoration: activeSlide === i ? "underline" : "none",
+            position: isSmallScreen && activeSlide === 1 ? "fixed" : "absolute",
+          }}
+        >
           {i + 1}
         </div>
       ),
@@ -77,16 +74,18 @@ export default function Kinesiologie({isSmallScreen}) {
                 <h3 className="text-center font-bold  text-xl underline text-[#333333]">
                   C'est quoi la kinésiologie
                 </h3>
-                <p >{items.item1}</p>
-                <p >{items.item2}</p>
-                <p >{items.item3}</p>
-                <p >{items.item4}</p>
-                <p >{items.item5}</p>
+                <p>{items.item1}</p>
+                <p>{items.item2}</p>
+                <p>{items.item3}</p>
+                <p>{items.item4}</p>
+                <p>{items.item5}</p>
               </div>
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
               <div className="h-full flex flex-col justify-center space-y-4  lg:space-y-6 py-10 mt-40 text-[#333333] p-5 lg:p-0">
-                <p className="text-center font-bold  text-xl underline ">{items.item6}</p>
+                <p className="text-center font-bold  text-xl underline ">
+                  {items.item6}
+                </p>
                 <p>
                   <img
                     className="mx-auto opacity-60"
@@ -96,32 +95,32 @@ export default function Kinesiologie({isSmallScreen}) {
                   />
                 </p>
                 <div className="md:flex-row justify-around space-y-4 lg:space-y-6">
-  <p className="text-center md:text-xl flex-grow">{items.item8}</p>
-  <p className="text-center md:text-xl flex-grow">{items.item9}</p>
-</div>
-
+                  <p className="text-center md:text-xl flex-grow">
+                    {items.item8}
+                  </p>
+                  <p className="text-center md:text-xl flex-grow">
+                    {items.item9}
+                  </p>
+                </div>
               </div>
             </div>
             <div className={activeSlide === 2 ? "" : "hidden"}>
               <div className=" lg:text-base  flex flex-col justify-center space-y-4 lg:space-y-6 py-10 mt-40 lg:mt-30 text-[#333333] p-5 lg:p-0">
                 <h3 className="text-center font-bold text-xl underline ">
-                  
                   Déroulé d'une séance
                 </h3>
-                <p >{items.item10}</p>
-                <p >{items.item11}</p>
-                <p >{items.item12}</p>
+                <p>{items.item10}</p>
+                <p>{items.item11}</p>
+                <p>{items.item12}</p>
               </div>
             </div>
           </Slider>
-        
         </div>
       </div>
     );
   };
   return (
     <div className="min-h-screen lg:  relative">
-      {/* <Menu /> */}
       <div className="opacity-40" style={{ minHeight: "calc(100% - 100px)" }}>
         {/* Image pour les smartphones */}
 

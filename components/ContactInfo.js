@@ -1,6 +1,5 @@
 import React from "react";
 import { HiUserCircle, HiLocationMarker } from "react-icons/hi";
-import { BiHealth } from "react-icons/bi";
 import { AiFillMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
