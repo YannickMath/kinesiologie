@@ -129,6 +129,7 @@ export default function Kinesiologie({ isSmallScreen }) {
           objectFit="cover"
           quality={100}
           className="lg:hidden mt-10 md:mt-0 opacity-80" // Cache l'image sur les écrans larges
+          loading="lazy"
         />
         {/* Image pour les ordinateurs */}
         <Image
@@ -138,6 +139,7 @@ export default function Kinesiologie({ isSmallScreen }) {
           objectFit="cover"
           quality={100}
           className="hidden lg:block mt-10 md:mt-0 opacity-80" // Affiche l'image uniquement sur les écrans larges
+          loading="lazy"
         />
       </div>
       <Carousel items={wikipedia} />

@@ -13,6 +13,7 @@ export default function Pourquoi() {
           objectPosition="center"
           priority
           className="opacity-80"
+          loading="lazy"
         />
       </div>
       <div className="relative z-10 ">

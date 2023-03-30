@@ -31,6 +31,7 @@ export default function Acceuil() {
           quality={100}
           className="hidden lg:block opacity-80" // Affiche l'image uniquement sur les écrans larges
           style={{ filter: "brightness(70%)" }}
+          loading="lazy"
         />
       </div>
       <div className=" h-full">
