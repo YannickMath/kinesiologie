@@ -19,6 +19,9 @@ export default function NettoyageEnergetique() {
           layout="fill"
           objectFit="cover"
           quality={100}
+          style={{ filter: "brightness(85%)" }}
+          className="opacity-85"
+
         />
       </div>
       <div className="mt-40 flex flex-col justify-center text-[#333333] lg:mt-0 lg:h-full font-roboto space-y-4 lg:space-y-6  lg:text-base p-5 lg:p-0">

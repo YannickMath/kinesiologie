@@ -84,7 +84,7 @@ export default function Menu({ isSmallScreen }) {
         <div
           className={`${
             isSmallScreen ? (menuOpen ? "block" : "hidden") : "flex"
-          }  md:flex-row md:justify-around md:w-auto md:ml-64 mr-2 items-center text-gray-500`}
+          }  md:flex-row md:justify-around md:w-auto md:ml-64 mr-2 items-center font-medium text-gray-600`}
         >
           <Link href="/Acceuil">
             <p className={styles.link} onClick={() => handleSelectPage("id1")}>
