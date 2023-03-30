@@ -26,11 +26,25 @@ export default function Form() {
   };
   
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+    
+    // On vérifie si c'est le champ téléphone ou email et on applique la regex correspondante
+    if (name === 'téléphone') {
+      const phoneRegex = /^[0-9\b]+$/;
+      if (value === '' || phoneRegex.test(value)) {
+        setFormData({
+          ...formData,
+          [name]: value
+        });
+      }
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    }
   };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -164,7 +178,7 @@ export default function Form() {
         ></textarea>
       </div>
       <div className="flex items-center">
-        <button className="border-2 w-2/3 lg:w-1/5 border-yellow-500 bg-green-200 rounded-full" onClick={handleSubmit}>
+        <button className="border-2 w-2/3 lg:w-1/4 border-yellow-500 bg-green-200 rounded-full" onClick={handleSubmit}>
           {success ? "Message envoyé" : "Envoyer message"}
         </button>
         {success && (
