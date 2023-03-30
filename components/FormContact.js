@@ -87,6 +87,7 @@ export default function Form() {
           téléphone: "",
           message: "",
         });
+        setSelectedOption("Choisir le type de soin");
         setTimeout(() => {
           setSuccess(false);
         }, 3000);
