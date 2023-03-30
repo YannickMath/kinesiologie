@@ -19,8 +19,8 @@ export default function NettoyageEnergetique() {
           layout="fill"
           objectFit="cover"
           quality={100}
-          style={{ filter: "brightness(85%)" }}
-          className="opacity-85"
+          style={{ filter: "brightness(90%)" }}
+          // className="opacity-85"
 
         />
       </div>

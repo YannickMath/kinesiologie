@@ -1,4 +1,3 @@
-import Menu from "./Menu";
 import React from "react";
 import { useState, useRef } from "react";
 import "slick-carousel/slick/slick.css";
@@ -123,7 +122,6 @@ export default function Kinesiologie({ isSmallScreen }) {
     <div className="min-h-screen lg:  relative">
       <div className="opacity-40" style={{ minHeight: "calc(100% - 100px)" }}>
         {/* Image pour les smartphones */}
-
         <Image
           src="/fondkinesiosmart.jpg"
           alt="Image de fond"
@@ -133,7 +131,6 @@ export default function Kinesiologie({ isSmallScreen }) {
           className="lg:hidden mt-10 md:mt-0 opacity-80" // Cache l'image sur les écrans larges
         />
         {/* Image pour les ordinateurs */}
-
         <Image
           src="/fondkinesio.jpg"
           alt="Image de fond"
@@ -143,10 +140,7 @@ export default function Kinesiologie({ isSmallScreen }) {
           className="hidden lg:block mt-10 md:mt-0 opacity-80" // Affiche l'image uniquement sur les écrans larges
         />
       </div>
-
-      {/* <div style={{height:"100%"}}> */}
       <Carousel items={wikipedia} />
-      {/* </div> */}
     </div>
   );
 }

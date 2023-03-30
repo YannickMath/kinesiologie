@@ -122,7 +122,6 @@ export default function Form() {
           id="slectSoin"
           name="soin"
           required
-          // className="outline-none border-2 "
         >
           <option value="Aucune sélectoin de soin">Choisir le type de soin</option>
           <option value="kinésiologie">Kinésiologie</option>
