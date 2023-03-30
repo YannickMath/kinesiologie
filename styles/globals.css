@@ -51,9 +51,7 @@
   transform: translateX(-50%);
   width: 90%;
   text-align: center;
-  /* color: #f7eded; */
   color: #ffffff;
-  /* font-weight: 500; */
   margin-top: -50px; /* ajuster la valeur pour la position souhaitée */
 }
 
@@ -119,25 +117,17 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 680px) {
-  .phrase {
-    font-size: 3px;
-    line-height: 0.67;
-    margin-top: 5px;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .phrase {
-    font-size: 35px;
-    line-height: 0.67;
+    font-size: 30px;
+    line-height: 0.75;
     margin-top: 5px;
   }
 
  
   .signature {
     font-size: 36px;
-    /* margin-top: 10%; */
     margin-left: 60%;
   }
   .phrase:nth-child(1) {
@@ -171,6 +161,7 @@
 @media screen and (min-width: 768px) {
   .phrase {
     font-size: 50px;
+    line-height: 0.65;
   }
 
   .signature {
@@ -187,16 +178,21 @@
   }
   .phrase {
     font-size: 36px;
+    line-height: 0.8;
+
   }
   .signature {
-    font-size: 32px;
+    font-size: 38px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .phrase {
-    font-size: 45px;
+    font-size: 35px;
     line-height: 0.95;
+  }
+  .signature{
+    font-size: 38px;
   }
 }
 

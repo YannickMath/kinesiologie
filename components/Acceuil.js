@@ -9,7 +9,7 @@ export default function Acceuil() {
   };
 
   return (
-    <div className="h-screen font-carattere text-5xl lg:text-3xl relative  flex flex-col  ">
+    <div className="h-screen font-carattere relative flex flex-col  ">
       <div className="h-full">
         {/* Image pour les smartphones */}
         <Image
