@@ -28,7 +28,7 @@ export default function AproposDeMoi({isSmallScreen}) {
         <div className=" w-full md:w-1/5 relative">
           <div className="opacity-70 h-full">
             <Image
-              src="/moi.jpg"
+              src="/moi.WebP"
               alt="Image de fond"
               layout="fill"
               objectFit="cover"

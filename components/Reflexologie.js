@@ -16,7 +16,7 @@ export default function Reflexologie({ isSmallScreen }) {
     <div className="h-screen flex flex-col md:flex-row font-roboto">
       <div className="w-full md:w-1/3 h-full relative opacity-70">
         <Image
-          src="/fondreflexo.jpg"
+          src="/fondreflexo.WebP"
           alt="Image de fond"
           layout={isSmallScreen ? "fit" : "fill"}
           objectFit={isSmallScreen ? "contain" : "cover"}

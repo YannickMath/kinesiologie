@@ -13,7 +13,7 @@ export default function Acceuil() {
       <div className="h-full">
         {/* Image pour les smartphones */}
         <Image
-          src="/fond.jpg"
+          src="/fond.WebP"
           alt="Image de fond"
           layout="fill"
           objectFit="cover"
@@ -24,7 +24,7 @@ export default function Acceuil() {
 
         {/* Image pour les ordinateurs */}
         <Image
-          src="/fond-pc.jpg"
+          src="/fond-pc.WebP"
           alt="Image de fond"
           layout="fill"
           objectFit="cover"

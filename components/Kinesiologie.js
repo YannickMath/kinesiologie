@@ -123,7 +123,7 @@ export default function Kinesiologie({ isSmallScreen }) {
       <div className="opacity-40" style={{ minHeight: "calc(100% - 100px)" }}>
         {/* Image pour les smartphones */}
         <Image
-          src="/fondkinesiosmart.jpg"
+          src="/fondkinesiosmart.WebP"
           alt="Image de fond"
           layout="fill"
           objectFit="cover"
@@ -133,7 +133,7 @@ export default function Kinesiologie({ isSmallScreen }) {
         />
         {/* Image pour les ordinateurs */}
         <Image
-          src="/fondkinesio.jpg"
+          src="/fondkinesio.WebP"
           alt="Image de fond"
           layout="fill"
           objectFit="cover"

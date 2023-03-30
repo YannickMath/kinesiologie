@@ -38,7 +38,7 @@ export default function Menu({ isSmallScreen }) {
 
   const getImageSrc = () => {
     if (isSmallScreen && nomPage === "A propos de moi") {
-      return "/moi.jpg";
+      return "/moi.WebP";
     }
     return "logo.png";
   };

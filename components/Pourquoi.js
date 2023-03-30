@@ -6,7 +6,7 @@ export default function Pourquoi() {
     <div className="relative w-screen h-screen overflow-hidden font-roboto ">
       <div className="fixed top-0 left-0 w-full h-full z-0 ">
         <Image
-          src="/fondpourquoi.jpg"
+          src="/fondpourquoi.WebP"
           alt="Image de fond"
           layout="fill"
           objectFit="cover"
