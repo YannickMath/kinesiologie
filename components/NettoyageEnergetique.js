@@ -21,7 +21,6 @@ export default function NettoyageEnergetique() {
           quality={100}
           style={{ filter: "brightness(80%)" }}
           loading="lazy"
-          // className="opacity-80"
 
         />
       </div>

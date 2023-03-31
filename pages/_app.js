@@ -26,6 +26,7 @@ export default function MyApp({ Component, pageProps }) {
     };
   }, []);
 
+  
   return (
     <Layout isSmallScreen={isSmallScreen} >
       <Component {...pageProps} key={router.route} isSmallScreen={isSmallScreen}  />
