@@ -58,7 +58,7 @@ export default function Menu({ isSmallScreen }) {
           }`}
         >
           <img
-            className="md:rounded-xl w-40 h-40 md:w-56 md:h-56 logo "
+            className="md:rounded-xl w-40 h-40 md:w-52 md:h-52 logo "
             src={getImageSrc()}
             alt="logo"
             style={{
@@ -71,7 +71,7 @@ export default function Menu({ isSmallScreen }) {
 
         {isSmallScreen && (
           <div className="text-center font-medium ">
-            <p className="text-gray-600 text-3xl mb-3 ">{nomPage}</p>
+            <p className="text-gray-600 text-3xl mb-2 p-2">{nomPage}</p>
           </div>
         )}
         <button

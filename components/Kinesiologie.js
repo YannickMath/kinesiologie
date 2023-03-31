@@ -71,7 +71,7 @@ export default function Kinesiologie({ isSmallScreen }) {
                 <h3 className="text-center font-bold  text-xl underline text-[#333333]">
                   C'est quoi la kinésiologie
                 </h3>
-                <p>{items.item1}</p>
+                <p className="">{items.item1}</p>
                 <p>{items.item2}</p>
                 <p>{items.item3}</p>
                 <p>{items.item4}</p>
