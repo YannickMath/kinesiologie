@@ -6,7 +6,7 @@ export default function AproposDeMoi({isSmallScreen}) {
     item1:
       "Je m'appelle Muriel et je suis kinésiologue certifiée, réflexologue cranio-sacrée et magnétiseuse.",
     item2:
-      "Mais dans ma première vie comme j’aime à le dire, j’ai travaillé dans la comptabilité gestion, seulement je sentais depuis de longues années que ce métier ne me correspondait pas. Au fil du temps, j’ai perdu ma flamme intérieure et mon corps s’est mis à me faire de plus en plus mal jusqu’au jour où il s’est arrêté de bouger et là j’ai expérimenté le burnout, mon corps et ma tête me lâchaient. Il m’a fallu quelques semaines pour m’autoriser à prendre soin de moi, le temps était venu des changements profonds.",
+      "Mais dans ma première vie comme j’aime à le dire, j’ai travaillé dans la comptabilité gestion, seulement je sentais depuis de longues années que ce métier ne me correspondait pas. Au fil du temps, j’ai perdu ma flamme intérieure et mon corps s’est mis à me faire de plus en plus mal jusqu’au jour où il s’est arrêté de bouger et là j’ai expérimenté le burnout. Mon corps et ma tête me lâchaient. Il m’a fallu quelques semaines pour m’autoriser à prendre soin de moi, le temps était venu des changements profonds.",
     item3:
       "J’ai toujours été intéressée par le développement personnel, l’énergétique car oui et cela a été prouvé scientifiquement que l’être humain est fait d’énergie, tout est fait d’énergie. J’ai essayé plein de médecine alternative pour prendre soin de moi, pour me comprendre, pour me sortir de fonctionnements inadaptés, lâcher l’ancien pour créer du nouveau.",
     item4:

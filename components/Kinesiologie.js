@@ -45,7 +45,7 @@ export default function Kinesiologie({ isSmallScreen }) {
             color: activeSlide === i ? "white" : "black",
             fontSize: activeSlide === i ? "25px" : "18px",
             textDecoration: activeSlide === i ? "underline" : "none",
-            position: isSmallScreen && activeSlide === 1 ? "fixed" : "absolute",
+            position: isSmallScreen && activeSlide === 2 ? "fixed" : "absolute",
           }}
         >
           {i + 1}
@@ -65,7 +65,7 @@ export default function Kinesiologie({ isSmallScreen }) {
 
     return (
       <div
-        className=" min-h-screen font-roboto  italic relative "
+        className=" min-h-screen font-roboto   relative "
         ref={parentRef}
       >
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
@@ -83,6 +83,16 @@ export default function Kinesiologie({ isSmallScreen }) {
               </div>
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
+              <div className=" lg:text-base  flex flex-col justify-center space-y-4 lg:space-y-6 py-10 mt-40 lg:mt-30 text-[#333333] p-5 lg:p-0">
+                <h3 className="text-center font-bold text-xl underline ">
+                  Déroulé d'une séance
+                </h3>
+                <p>{items.item10}</p>
+                <p>{items.item11}</p>
+                <p>{items.item12}</p>
+              </div>
+            </div>
+            <div className={activeSlide === 2 ? "" : "hidden"}>
               <div className="h-full flex flex-col justify-center space-y-4  lg:space-y-6 py-10 mt-40 text-[#333333] p-5 lg:p-0">
                 <p className="text-center font-bold  text-xl underline ">
                   {items.item6}
@@ -103,16 +113,6 @@ export default function Kinesiologie({ isSmallScreen }) {
                     {items.item9}
                   </p>
                 </div>
-              </div>
-            </div>
-            <div className={activeSlide === 2 ? "" : "hidden"}>
-              <div className=" lg:text-base  flex flex-col justify-center space-y-4 lg:space-y-6 py-10 mt-40 lg:mt-30 text-[#333333] p-5 lg:p-0">
-                <h3 className="text-center font-bold text-xl underline ">
-                  Déroulé d'une séance
-                </h3>
-                <p>{items.item10}</p>
-                <p>{items.item11}</p>
-                <p>{items.item12}</p>
               </div>
             </div>
           </Slider>
