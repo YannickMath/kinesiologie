@@ -22,10 +22,10 @@ export default function Acceuil() {
         />
       </div>
       <div className=" h-full">
-        <p className="phrase espace">{welcome.item1}</p>
-        <p className="phrase espace">{welcome.item2}</p>
-        <p className="phrase espace">{welcome.item3}</p>
-        <p className="phrase espace">
+        <p className="phrase">{welcome.item1}</p>
+        <p className="phrase">{welcome.item2}</p>
+        <p className="phrase">{welcome.item3}</p>
+        <p className="phrase">
           <span className="signature ">Muriel</span>
         </p>
       </div>

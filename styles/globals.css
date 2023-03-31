@@ -159,17 +159,29 @@
 /*CSS Menu et plus précisemmment du logo*/
 @media screen and (min-width: 769px) and (max-width: 1150px) {
   .logo {
-    width: 180px !important;
-    height: 180px !important;
+    width: 160px !important;
+    height: 160px !important;
   }
   .phrase {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 0.8;
 
   }
   .signature {
     font-size: 38px;
   }
+  .phrase:nth-child(1) {
+  margin-top: 2px;
+}
+  .phrase:nth-child(2) {
+  margin-top: 2px;
+}
+  .phrase:nth-child(3) {
+  margin-top: 2px;
+}
+  .phrase:nth-child(4) {
+  margin-top: 2px;
+}
 }
 
 @media screen and (min-width: 1200px) {

@@ -37,8 +37,9 @@ export default function Kinesiologie({ isSmallScreen }) {
     const settings = {
       dots: true,
       customPaging: (i) => (
+        
         <div
-          className="md:top-10 bottom-2 font-bold text-black font-roboto"
+          className=" lg:top-10 bottom-2 font-bold text-black font-roboto"
           style={{
             color: activeSlide === i ? "white" : "black",
             fontSize: activeSlide === i ? "25px" : "18px",
@@ -66,7 +67,7 @@ export default function Kinesiologie({ isSmallScreen }) {
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className="  lg:text-base flex-col space-y-4 lg:space-y-6 py-10 mt-40 sm:mt-24 md:mt-36 p-5 lg:p-0">
+              <div className="  lg:text-base flex-col space-y-4 lg:space-y-6 py-10 mt-40 sm:mt-24 md:mt-30 p-5 ">
                 <h3 className="text-center font-bold  text-xl underline text-[#333333]">
                   C'est quoi la kinésiologie
                 </h3>
@@ -78,7 +79,7 @@ export default function Kinesiologie({ isSmallScreen }) {
               </div>
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
-              <div className="h-full flex flex-col justify-center space-y-4  lg:space-y-6 py-10 mt-40 text-[#333333] p-5 lg:p-0">
+              <div className="h-full flex flex-col justify-center space-y-4  lg:space-y-6 py-10 md:mt-24 mt-40 text-[#333333] p-5 ">
                 <p className="text-center font-bold  text-xl underline ">
                   {items.item6}
                 </p>
@@ -101,7 +102,7 @@ export default function Kinesiologie({ isSmallScreen }) {
               </div>
             </div>
             <div className={activeSlide === 2 ? "" : "hidden"}>
-              <div className=" lg:text-base  flex flex-col justify-center space-y-4 lg:space-y-6 py-10 mt-40 lg:mt-30 text-[#333333] p-5 lg:p-0">
+              <div className=" lg:text-base  flex flex-col justify-center space-y-4 lg:space-y-6 py-10 mt-40 md:mt-24 lg:mt-30 text-[#333333] p-5 ">
                 <h3 className="text-center font-bold text-xl underline ">
                   Déroulé d'une séance
                 </h3>
@@ -124,7 +125,7 @@ export default function Kinesiologie({ isSmallScreen }) {
           layout="fill"
           objectFit="cover"
           quality={100}
-          className=" mt-10 md:mt-0 opacity-80" // Cache l'image sur les écrans larges
+          className=" mt-10 md:mt-10 opacity-80" // Cache l'image sur les écrans larges
           loading="lazy"
         />
       </div>

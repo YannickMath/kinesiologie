@@ -15,7 +15,7 @@ export default function Contact() {
           <FormContact />
         </div>
       </div>
-      <div className="mt-5 lg:mt-4 w-1/4 mb-4 md:m-0">
+      <div className="mt-5 lg:mt-4 w-1/4 mb-4 md:mb-2 lg:mb-0">
         <SocialIcons />
       </div>
     </div>

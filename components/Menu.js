@@ -51,7 +51,7 @@ export default function Menu({ isSmallScreen }) {
         <title>Muriel MATHIEU Kinésiologie</title>
         <link rel="icon" href="/logo.png" type="image/x-icon" />
       </Head>
-      <div className="bg-green-50 md:h-1/6 text-gray-500 flex justify-around md:justify-around items-center font-semibold font-carattere fixed top-0 w-full z-50 ">
+      <div className="bg-green-50 md:h-1/6v p-2 text-gray-500 flex justify-around md:justify-around items-center font-semibold font-carattere fixed top-0 w-full z-50 ">
         <div
           className={`relative md:fixed md:top-0 md:left-0 md:ml-5 ${
             menuOpen ? "hidden md:block" : ""
@@ -63,7 +63,7 @@ export default function Menu({ isSmallScreen }) {
             alt="logo"
             style={{
               marginTop: isSmallScreen ? 0 : "-35px",
-              padding: "6px",
+              // padding: "6px",
               borderRadius: "30px",
             }}
           />
@@ -84,7 +84,7 @@ export default function Menu({ isSmallScreen }) {
         <div
           className={`${
             isSmallScreen ? (menuOpen ? "block" : "hidden") : "flex"
-          }  md:flex-row md:justify-around md:w-auto md:ml-64 mr-2 items-center font-medium text-gray-600`}
+          }  md:flex-row md:justify-around md:w-auto md:ml-64 mr-2 p-2 items-center font-medium text-gray-600`}
         >
           <Link href="/Acceuil">
             <p className={styles.link} onClick={() => handleSelectPage("id1")}>
