@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 
-
 const imageTestMusculaire = "/testmusc.png";
 
 const wikipedia = {
@@ -31,7 +30,6 @@ const wikipedia = {
     "Le kinésiologue n'est pas un médecin, il n'établit ni diagnostic, ni prescription et ne vous demandera jamais d'arrêter un traitement.",
 };
 export default function Kinesiologie({ isSmallScreen }) {
-
   const Carousel = ({ items }) => {
     const [activeSlide, setActiveSlide] = useState(0);
     const parentRef = useRef(null);
@@ -64,10 +62,7 @@ export default function Kinesiologie({ isSmallScreen }) {
     };
 
     return (
-      <div
-        className=" min-h-screen font-roboto   relative "
-        ref={parentRef}
-      >
+      <div className=" min-h-screen font-roboto   relative " ref={parentRef}>
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
@@ -123,24 +118,13 @@ export default function Kinesiologie({ isSmallScreen }) {
   return (
     <div className="min-h-screen lg:  relative">
       <div className="opacity-40" style={{ minHeight: "calc(100% - 100px)" }}>
-        {/* Image pour les smartphones */}
-        <Image
-          src="/fondkinesiosmart.WebP"
-          alt="Image de fond"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          className="lg:hidden mt-10 md:mt-0 opacity-80" // Cache l'image sur les écrans larges
-          loading="lazy"
-        />
-        {/* Image pour les ordinateurs */}
         <Image
           src="/fondkinesio.WebP"
           alt="Image de fond"
           layout="fill"
           objectFit="cover"
           quality={100}
-          className="hidden lg:block mt-10 md:mt-0 opacity-80" // Affiche l'image uniquement sur les écrans larges
+          className=" mt-10 md:mt-0 opacity-80" // Cache l'image sur les écrans larges
           loading="lazy"
         />
       </div>
