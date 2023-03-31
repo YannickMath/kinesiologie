@@ -160,7 +160,7 @@
 @media screen and (min-width: 769px) and (max-width: 1150px) {
   .logo {
     width: 160px !important;
-    height: 160px !important;
+    height: 180px !important;
   }
   .phrase {
     font-size: 30px;
