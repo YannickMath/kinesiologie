@@ -1,4 +1,5 @@
 import Contact from "./ContactEtTarifs/Contact";
+import Footer from "./Footer";
 
 export default function ContactsEtTarifs() {
   return (
@@ -6,6 +7,7 @@ export default function ContactsEtTarifs() {
       <div className=" min-h-screen w-90  ">
         <Contact />
       </div>
+      <Footer/>
     </div>
   );
 }
