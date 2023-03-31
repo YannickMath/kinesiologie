@@ -42,14 +42,14 @@
     width: 6vw;
   }
 }
-@media (min-width: 850px) and (max-width: 1050px) {
+@media (min-width: 850px) and (max-width: 1200px) {
   .link {
-    font-size: 18px;
+    font-size: 20px;
     width: 7vw;
 
   }
 }
-@media (min-width: 1051px) and (max-width: 1200px) {
+@media (min-width: 1201px)  {
   .link {
     font-size: 25px;
   }

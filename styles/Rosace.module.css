@@ -29,7 +29,7 @@
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: center;
   transition-duration: 1s;
   font-family: roboto;
@@ -194,5 +194,8 @@
 @media screen and (max-width: 1120px) {
   .circle {
     font-size: 1.1rem;
+  }
+  .container {
+    margin-top: 0;
   }
 }
