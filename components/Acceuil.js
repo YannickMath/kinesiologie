@@ -12,13 +12,13 @@ export default function Acceuil() {
     <div className="h-screen font-carattere relative flex flex-col  ">
       <div className="h-full">
         <Image
-          src="/fond.WebP"
+          src="/fond-pc.WebP"
           alt="Image de fond"
           layout="fill"
           objectFit="cover"
           quality={100}
           className=" opacity-80"
-          style={{ filter: "brightness(70%)" }}
+          style={{ filter: "brightness(60%)" }}
         />
       </div>
       <div className=" h-full">
