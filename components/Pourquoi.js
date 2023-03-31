@@ -11,8 +11,7 @@ export default function Pourquoi() {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
-          priority
-          className="opacity-80"
+          className="opacity-60"
           loading="lazy"
         />
       </div>

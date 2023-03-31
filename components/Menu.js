@@ -49,7 +49,7 @@ export default function Menu({ isSmallScreen }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Muriel MATHIEU Kinésiologie</title>
-        <link rel="icon" href="./logo.png" type="image/x-icon" />
+        <link rel="icon" href="/logo.png" type="image/x-icon" />
       </Head>
       <div className="bg-green-50 md:h-1/6 text-gray-500 flex justify-around md:justify-around items-center font-semibold font-carattere fixed top-0 w-full z-50 ">
         <div

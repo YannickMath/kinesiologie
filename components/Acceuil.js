@@ -11,27 +11,14 @@ export default function Acceuil() {
   return (
     <div className="h-screen font-carattere relative flex flex-col  ">
       <div className="h-full">
-        {/* Image pour les smartphones */}
         <Image
           src="/fond.WebP"
           alt="Image de fond"
           layout="fill"
           objectFit="cover"
           quality={100}
-          className="lg:hidden opacity-80" // Cache l'image sur les écrans larges
+          className=" opacity-80"
           style={{ filter: "brightness(70%)" }}
-        />
-
-        {/* Image pour les ordinateurs */}
-        <Image
-          src="/fond-pc.WebP"
-          alt="Image de fond"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          className="hidden lg:block opacity-80" // Affiche l'image uniquement sur les écrans larges
-          style={{ filter: "brightness(70%)" }}
-          loading="lazy"
         />
       </div>
       <div className=" h-full">

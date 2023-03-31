@@ -14,14 +14,14 @@ export default function NettoyageEnergetique() {
     <div className="relative h-screen  lg:flex ">
       <div className="opacity-40">
         <Image
-          src="/fondnettoyage.WebP"
+          src="/fondnettoyage.jpg"
           alt="Image de fond"
           layout="fill"
           objectFit="cover"
           quality={100}
-          style={{ filter: "brightness(60%)" }}
+          style={{ filter: "brightness(80%)" }}
           loading="lazy"
-          className="opacity-90"
+          className="opacity-80"
 
         />
       </div>

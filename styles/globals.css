@@ -4,28 +4,15 @@
 
 /*font family du projet*/
 
-.font-tangerine {
-  font-family: "Tangerine", cursive;
-}
-
-.font-raleway {
-        font-family: 'Raleway', sans-serif;
-    
-    } 
-
 .font-roboto {
   font-family: "Roboto", sans-serif;
 }
 
-.font-satisfy {
-  font-family: 'Satisfy', cursive;
-}
 .font-carattere {
   font-family: 'Carattere', cursive;
 }
 
 /*CSS ACCEUIL*/
-
 @keyframes display-phrases {
   0% {
     opacity: 0;
@@ -116,16 +103,12 @@
 }
 
 /* Media Queries */
-
-
 @media screen and (max-width: 768px) {
   .phrase {
     font-size: 30px;
     line-height: 0.75;
     margin-top: 5px;
   }
-
- 
   .signature {
     font-size: 36px;
     margin-left: 60%;
@@ -158,6 +141,7 @@
   }
 }
 
+
 @media screen and (min-width: 768px) {
   .phrase {
     font-size: 50px;
@@ -169,6 +153,8 @@
     margin-left: 50%;
   }
 }
+
+
 
 /*CSS Menu et plus précisemmment du logo*/
 @media screen and (min-width: 769px) and (max-width: 1150px) {
@@ -195,6 +181,10 @@
     font-size: 38px;
   }
 }
+
+
+
+
 
 .md:flex-row {
   justify-content: center; /* centre horizontalement sur tailles écran plus larges */
