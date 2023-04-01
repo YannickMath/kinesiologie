@@ -25,10 +25,10 @@ export default function Reflexologie({ isSmallScreen }) {
         />
       </div>
       <div className="flex bg-gray-100 mt-40 md:mt-24 lg:mt-0 flex-col p-5  justify-center w-full md:w-2/3  font-roboto space-y-4 lg:space-y-6  md:text-base text-[#333333]  ">
-        <p className="md:mt-12 mt-0">{reflexo.item1}</p>
-        <p className="">{reflexo.item2}</p>
-        <p className="">{reflexo.item3}</p>
-        <p className="">{reflexo.item4}</p>
+        <p >{reflexo.item1}</p>
+        <p >{reflexo.item2}</p>
+        <p >{reflexo.item3}</p>
+        <p >{reflexo.item4}</p>
       </div>
     </div>
   );
