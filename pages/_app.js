@@ -11,50 +11,10 @@ export default function MyApp({ Component, pageProps }) {
 
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  // const updateScreenSize = () => {
-  //   const mediaQuery = window.matchMedia("(max-width: 768px)");
-  //   setIsSmallScreen(mediaQuery.matches);
-  // };
-
-
   const updateScreenSize = () => {
-    const isPortrait = window.matchMedia("(orientation: portrait)").matches;
-    const isTablet = window.matchMedia("(min-width: 768px)").matches;
-  
-    // Verrouiller le mode portrait sur les smartphones
-    if (isSmallScreen && !isPortrait) {
-      document.documentElement.style.transform = "rotate(0deg)";
-      document.documentElement.style.width = "100vw";
-      document.documentElement.style.height = "100vh";
-      document.documentElement.style.overflow = "hidden";
-    } else {
-      document.documentElement.style.transform = "none";
-      document.documentElement.style.width = "auto";
-      document.documentElement.style.height = "auto";
-      document.documentElement.style.overflow = "visible";
-    }
-  
-    // Verrouiller le mode paysage sur les tablettes
-    if (!isSmallScreen && isTablet && isPortrait) {
-      document.documentElement.style.transform = "rotate(90deg)";
-      document.documentElement.style.width = "100vh";
-      document.documentElement.style.height = "100vw";
-      document.documentElement.style.overflow = "hidden";
-  
-      // Réinitialiser le menu burger
-      $(document).ready(function() {
-        $('.menu-toggle').removeClass('active');
-        $('.nav').removeClass('active');
-      });
-    } else {
-      document.documentElement.style.transform = "none";
-      document.documentElement.style.width = "auto";
-      document.documentElement.style.height = "auto";
-      document.documentElement.style.overflow = "visible";
-    }
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsSmallScreen(mediaQuery.matches);
   };
-  
-  
 
   
   useEffect(() => {
