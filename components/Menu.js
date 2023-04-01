@@ -58,7 +58,7 @@ export default function Menu({ isSmallScreen }) {
           }`}
         >
           <img
-            className="md:rounded-xl w-40 h-40 md:w-52 md:h-48 logo "
+            className="md:rounded-xl w-40 h-40 md:w-44 md:h-44 logo "
             src={getImageSrc()}
             alt="logo"
             style={{
