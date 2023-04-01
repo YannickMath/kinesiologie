@@ -19,12 +19,13 @@ export default function NettoyageEnergetique() {
           layout="fill"
           objectFit="cover"
           quality={100}
-          style={{ filter: "brightness(80%)" }}
+          // style={{ filter: "brightness(80%)" }}
+          className="opacity-80"
           loading="lazy"
 
         />
       </div>
-      <div className="mt-40  lg:mt-[-64px] sm:mt-24  flex flex-col justify-center text-[#050202] lg:h-full font-roboto space-y-4 lg:space-y-6  lg:text-base p-5 lg:p-0">
+      <div className="mt-40  lg:mt-[-64px] sm:mt-16  flex flex-col justify-center text-[#050202] lg:h-full font-roboto space-y-4 lg:space-y-6  lg:text-base p-5 lg:p-0">
         <p className=" lg:mr-10 lg:ml-10 sm:mt-10 md:mt-14 ">{nettoyage.item1}</p>
         <p className=" lg:mr-10 lg:ml-10 ">{nettoyage.item2}</p>
         <p className="  lg:mr-10 lg:ml-10 ">{nettoyage.item3}</p>

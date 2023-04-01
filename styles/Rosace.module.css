@@ -151,22 +151,22 @@
     cursor: none;
   }
   .circle:nth-child(1) {
-    top: 20%;
+    top: 10%;
     left: -10%;
   }
 
   .circle:nth-child(2) {
-    top: 30%;
+    top: 20%;
     left: -10%;
   }
 
   .circle:nth-child(3) {
-    top: 40%;
+    top: 30%;
     left: -10%;
   }
 
   .circle:nth-child(4) {
-    top: 50%;
+    top: 40%;
     left: -10%;
   }
 
