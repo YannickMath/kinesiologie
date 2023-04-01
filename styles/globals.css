@@ -142,6 +142,18 @@
 }
 
 
+@media screen and (min-width: 720px) {
+  .phrase {
+    font-size: 24px;
+    line-height: 0.65;
+    margin-top: 4%;
+  }
+
+  .signature {
+    font-size: 50px;
+    margin-left: 50%;
+  }
+}
 @media screen and (min-width: 768px) {
   .phrase {
     font-size: 50px;
