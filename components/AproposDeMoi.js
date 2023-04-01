@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export default function AproposDeMoi({isSmallScreen}) {
   const apropos = {
-    item: "Bienvenue sur mon site ! Laissez moi me présenter.",
+    item: "Bienvenue sur mon site ! Laissez-moi me présenter.",
     item1:
       "Je m'appelle Muriel et je suis kinésiologue certifiée, réflexologue cranio-sacrée et magnétiseuse.",
     item2:
-      "Mais dans ma première vie comme j’aime à le dire, j’ai travaillé dans la comptabilité gestion, seulement je sentais depuis de longues années que ce métier ne me correspondait pas. Au fil du temps, j’ai perdu ma flamme intérieure et mon corps s’est mis à me faire de plus en plus mal jusqu’au jour où il s’est arrêté de bouger et là j’ai expérimenté le burnout. Mon corps et ma tête me lâchaient. Il m’a fallu quelques semaines pour m’autoriser à prendre soin de moi, le temps était venu des changements profonds.",
+      "Mais dans ma première vie comme j’aime à le dire, j’ai travaillé dans la comptabilité gestion, seulement je sentais depuis de longues années que ce métier ne me correspondait plus. Au fil du temps, j’ai perdu ma flamme intérieure et mon corps s’est mis à me faire de plus en plus mal jusqu’au jour où il s’est arrêté de bouger et là j’ai expérimenté le burn out. Mon corps et ma tête me lâchaient. Il m’a fallu quelques semaines pour m’autoriser à prendre soin de moi, le temps était venu des changements profonds.",
     item3:
-      "J’ai toujours été intéressée par le développement personnel, l’énergétique car oui et cela a été prouvé scientifiquement que l’être humain est fait d’énergie, tout est fait d’énergie. J’ai essayé plein de médecine alternative pour prendre soin de moi, pour me comprendre, pour me sortir de fonctionnements inadaptés, lâcher l’ancien pour créer du nouveau.",
+      "J’ai toujours été intéressée par le développement personnel, l’énergétique car, cela a été prouvé scientifiquement, l’être humain est fait d’énergie, tout est fait d’énergie. J’ai essayé différebtes médecines alternatives pour prendre soin de moi, pour me comprendre, pour me sortir de fonctionnements inadaptés, lâcher l’ancien pour créer du nouveau.",
     item4:
-      "Je suis vraiment passionnée par la recherche du bien-être, de la spiritualité. J’ai fait une formation de magnétisme que je ressentais beaucoup dans mes mains puis j’ai fait une formation de kinésiologue et de réflexologue cranio sacrée à l’école EKTC pendant 1 an et demi.",
+      "Je suis vraiment passionnée par la recherche du bien-être, de la spiritualité. J’ai d'abord fait une formation de magnétisme puis une formation de kinésiologue et de réflexologue cranio sacrée à l’école EKTC pendant 1 an et demi.",
     item5:
-      "Mon objectif est d'accompagner les personnes pour qu’elles retrouvent leur chemin de vie de manière paisible, prêtes à faire de nouveaux choix et poser de nouvelles actions pour aller vers la vie qui leur ressemble.",
+      "Mon objectif est d'accompagner les personnes afin qu’elles retrouvent leur chemin de vie de manière paisible, prêtes à faire de nouveaux choix et poser de nouvelles actions pour aller vers la vie qui leur ressemble.",
   };
   return (
     <div className=" min-h-screen relative flex flex-col md:flex-row font-roboto text-[#333333]">

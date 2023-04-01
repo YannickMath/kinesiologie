@@ -15,7 +15,7 @@ export default function ContactInfo() {
   return (
     <div className="lg:space-y-2 space-y-1 font-roboto p-5 lg:p-0">
       <p className="font-roboto font-semibold mb-4 md:mt-6 ">
-        "N'hésitez pas à me contacter pour de plus informations, je serais ravie
+        "N'hésitez pas à me contacter pour de plus amples informations, je serais ravie
         de vous renseigner".
       </p>
       <p className="flex items-center">

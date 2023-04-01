@@ -4,7 +4,7 @@ export default function Rosace() {
   const words = [
     "Manque de confiance en soi",
     "Blocages émotionels",
-    `Difficulté d'apprenttissage`,
+    `Difficulté d'apprentissage`,
     "Découragement, burn out",
     "Insomnies",
     "Maux du corps, douleurs chroniques",

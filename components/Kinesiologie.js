@@ -11,7 +11,7 @@ const wikipedia = {
   item1:
     "La kinésiologie est une approche holistique qui vise à rétablir l'équilibre du corps dans toutes ses composantes : structurelles, psycho-émotionnelles, biochimiques et énergétiques.",
   item2:
-    "La spécificité de la kinésiologie c'est l'utilisation du test musculaire qui permet d'interroger le corps, notre inconscient et de faire remonter à la soncience les déséquilibres énéergétiques et les stress émotionnels qui empêchent l'individu d'utiliser toutes ses potentialiités.",
+    "La spécificité de la kinésiologie c'est l'utilisation du test musculaire qui permet d'interroger le corps, notre inconscient et de faire remonter à la concience les déséquilibres énergétiques et les stress émotionnels qui empêchent l'individu d'utiliser toutes ses potentialités.",
   item3:
     "En effet, le corps a une mémoire dite cellulaire dans laquelle sont enregistrés tous les évènements vécus. Le test musculaire oriente vers les techniques à utiliser pour libérer ces blocages, ces tensions.",
   item4:
@@ -25,7 +25,7 @@ const wikipedia = {
   item10:
     "Une séance débute par un temps d’échange afin de clarifier la raison de votre venue et d’identifier votre objectif de séance. Puis allongé sur une table de massage, le test musculaire permet « d’interroger » votre corps.",
   item11:
-    "Qu’est-ce que le test musculaire ? Il s’agit d’une pression douce et non contraignante qui se pratique le plus souvent sur le muscle du bras. Il nous mène aux causes et aux antidotes du mal être. Il nous permet d’accéder à la mémoire du corps, d’identifier les facteurs contribuant aux blocages et nous amène aux équilibrations afin de retirer la charge émotionnelle négative associée pour rétablir votre mieux être.",
+    "Qu’est-ce que le test musculaire ? Il s’agit d’une pression douce et non contraignante qui se pratique le plus souvent sur le muscle du bras. Il nous mène aux causes et aux antidotes du mal-être. Il nous permet d’accéder à la mémoire du corps, d’identifier les facteurs contribuant aux blocages et nous amène aux équilibrations afin de retirer la charge émotionnelle négative associée pour rétablir votre mieux-être.",
   item12:
     "Le kinésiologue n'est pas un médecin, il n'établit ni diagnostic, ni prescription et ne vous demandera jamais d'arrêter un traitement.",
 };
@@ -69,7 +69,7 @@ export default function Kinesiologie({ isSmallScreen }) {
             <div className={activeSlide === 0 ? "" : "hidden"}>
               <div className="  lg:text-base flex-col space-y-4 lg:space-y-6 py-10 mt-40 sm:mt-24 md:mt-30 p-5 ">
                 <h3 className="text-center font-bold  text-xl underline text-[#333333]">
-                  C'est quoi la kinésiologie
+                  C'est quoi la kinésiologie ?
                 </h3>
                 <p className="">{items.item1}</p>
                 <p>{items.item2}</p>

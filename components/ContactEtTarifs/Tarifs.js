@@ -1,8 +1,8 @@
 export default function Tarifs() {
   const details = {
-    item1: "Séance de Kinésiologie durée 1 h 30 : 70 euros.",
-    item2: "Séance de réflexologie Cranio Sacrée durée 1 h 30 : 70 euros.",
-    item3: "Nettoyage énergétique durée 1 H : 60 euros.",
+    item1: "Séance de kinésiologie - durée 1 h 30 : 70 euros.",
+    item2: "Séance de réflexologie cranio-sacrée - durée 1 h 30 : 70 euros.",
+    item3: "Nettoyage énergétique - durée 1 h : 60 euros.",
     item4: "Paiement par espèces ou par chèque.",
     item5: "Merci de me prévenir au moins 48h en avance pour toute annulation.",
   };

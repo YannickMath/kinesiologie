@@ -5,13 +5,12 @@ export default function Reflexologie({ isSmallScreen }) {
     item1:
       "La réflexologie cranio-sacrée est une technique douce issue de l’ostéopathie, simple et complète, totalement dédiée à l’écoute du corps.",
     item2:
-      "Elle permet de réduire, voir de supprimer les douleurs ou les inconforts physiques en fluidifiant les blocages énergétiques dans le corps pour retrouver ou prolonger votre vitalité et votre bien être.",
+      "Elle permet de réduire, voir de supprimer les douleurs ou les inconforts physiques en fluidifiant les blocages énergétiques dans le corps pour retrouver ou prolonger votre vitalité et votre bien-être.",
     item3:
-      "Cela se passe par une étape d’écoute du crane, puis une ré harmonisation par de légères pulsions au niveau du sacrum et/ou des membres concernés en passant par les vertèbres.",
+      "Cela se passe par une étape d’écoute du crâne, puis une réharmonisation par de légères pulsions au niveau du sacrum et/ou des membres concernés en passant par les vertèbres.",
     item4:
-      "Elle redonne au corps la possibilité de s’adapter et procure une relaxation complète au travers de l’axe crane/vertèbre/sacrum.",
+      "Elle redonne au corps la possibilité de s’adapter et procure une relaxation complète au travers de l’axe crâne/vertèbres/sacrum.",
   };
-
   return (
     <div className="h-screen flex flex-col md:flex-row font-roboto">
       <div className="w-full md:w-1/3 h-full relative opacity-70">
