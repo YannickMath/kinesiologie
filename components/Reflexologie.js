@@ -12,19 +12,19 @@ export default function Reflexologie({ isSmallScreen }) {
       "Elle redonne au corps la possibilité de s’adapter et procure une relaxation complète au travers de l’axe crâne/vertèbres/sacrum.",
   };
   return (
-    <div className="min-h-screen flex flex-col md:flex-row font-roboto">
-      <div className="w-full md:w-1/3 h-screen relative opacity-70">
+    <div className="h-screen md:min-h-screen flex flex-col md:flex-row font-roboto">
+      <div className="w-full md:w-1/3 h-full md:mt-24 relative opacity-70">
         <Image
           src="/fondreflexo.WebP"
           alt="Image de fond"
           layout={isSmallScreen ? "fit" : "fill"}
           objectFit={isSmallScreen ? "contain" : "cover"}
           quality={50}
-          className="opacity-70 mt-40 md:mt-10"
+          className="opacity-70 mt-40 md:mt-0"
           loading="lazy"
         />
       </div>
-      <div className="flex bg-gray-100 mt-40 md:mt-24 lg:mt-0 flex-col p-5  justify-center w-full md:w-2/3  font-roboto space-y-4 md:space-y-4 lg:space-y-6  md:text-base text-[#333333]  ">
+      <div className="flex bg-gray-100 mt-40 md:mt-24 lg:mt-0 flex-col p-5 md:h-screen  justify-center w-full md:w-2/3  font-roboto space-y-4 md:space-y-4 lg:space-y-6  md:text-base text-[#333333]  ">
         <p >{reflexo.item1}</p>
         <p >{reflexo.item2}</p>
         <p >{reflexo.item3}</p>
