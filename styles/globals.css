@@ -163,13 +163,13 @@
     height: 180px !important;
   }
   .phrase {
-    font-size: 27px;
+    font-size: 20px;
     line-height: 0.8
   }
 
   
   .signature {
-    font-size: 30px;
+    font-size: 23px;
   }
   .phrase:nth-child(1) {
   margin-top: 2px;
