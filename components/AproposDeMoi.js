@@ -25,7 +25,7 @@ export default function AproposDeMoi({isSmallScreen}) {
         <p>{apropos.item5}</p>
       </div>
       {!isSmallScreen && (
-        <div className=" w-full md:w-1/5 relative">
+        <div className=" w-full sm:w-2/5 md:w-[27vw] relative bg-gray-100">
           <div className="opacity-70 h-full">
             <Image
               src="/moi.WebP"
