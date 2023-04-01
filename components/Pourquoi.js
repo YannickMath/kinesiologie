@@ -11,9 +11,9 @@ export default function Pourquoi() {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
-          className="opacity-60"
+          className="opacity-50"
           loading="lazy"
-          style={{ filter: "brightness(80%)" }}
+          // style={{ filter: "brightness(80%)" }}
 
         />
       </div>

@@ -71,7 +71,7 @@ export default function Menu({ isSmallScreen }) {
 
         {isSmallScreen && (
           <div className="text-center font-medium ">
-            <p className="text-gray-600 text-3xl mb-2 p-2">{nomPage}</p>
+            <p className="text-gray-600 text-3xl mb-2 p-2 ml-2">{nomPage}</p>
           </div>
         )}
         <button
