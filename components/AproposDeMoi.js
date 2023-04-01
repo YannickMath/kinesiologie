@@ -8,7 +8,7 @@ export default function AproposDeMoi({isSmallScreen}) {
     item2:
       "Mais dans ma première vie comme j’aime à le dire, j’ai travaillé dans la comptabilité gestion, seulement je sentais depuis de longues années que ce métier ne me correspondait plus. Au fil du temps, j’ai perdu ma flamme intérieure et mon corps s’est mis à me faire de plus en plus mal jusqu’au jour où il s’est arrêté de bouger et là j’ai expérimenté le burn out. Mon corps et ma tête me lâchaient. Il m’a fallu quelques semaines pour m’autoriser à prendre soin de moi, le temps était venu des changements profonds.",
     item3:
-      "J’ai toujours été intéressée par le développement personnel, l’énergétique car, cela a été prouvé scientifiquement, l’être humain est fait d’énergie, tout est fait d’énergie. J’ai essayé différebtes médecines alternatives pour prendre soin de moi, pour me comprendre, pour me sortir de fonctionnements inadaptés, lâcher l’ancien pour créer du nouveau.",
+      "J’ai toujours été intéressée par le développement personnel, l’énergétique car, cela a été prouvé scientifiquement, l’être humain est fait d’énergie, tout est fait d’énergie. J’ai essayé différentes médecines alternatives pour prendre soin de moi, pour me comprendre, pour me sortir de fonctionnements inadaptés, lâcher l’ancien pour créer du nouveau.",
     item4:
       "Je suis vraiment passionnée par la recherche du bien-être, de la spiritualité. J’ai d'abord fait une formation de magnétisme puis une formation de kinésiologue et de réflexologue cranio sacrée à l’école EKTC pendant 1 an et demi.",
     item5:

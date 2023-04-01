@@ -154,7 +154,7 @@
     margin-left: 50%;
   }
 } */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .phrase {
     font-size: 50px;
     line-height: 0.65;
@@ -165,18 +165,18 @@
     font-size: 50px;
     margin-left: 50%;
   }
-}
+} */
 
 
 
 /*CSS Menu et plus précisemmment du logo*/
-@media screen and (min-width: 850px) and (max-width: 914px) {
+@media screen and (min-width: 769px) and (max-width: 914px) {
   .logo {
     width: 130px !important;
     height: 150px !important;
   }
   .phrase {
-    font-size: 10px;
+    font-size: 28px;
     line-height: 0.8;
     /* margin-top: 0%; */
 
@@ -184,7 +184,7 @@
 
   
   .signature {
-    font-size: 13px;
+    font-size: 31px;
   }
 }
 @media screen and (min-width: 915px) and (max-width: 1199px) {
@@ -193,7 +193,7 @@
     height: 180px !important;
   }
   .phrase {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 0.8;
     /* margin-top: 0%; */
 
@@ -201,7 +201,7 @@
 
   
   .signature {
-    font-size: 23px;
+    font-size: 33px;
   }
   .phrase:nth-child(1) {
   margin-top: 2px;
