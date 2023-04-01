@@ -15,7 +15,7 @@
   height: 80vh;
   background-color: transparent;
   overflow: hidden;
-  /* margin-top: 6%; */
+  margin-top: -15%;
   z-index: 20;
 }
 
@@ -127,7 +127,7 @@
   }
   .circle {
     width: 102vw;
-    height: 15%;
+    height: 12%;
   }
 
   .item {
