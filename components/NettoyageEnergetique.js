@@ -11,7 +11,7 @@ export default function NettoyageEnergetique() {
   };
 
   return (
-    <div className="relative h-screen  lg:flex ">
+    <div className="relative min-h-screen lg:flex ">
       <div className="opacity-40">
         <Image
           src="/fondnettoyage.WebP"
@@ -25,8 +25,8 @@ export default function NettoyageEnergetique() {
 
         />
       </div>
-      <div className="mt-40  lg:mt-[-64px] sm:mt-16  flex flex-col justify-center text-[#050202] lg:h-full font-roboto space-y-4 lg:space-y-6  lg:text-base p-5 lg:p-0">
-        <p className=" lg:mr-10 lg:ml-10 sm:mt-10 md:mt-14 ">{nettoyage.item1}</p>
+      <div className=" mt-40 lg:mt-[-64px] sm:mt-16  flex flex-col justify-center text-[#050202] lg:h-full h-full font-roboto space-y-4 lg:space-y-6  lg:text-base p-5 lg:p-0">
+        <p className=" lg:mr-10 lg:ml-10 sm:mt-10 md:mt-20 mt-10 ">{nettoyage.item1}</p>
         <p className=" lg:mr-10 lg:ml-10 ">{nettoyage.item2}</p>
         <p className="  lg:mr-10 lg:ml-10 ">{nettoyage.item3}</p>
       </div>

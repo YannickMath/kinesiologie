@@ -106,7 +106,7 @@
 @media screen and (max-width: 768px) {
   .phrase {
     font-size: 30px;
-    line-height: 0.75;
+    line-height: 0.9;
     margin-top: 2px;
   }
   .signature {
