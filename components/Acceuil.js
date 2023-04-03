@@ -9,7 +9,7 @@ export default function Acceuil() {
   };
 
   return (
-    <div className="h-screen font-carattere relative flex flex-col sm:mt-8 ">
+    <div className="h-screen font-carattere relative flex flex-col sm:mt-6 ">
       <div className="h-full ">
         <Image
           src="/fond-pc.WebP"
@@ -21,7 +21,7 @@ export default function Acceuil() {
           style={{ filter: "brightness(60%)" }}
         />
       </div>
-      <div className=" h-full sm:space-y-2 md:space-y-2">
+      <div className=" h-full sm:space-y-2 md:space-y-4">
         <p className="phrase ">{welcome.item1}</p>
         <p className="phrase ">{welcome.item2}</p>
         <p className="phrase ">{welcome.item3}</p>
