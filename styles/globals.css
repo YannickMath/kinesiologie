@@ -108,7 +108,7 @@
 @media screen and (max-width: 768px) {
   .phrase {
     font-size: 1.7rem;
-    line-height: 0.75;
+    line-height: 0.8;
     margin-top: 2px;
   }
   .signature {
@@ -145,7 +145,7 @@
 @media screen and (max-width: 768px) and (orientation : landscape) {
   .phrase {
     font-size: 1.6rem;
-    line-height: 0.7;
+    line-height: 0.6;
     margin-top: 2px;
   }
   .signature {
