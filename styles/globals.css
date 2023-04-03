@@ -146,10 +146,10 @@
 
 /*CSS Menu et plus précisemmment du logo*/
 @media screen and (min-width: 769px) and (max-width: 914px) {
-  /* .logo {
+  .logo {
     width: 130px !important;
     height: 150px !important;
-  } */
+  }
   .phrase {
     font-size: 28px;
     line-height: 0.8;
@@ -175,10 +175,10 @@
   }
 }
 @media screen and (min-width: 915px) and (max-width: 1199px) {
-  /* .logo {
+  .logo {
     width: 160px !important;
     height: 180px !important;
-  } */
+  }
   .phrase {
     font-size: 30px;
     line-height: 0.8;
