@@ -258,6 +258,9 @@
   .signature{
     font-size: 1.6rem;
   }
+  .phrase:nth-child(4) {
+    margin-top: 3%;
+  }
 }
 
 
