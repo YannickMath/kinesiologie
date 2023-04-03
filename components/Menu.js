@@ -1,8 +1,8 @@
+import Head from "next/head";
+import "tailwindcss/tailwind.css";
+import styles from "../styles/Menu.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Head from "next/head";
-import styles from "../styles/Menu.module.css";
-
 export default function Menu({ isSmallScreen }) {
   const links = {
     id1: "Acceuil",
@@ -19,7 +19,7 @@ export default function Menu({ isSmallScreen }) {
   const [isPortrait, setIsPortrait] = useState(false);
   const [isLandscape, setIsLandscape] = useState(false);
   const [showBurger, setShowBurger] = useState(false);
-
+  
   const toggleMenu = () => {
     if (isSmallScreen && isPortrait) {
       setMenuOpen(!menuOpen);
@@ -29,16 +29,16 @@ export default function Menu({ isSmallScreen }) {
       setMenuOpen(true);
     }
   };
-
+  
   const closeMenu = () => {
-    if (menuOpen) {
-      setMenuOpen(false);
-      if (!menuOpen) {
-        setMenuOpen(true);
+    if(menuOpen) {
+      setMenuOpen(false)
+      if(!menuOpen) {
+        setMenuOpen(true)
       }
     }
-  };
-
+  }
+  
   const handleSelectPage = (id) => {
     const newPageName = links[id];
     localStorage.setItem("nomPage", newPageName);
@@ -49,14 +49,15 @@ export default function Menu({ isSmallScreen }) {
       toggleMenu();
     }
   };
-
+  
+  
   useEffect(() => {
     const savedNomPage = localStorage.getItem("nomPage");
     if (savedNomPage) {
       setNomPage(savedNomPage);
     }
   }, []);
-
+  
   useEffect(() => {
     const handleOrientationChange = () => {
       if (window.matchMedia("(orientation: portrait)").matches && isSmallScreen) {
@@ -69,43 +70,28 @@ export default function Menu({ isSmallScreen }) {
         setIsLandscape(true);
       }
     };
-
+  
     handleOrientationChange();
     window.addEventListener("orientationchange", handleOrientationChange);
-
+  
     return () => window.removeEventListener("orientationchange", handleOrientationChange);
   }, [isSmallScreen]);
-
-  useEffect(() => {
-    const handleScreenOrientation = () => {
-      if (screen.orientation.type.includes("landscape")) {
-        alert("L'application ne supporte pas le format paysage");
-      }
-    };
-
-    handleScreenOrientation();
-    window.addEventListener("orientationchange", handleScreenOrientation);
-
-    return () => window.removeEventListener("orientationchange", handleScreenOrientation);
-  }, []);
-
+  
   const getImageSrc = () => {
     if (isSmallScreen && nomPage === "A propos de moi") {
       return "/moi.WebP";
     }
     return "logo.png";
   };
-
+  
   return (
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-
+         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <title>Muriel MATHIEU Kinésiologie</title>
         <link rel="icon" href="/logo.png" type="image/x-icon" />
       </Head>
-
       <div className="bg-green-50 lg:h-28 md:h-28 sm:h-20 p-2 text-gray-500 flex justify-around md:justify-around items-center font-semibold font-carattere fixed top-0 w-full z-50 ">
         <div
           className={`relative md:fixed md:top-0 md:left-0 md:ml-5 ${
