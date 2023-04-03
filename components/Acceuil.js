@@ -21,7 +21,7 @@ export default function Acceuil() {
           style={{ filter: "brightness(60%)" }}
         />
       </div>
-      <div className=" h-full sm:space-y-2">
+      <div className=" h-full sm:space-y-2 md:space-y-2">
         <p className="phrase ">{welcome.item1}</p>
         <p className="phrase ">{welcome.item2}</p>
         <p className="phrase ">{welcome.item3}</p>
