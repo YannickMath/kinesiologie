@@ -34,14 +34,14 @@
     margin: 4px;
     /* font-size: 1.4rem; */
     /* width: 10vw; */
-    font-size: 19px;
+    font-size: 23px;
   }
 }
 
 
 @media (min-width: 769px) and (max-width: 849px) {
   .link {
-    font-size: 20px;
+    font-size: 22px;
     width: 6vw;
   }
 }
