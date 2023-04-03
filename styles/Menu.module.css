@@ -25,13 +25,6 @@
 }
 
 /* MEDIA QUERIES */
-/* @media (max-width: 768px) and (orientation: landscape) {
-  .link {
-    display: block;
-    margin: 4px ;
-    font-size: 0.8rem;
-  }
-} */
 
 
 
@@ -41,7 +34,7 @@
     margin: 4px;
     /* font-size: 1.4rem; */
     /* width: 10vw; */
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
