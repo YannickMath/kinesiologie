@@ -84,11 +84,18 @@ export default function Menu({ isSmallScreen }) {
     return "logo.png";
   };
   
+  window.addEventListener("orientationchange", function() {
+    if (screen.orientation.angle === 90 || screen.orientation.angle === -90) {
+      alert("L'application ne supporte pas le format paysage");
+    }
+  });
+  
   return (
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
         <title>Muriel MATHIEU Kinésiologie</title>
         <link rel="icon" href="/logo.png" type="image/x-icon" />
       </Head>
