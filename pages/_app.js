@@ -25,7 +25,9 @@ export default function MyApp({ Component, pageProps }) {
       window.removeEventListener("resize", updateScreenSize);
     };
   }, []);
-
+  
+  
+  
   return (
     <Layout isSmallScreen={isSmallScreen} >
       <Component {...pageProps} key={router.route} isSmallScreen={isSmallScreen}  />
