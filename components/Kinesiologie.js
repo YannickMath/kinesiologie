@@ -67,7 +67,7 @@ export default function Kinesiologie({ isSmallScreen }) {
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className="  lg:text-base flex-col space-y-4 lg:space-y-6 py-10 mt-40 sm:mt-24 md:mt-30 p-5 ">
+              <div className="  lg:text-base flex-col space-y-4 lg:space-y-6 py-10 mt-40 sm:mt-20 md:mt-30 p-5 ">
                 <h3 className="text-center font-bold  text-xl underline text-[#333333]">
                   C'est quoi la kinésiologie ?
                 </h3>
@@ -79,7 +79,7 @@ export default function Kinesiologie({ isSmallScreen }) {
               </div>
             </div>
             <div className={activeSlide === 1 ? "" : "hidden"}>
-              <div className="h-full flex flex-col justify-center space-y-4  lg:space-y-6 py-10 md:mt-24 mt-40 text-[#333333] p-5 ">
+              <div className="h-full flex flex-col justify-center space-y-4  lg:space-y-6 py-10 md:mt-24 mt-40 sm:mt-20 text-[#333333] p-5 ">
                 <p className="text-center font-bold  text-xl underline ">
                   {items.item6}
                 </p>
@@ -102,7 +102,7 @@ export default function Kinesiologie({ isSmallScreen }) {
               </div>
             </div>
             <div className={activeSlide === 2 ? "" : "hidden"}>
-              <div className=" lg:text-base  flex flex-col justify-center space-y-4 lg:space-y-6 py-10 mt-40 md:mt-24 lg:mt-30 text-[#333333] p-5 ">
+              <div className=" lg:text-base  flex flex-col justify-center space-y-4 lg:space-y-6 py-10 mt-40 md:mt-24 sm:mt-20 lg:mt-30 text-[#333333] p-5 ">
                 <h3 className="text-center font-bold text-xl underline ">
                   Déroulé d'une séance
                 </h3>

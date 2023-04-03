@@ -105,12 +105,12 @@
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .phrase {
-    font-size: 30px;
+    font-size: 1.7rem;
     line-height: 0.75;
     margin-top: 2px;
   }
   .signature {
-    font-size: 36px;
+    font-size: 1.8rem;
     margin-left: 60%;
   }
   .phrase:nth-child(1) {

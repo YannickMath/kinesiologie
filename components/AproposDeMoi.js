@@ -15,8 +15,8 @@ export default function AproposDeMoi({isSmallScreen}) {
       "Mon objectif est d'accompagner les personnes afin qu’elles retrouvent leur chemin de vie de manière paisible, prêtes à faire de nouveaux choix et poser de nouvelles actions pour aller vers la vie qui leur ressemble.",
   };
   return (
-    <div className=" min-h-screen relative flex flex-col md:flex-row font-roboto text-[#333333]">
-      <div className="bg-gray-100 p-5 justify-center mt-44 md:mt-0  space-y-2 md:space-y-4 lg:space-y-6  w-full md:w-full lg:w-4/5 h-full md:h-auto ">
+    <div className=" min-h-screen relative flex flex-col sm:flex-row font-roboto text-[#333333]">
+      <div className="bg-gray-100 p-5 justify-center sm:mt-20 mt-44 md:mt-0  space-y-2 md:space-y-4 lg:space-y-6  w-full md:w-full lg:w-4/5 h-full md:h-auto ">
         <p className="font-bold md:text-center sm:ml-0 md:mt-32 underline">{apropos.item}</p>
         <p className="md:pt-5">{apropos.item1}</p>
         <p>{apropos.item2}</p>

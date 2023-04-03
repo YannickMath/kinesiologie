@@ -171,22 +171,22 @@
   }
 
   .circle:nth-child(5) {
-    top: 60%;
+    top: 50%;
     left: -10%;
   }
 
   .circle:nth-child(6) {
-    top: 70%;
+    top: 60%;
     left: -10%;
   }
 
   .circle:nth-child(7) {
-    top: 80%;
+    top: 70%;
     left: -10%;
   }
 
   .circle:nth-child(8) {
-    top: 90%;
+    top: 80%;
     left: -10%;
   }
 }

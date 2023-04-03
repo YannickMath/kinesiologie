@@ -9,8 +9,8 @@ export default function Acceuil() {
   };
 
   return (
-    <div className="h-screen font-carattere relative flex flex-col  ">
-      <div className="h-full">
+    <div className="h-screen font-carattere relative flex flex-col sm:overflow-hidden sm:mt-8 ">
+      <div className="h-full ">
         <Image
           src="/fond-pc.WebP"
           alt="Image de fond"
@@ -21,12 +21,12 @@ export default function Acceuil() {
           style={{ filter: "brightness(60%)" }}
         />
       </div>
-      <div className=" h-full">
-        <p className="phrase">{welcome.item1}</p>
-        <p className="phrase">{welcome.item2}</p>
-        <p className="phrase">{welcome.item3}</p>
-        <p className="phrase">
-          <span className="signature ">Muriel</span>
+      <div className=" h-full ">
+        <p className="phrase sm:text-[22px]">{welcome.item1}</p>
+        <p className="phrase sm:text-[22px]">{welcome.item2}</p>
+        <p className="phrase sm:text-[22px]">{welcome.item3}</p>
+        <p className="phrase sm:text-[24px]">
+          <span className="signature sm:text-[27px] ">Muriel</span>
         </p>
       </div>
     </div>
