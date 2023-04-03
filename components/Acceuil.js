@@ -22,11 +22,11 @@ export default function Acceuil() {
         />
       </div>
       <div className=" h-full ">
-        <p className="phrase sm:text-[22px]">{welcome.item1}</p>
-        <p className="phrase sm:text-[22px]">{welcome.item2}</p>
-        <p className="phrase sm:text-[22px]">{welcome.item3}</p>
-        <p className="phrase sm:text-[24px]">
-          <span className="signature sm:text-[27px] ">Muriel</span>
+        <p className="phrase ">{welcome.item1}</p>
+        <p className="phrase ">{welcome.item2}</p>
+        <p className="phrase ">{welcome.item3}</p>
+        <p className="phrase ">
+          <span className="signature  ">Muriel</span>
         </p>
       </div>
     </div>
