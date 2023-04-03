@@ -39,12 +39,10 @@
   width: 90%;
   text-align: center;
   color: #ffffff;
-  margin-top: -50px; /* ajuster la valeur pour la position souhaitée */
+  /* margin-top: -50px; ajuster la valeur pour la position souhaitée */
 }
 
-.item-to-move {
-  margin-top: -20px;
-}
+
 
 .phrase:nth-child(1) {
   top: 40%;
@@ -124,11 +122,11 @@
     animation: display-phrases 8s linear forwards 1s;
   }
   .phrase:nth-child(3) {
-    top: 50%;
+    top: 53%;
     animation: display-phrases 8s linear forwards 1s;
   }
   .phrase:nth-child(4) {
-    top: 80%;
+    top: 78%;
     animation: display-phrases 8s linear forwards 1s;
   }
   .signature {
