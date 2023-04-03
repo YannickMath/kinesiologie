@@ -9,7 +9,7 @@ export default function Acceuil() {
   };
 
   return (
-    <div className="h-screen font-carattere relative flex flex-col sm:overflow-hidden sm:mt-8 ">
+    <div className="h-screen font-carattere relative flex flex-col sm:mt-8 ">
       <div className="h-full ">
         <Image
           src="/fond-pc.WebP"
