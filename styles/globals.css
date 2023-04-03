@@ -122,7 +122,7 @@
     animation: display-phrases 8s linear forwards 1s;
   }
   .phrase:nth-child(3) {
-    top: 55%;
+    top: 53%;
     animation: display-phrases 8s linear forwards 1s;
   }
   .phrase:nth-child(4) {
@@ -159,11 +159,11 @@
     animation: display-phrases 8s linear forwards 1s;
   }
   .phrase:nth-child(3) {
-    top: 53%;
+    top: 50%;
     animation: display-phrases 8s linear forwards 1s;
   }
   .phrase:nth-child(4) {
-    top: 55%;
+    top: 53%;
     animation: display-phrases 8s linear forwards 1s;
   }
   .signature {
