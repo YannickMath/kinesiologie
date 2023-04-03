@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const updateScreenSize = () => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const mediaQuery = window.matchMedia("(max-width: 768px) and (orientation: portrait)");
     setIsSmallScreen(mediaQuery.matches);
   };
 
@@ -32,3 +32,4 @@ export default function MyApp({ Component, pageProps }) {
     </Layout>
   );
 }
+
