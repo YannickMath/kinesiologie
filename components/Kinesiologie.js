@@ -67,11 +67,11 @@ export default function Kinesiologie({ isSmallScreen }) {
         <div className="flex flex-col justify-center  lg:mt-0 lg:ml-10 ml-2 lg:mr-10 mr-2">
           <Slider {...settings}>
             <div className={activeSlide === 0 ? "" : "hidden"}>
-              <div className="  lg:text-base flex-col space-y-4 lg:space-y-6 py-10 mt-40 sm:mt-20 md:mt-30 p-5 ">
+              <div className="  lg:text-base flex-col space-y-4 lg:space-y-6 py-10 mt-40 sm:mt-20 md:mt-24 p-5 ">
                 <h3 className="text-center font-bold  text-xl underline text-[#333333]">
                   C'est quoi la kinésiologie ?
                 </h3>
-                <p className="">{items.item1}</p>
+                <p >{items.item1}</p>
                 <p>{items.item2}</p>
                 <p>{items.item3}</p>
                 <p>{items.item4}</p>
