@@ -165,7 +165,7 @@
     animation: display-phrases 8s linear forwards 1s;
   }
   .phrase:nth-child(4) {
-    top: 50%;
+    top: 55%;
     animation: display-phrases 8s linear forwards 1s;
   }
   .signature {
@@ -190,7 +190,7 @@
     height: 150px !important;
   } */
   .phrase {
-    font-size: 28px;
+    font-size: 1.9rem;
     line-height: 0.8;
     /* margin-top: 0%; */
 
@@ -198,7 +198,7 @@
 
   
   .signature {
-    font-size: 31px;
+    font-size: 2.1rem;
   }
   .phrase:nth-child(1) {
     margin-top: 1%;
@@ -213,13 +213,14 @@
     margin-top: 1%;
   }
 }
+
 @media screen and (min-width: 915px) and (max-width: 1199px) {
   /* .logo {
     width: 150px !important;
     height: 160px !important;
   } */
   .phrase {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     line-height: 0.8;
     /* margin-top: 0%; */
 
@@ -244,11 +245,11 @@
 
 @media screen and (min-width: 1200px) {
   .phrase {
-    font-size: 35px;
+    font-size: 1.9rem;
     line-height: 0.95;
   }
   .signature{
-    font-size: 38px;
+    font-size: 2.1rem;
   }
 }
 
