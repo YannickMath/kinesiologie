@@ -35,13 +35,25 @@
   }
 } */
 
+@media (max-width: 768px)  and (orientation : landscape) {
+  .link {
+    display: block;
+    margin: 4px ;
+    font-size: 1.4rem;
+    /* width: 10vw; */
+    font-size: 2px;
+
+
+  
+  }
+}
 @media (max-width: 768px) {
   .link {
     display: block;
     margin: 4px ;
     /* font-size: 1.4rem; */
     /* width: 10vw; */
-    font-size: 18px;
+    font-size: 22px;
 
 
   
