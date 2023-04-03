@@ -62,7 +62,7 @@
 
 .phrase:nth-child(4) {
   top: 72%;
-  animation: display-phrases 5s linear forwards 4s;
+  animation: display-phrases 2s linear forwards 2s;
   animation-fill-mode: forwards;
 }
 
