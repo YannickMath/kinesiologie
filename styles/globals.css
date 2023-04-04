@@ -9,7 +9,7 @@
 }
 
 .font-carattere {
-  font-family: 'Carattere', cursive;
+  font-family: "Carattere", cursive;
 }
 
 /*CSS ACCEUIL*/
@@ -39,10 +39,7 @@
   width: 90%;
   text-align: center;
   color: #ffffff;
-  /* margin-top: -50px; ajuster la valeur pour la position souhaitée */
 }
-
-
 
 .phrase:nth-child(1) {
   top: 40%;
@@ -76,8 +73,6 @@
   margin-top: 5%;
   margin-left: 70%;
 }
-
-
 
 @keyframes write-signature {
   0% {
@@ -140,7 +135,7 @@
     margin-left: 70%;
   }
 }
-@media screen and (max-width: 768px) and (orientation : landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
   .phrase {
     font-size: 1.6rem;
     line-height: 0.6;
@@ -178,67 +173,51 @@
   }
 }
 
-
-
-
 /*CSS Menu et plus précisemmment du logo*/
 @media screen and (min-width: 769px) and (max-width: 914px) {
-  /* .logo {
-    width: 130px !important;
-    height: 150px !important;
-  } */
   .phrase {
     font-size: 1.8rem;
     line-height: 0.65;
-    /* margin-top: 0%; */
-
   }
 
-  
   .signature {
     font-size: 1.9rem;
   }
   .phrase:nth-child(1) {
     margin-top: 1%;
   }
-    .phrase:nth-child(2) {
+  .phrase:nth-child(2) {
     margin-top: 1%;
   }
-    .phrase:nth-child(3) {
+  .phrase:nth-child(3) {
     margin-top: 1%;
   }
-    .phrase:nth-child(4) {
+  .phrase:nth-child(4) {
     margin-top: 1%;
   }
 }
 
 @media screen and (min-width: 914px) and (max-width: 1199px) {
-  /* .logo {
-    width: 150px !important;
-    height: 160px !important;
-  } */
   .phrase {
     font-size: 1.9rem;
     line-height: 0.8;
-    /* margin-top: 0%; */
-
   }
 
   .signature {
     font-size: 28px;
   }
   .phrase:nth-child(1) {
-  margin-top: 1%;
-}
+    margin-top: 1%;
+  }
   .phrase:nth-child(2) {
-  margin-top: 1%;
-}
+    margin-top: 1%;
+  }
   .phrase:nth-child(3) {
-  margin-top: 1%;
-}
+    margin-top: 1%;
+  }
   .phrase:nth-child(4) {
-  margin-top: 1%;
-}
+    margin-top: 1%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -246,7 +225,7 @@
     font-size: 2.1rem;
     line-height: 0.95;
   }
-  .signature{
+  .signature {
     font-size: 2.3rem;
   }
 }
@@ -255,17 +234,13 @@
     font-size: 1.5rem;
     line-height: 0.95;
   }
-  .signature{
+  .signature {
     font-size: 1.6rem;
   }
   .phrase:nth-child(4) {
     margin-top: 3%;
   }
 }
-
-
-
-
 
 .md:flex-row {
   justify-content: center; /* centre horizontalement sur tailles écran plus larges */

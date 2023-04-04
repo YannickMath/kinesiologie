@@ -115,7 +115,6 @@
     width: 100vw;
     margin-left: 5%;
     margin-right: 5%;
-    /* margin-top: 5%; */
     
   }
 
@@ -123,7 +122,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-top: 5%; */
   }
   .circle {
     width: 102vw;

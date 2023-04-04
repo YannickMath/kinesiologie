@@ -1,16 +1,16 @@
 
 export default function MentionsLegales() {
     return (
-        <div className="flex-grow-1 font-roboto h-screen w-screen bg-gray-50 flex justify-center items-center z-50">
-          <div className="w-11/12 max-w-3xl ">
-            <h1 className="text-xl font-bold mb-4 mt-24">Mentions Légales</h1>
+        <div className="flex-grow-1 font-roboto min-h-screen w-screen bg-gray-50 flex justify-center items-center relative p-5">
+          <div className=" mt-44 md:mt-32 sm:mt-24">
+            <h1 className="font-bold mb-4 ">Mentions Légales</h1>
             <p className="mb-4">
               Le présent site internet est la propriété de Muriel MATHIEU,
               kinésiologue domiciliée au 45 Boulevard Général de Gaulle, Oullins
               69600. Le site est édité par Yannick MATHIEU et hébergé par Google
               Workspace.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 ">
               Le contenu de ce site internet est destiné à fournir des informations
               générales sur la kinésiologie et les services proposés par Muriel
               MATHIEU. Les informations fournies sur ce site ne sont pas destinées à

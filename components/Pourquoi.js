@@ -13,8 +13,6 @@ export default function Pourquoi() {
           objectPosition="center"
           className="opacity-50"
           loading="lazy"
-          // style={{ filter: "brightness(80%)" }}
-
         />
       </div>
       <div className="relative z-10 ">
