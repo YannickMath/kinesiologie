@@ -92,6 +92,7 @@ export default function Menu({ isSmallScreen }) {
         <title>Muriel MATHIEU Kinésiologie</title>
         <link rel="icon" href="/logo.png" type="image/x-icon" />
       </Head>
+      
       <div className="bg-green-50 lg:h-28 md:h-28 sm:h-20 p-2 text-gray-500 flex justify-around md:justify-around items-center font-semibold font-carattere fixed top-0 w-full z-50 ">
         <div
           className={`relative md:fixed md:top-0 md:left-0 md:ml-5 ${
