@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Head from "next/head";
 
 export default function Acceuil() {
   const welcome = {
@@ -11,17 +10,21 @@ export default function Acceuil() {
 
   return (
     <div className="h-screen font-carattere relative flex flex-col  ">
-      <Head>
-      {/* Google tag (gtag.js) */}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z137MMNTGH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <Script
+        src="
+https://www.googletagmanager.com/gtag/js?id=NEXT_PUBLIC_GA_ID
+"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-  gtag('config', 'G-Z137MMNTGH');
-</script>
-      </Head>
+          gtag('config', 'NEXT_PUBLIC_GA_ID');
+        `}
+      </Script> 
       <div className="h-full ">
         <Image
           src="/fond-pc.WebP"
