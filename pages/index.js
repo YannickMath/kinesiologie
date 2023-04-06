@@ -1,5 +1,5 @@
 
-import Accueil from "../components/Acceuil"
+import Accueil from "../components/Accueil"
 
 
 

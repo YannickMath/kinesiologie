@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Script from "next/script"; 
 
-export default function Acceuil() {
+export default function Accueil() {
   const welcome = {
     item1: `"Libérez-vous des blocages conscients ou inconscients grâce à la mémoire du corps"`,
     item2: `"Reprenez votre pouvoir personnel et accédez à votre grandeur et à votre plein potentiel"`,

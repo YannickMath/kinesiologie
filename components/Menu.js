@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 export default function Menu({ isSmallScreen }) {
   const links = {
-    id1: "Acceuil",
+    id1: "Accueil",
     id2: "Kinésiologie",
     id3: "Pourquoi?",
     id4: "Reflexologie cranio-sacrée",
@@ -15,7 +15,7 @@ export default function Menu({ isSmallScreen }) {
   };
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const [nomPage, setNomPage] = useState("Acceuil");
+  const [nomPage, setNomPage] = useState("Accueil");
   const [isPortrait, setIsPortrait] = useState(false);
   const [isLandscape, setIsLandscape] = useState(false);
   const [showBurger, setShowBurger] = useState(false);
@@ -131,7 +131,7 @@ export default function Menu({ isSmallScreen }) {
           }  md:flex-row md:justify-around md:w-auto md:ml-64 mr-2 p-2 items-center font-medium text-gray-600`}
         >
   
-          <Link href="/Acceuil">
+          <Link href="/Accueil">
             <p className={styles.link} onClick={() => handleSelectPage("id1")}>
               {links.id1}
             </p>
