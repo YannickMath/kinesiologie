@@ -36,7 +36,7 @@ export default function MyApp({ Component, pageProps }) {
   //Google analytics
   useEffect(() => {
     const handleRouteChange = (url) => {
-      window.gtag("config", process.env.NEXT_PUBLIC_GA_ID, {
+      window.gtag("config", NEXT_PUBLIC_GA_ID, {
         page_path: url,
       });
     };
@@ -50,11 +50,13 @@ export default function MyApp({ Component, pageProps }) {
 router.events
 ]);
 
+const NEXT_PUBLIC_GA_ID = "G-Z137MMNTGH"
+
   const GtagScript = () => (
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GA_ID}`}
       />
       <Script
         id="google-analytics"
@@ -64,7 +66,7 @@ router.events
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+            gtag('config', '${NEXT_PUBLIC_GA_ID}', {
               page_path: window.location.pathname,
             });
           `
