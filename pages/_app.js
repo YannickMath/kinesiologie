@@ -1,16 +1,11 @@
 import "@/styles/globals.css";
 import "tailwindcss/tailwind.css";
 import React from "react";
-import { useRouter} from "next/router";
+import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 import { useState, useEffect } from "react";
-import Script from "next/script"; 
-// import { LogBox } from "react-native";
-
-
-// LogBox.ignoreAllLogs();
-
+import Script from "next/script";
 
 
 export default function MyApp({ Component, pageProps }) {
@@ -19,7 +14,9 @@ export default function MyApp({ Component, pageProps }) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const updateScreenSize = () => {
-    const mediaQuery = window.matchMedia("(max-width: 768px) and (orientation: portrait)");
+    const mediaQuery = window.matchMedia(
+      "(max-width: 768px) and (orientation: portrait)"
+    );
     setIsSmallScreen(mediaQuery.matches);
   };
 
@@ -32,11 +29,11 @@ export default function MyApp({ Component, pageProps }) {
       window.removeEventListener("resize", updateScreenSize);
     };
   }, []);
-  
+
   //Google analytics
   useEffect(() => {
     const handleRouteChange = (url) => {
-      window.gtag("config", NEXT_PUBLIC_GA_ID, {
+      window.gtag("config", process.env.NEXT_PUBLIC_GA_ID, {
         page_path: url,
       });
     };
@@ -46,17 +43,13 @@ export default function MyApp({ Component, pageProps }) {
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, [
-router.events
-]);
-
-const NEXT_PUBLIC_GA_ID = "G-Z137MMNTGH"
+  }, [router.events]);
 
   const GtagScript = () => (
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GA_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
       />
       <Script
         id="google-analytics"
@@ -66,20 +59,23 @@ const NEXT_PUBLIC_GA_ID = "G-Z137MMNTGH"
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${NEXT_PUBLIC_GA_ID}', {
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
               page_path: window.location.pathname,
             });
-          `
+          `,
         }}
       />
     </>
-  ); 
-  
+  );
+
   return (
-    <Layout isSmallScreen={isSmallScreen} >
-      <Component {...pageProps} key={router.route} isSmallScreen={isSmallScreen}  />
-      <GtagScript /> 
+    <Layout isSmallScreen={isSmallScreen}>
+      <Component
+        {...pageProps}
+        key={router.route}
+        isSmallScreen={isSmallScreen}
+      />
+      <GtagScript />
     </Layout>
   );
 }
-
