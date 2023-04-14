@@ -5,6 +5,13 @@ import { useRouter} from "next/router";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 import { useState, useEffect } from "react";
+import Script from "next/script"; 
+// import { LogBox } from "react-native";
+
+
+// LogBox.ignoreAllLogs();
+
+
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -26,11 +33,50 @@ export default function MyApp({ Component, pageProps }) {
     };
   }, []);
   
-  
+  //Google analytics
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      window.gtag("config", process.env.NEXT_PUBLIC_GA_ID, {
+        page_path: url,
+      });
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [
+router.events
+]);
+
+  const GtagScript = () => (
+    <>
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+              page_path: window.location.pathname,
+            });
+          `
+        }}
+      />
+    </>
+  ); 
   
   return (
     <Layout isSmallScreen={isSmallScreen} >
       <Component {...pageProps} key={router.route} isSmallScreen={isSmallScreen}  />
+      <GtagScript /> 
     </Layout>
   );
 }

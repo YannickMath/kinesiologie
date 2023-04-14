@@ -1,13 +1,13 @@
 
 import Accueil from "../components/Accueil"
 
-import Script from "next/script"; 
+// import Script from "next/script"; 
 
 
 export default function Home() {
   return (
     <div style={{ height: "100vh" }}>
-       <Script
+       {/* <Script
         src="
 https://www.googletagmanager.com/gtag/js?id=NEXT_PUBLIC_GA_ID
 "
@@ -21,7 +21,7 @@ https://www.googletagmanager.com/gtag/js?id=NEXT_PUBLIC_GA_ID
 
           gtag('config', 'NEXT_PUBLIC_GA_ID');
         `}
-      </Script> 
+      </Script>  */}
       <Accueil />
     </div>
   );
