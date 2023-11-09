@@ -39,6 +39,9 @@ export default function ContactInfo() {
         <BsFillTelephoneFill className="lg:mr-2  mr-4 justify-items-center" />
         {infoPersonnel.téléphone}
       </p>
+      <p style={{textDecoration: "underline"}}>
+        Je peux vous recevoir également les 1ers et 3èmes samedis du mois à Osiris, centre de thérapies holistiques, 28 boulevard de l'artillerie 69007 Lyon.
+      </p>
     </div>
   );
 }
